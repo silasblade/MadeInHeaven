@@ -36,6 +36,7 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
+SeedData.EnsurePopulated(app);
 
 
 app.Run();

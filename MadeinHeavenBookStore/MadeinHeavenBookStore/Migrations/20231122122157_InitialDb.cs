@@ -57,11 +57,14 @@ namespace MadeinHeavenBookStore.Migrations
                     IdProduct = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     NameProduct = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    Price = table.Column<decimal>(type: "decimal(8,2)", nullable: false),
                     Author = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Publishing = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Category = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    imageurl1 = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    imageurl2 = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    imageurl3 = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Set = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
