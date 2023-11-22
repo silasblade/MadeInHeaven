@@ -28,7 +28,7 @@ namespace MadeinHeavenBookStore.Controllers
 			return View();
 		}
 
-		public IActionResult Product()
+		public IActionResult ProductDetail()
 		{
 			ViewData["Title"] = "Product Detail";
 			return View();
