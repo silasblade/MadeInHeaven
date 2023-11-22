@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace MadeinHeavenBookStore.Controllers
 {
+	[Authorize]
 	public class PagesController : Controller
 	{
 		public IActionResult Shop()
