@@ -263,9 +263,14 @@
 					<div class="block2-pic hov-img0">
 						<img src="@product.imageurl1" alt="IMG-PRODUCT">
 
-						<a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-							Quick View
-						</a>
+
+ 							<form method="post" asp-controller="Shop" asp-action="AddToCart" asp-route-id="@product.IdProduct">
+@* 								<a asp-controller="Shop" asp-action="AddToCart" asp-route-id="@product.IdProduct" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+ *@								
+ 								<button class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04" type="submit">Add to Cart</button>
+@*  								</a>
+ *@ 							</form>
+ 						
 					</div>
 
 					<div class="block2-txt flex-w flex-t p-t-14">
@@ -875,6 +880,17 @@
 		});
 	</script>
 	<script src="~/js/main.js"></script>
+	@section scripts {
+		<script>
+			// Kiểm tra xem có thông báo thành công hay không
+			var successMessage = '@TempData["SuccessMessage"]';
+			if (successMessage !== '') {
+				// Hiển thị alert pop-up
+				alert(successMessage);
+			}
+		</script>
+	}
+
 </body>
 </html>
 

@@ -178,6 +178,35 @@ namespace MadeinHeavenBookStore.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "ShopCarts",
+                columns: table => new
+                {
+                    IdShopCart = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    MadeinHeavenBookStoreUserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Id = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ProductIdProduct = table.Column<int>(type: "int", nullable: false),
+                    IdProduct = table.Column<int>(type: "int", nullable: false),
+                    Quantity = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ShopCarts", x => x.IdShopCart);
+                    table.ForeignKey(
+                        name: "FK_ShopCarts_AspNetUsers_MadeinHeavenBookStoreUserId",
+                        column: x => x.MadeinHeavenBookStoreUserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_ShopCarts_Products_ProductIdProduct",
+                        column: x => x.ProductIdProduct,
+                        principalTable: "Products",
+                        principalColumn: "IdProduct",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -216,6 +245,16 @@ namespace MadeinHeavenBookStore.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ShopCarts_MadeinHeavenBookStoreUserId",
+                table: "ShopCarts",
+                column: "MadeinHeavenBookStoreUserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ShopCarts_ProductIdProduct",
+                table: "ShopCarts",
+                column: "ProductIdProduct");
         }
 
         /// <inheritdoc />
@@ -237,13 +276,16 @@ namespace MadeinHeavenBookStore.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "Products");
+                name: "ShopCarts");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
+
+            migrationBuilder.DropTable(
+                name: "Products");
         }
     }
 }

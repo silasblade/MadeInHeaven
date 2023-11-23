@@ -139,6 +139,40 @@ namespace MadeinHeavenBookStore.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("MadeinHeavenBookStore.Models.ShopCart", b =>
+                {
+                    b.Property<int>("IdShopCart")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdShopCart"));
+
+                    b.Property<string>("Id")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("IdProduct")
+                        .HasColumnType("int");
+
+                    b.Property<string>("MadeinHeavenBookStoreUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("ProductIdProduct")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("IdShopCart");
+
+                    b.HasIndex("MadeinHeavenBookStoreUserId");
+
+                    b.HasIndex("ProductIdProduct");
+
+                    b.ToTable("ShopCarts");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -274,6 +308,25 @@ namespace MadeinHeavenBookStore.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("MadeinHeavenBookStore.Models.ShopCart", b =>
+                {
+                    b.HasOne("MadeinHeavenBookStore.Areas.Identity.Data.MadeinHeavenBookStoreUser", "MadeinHeavenBookStoreUser")
+                        .WithMany()
+                        .HasForeignKey("MadeinHeavenBookStoreUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MadeinHeavenBookStore.Models.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductIdProduct")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("MadeinHeavenBookStoreUser");
+
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
