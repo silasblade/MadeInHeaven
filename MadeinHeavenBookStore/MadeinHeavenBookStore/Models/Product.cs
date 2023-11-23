@@ -14,9 +14,7 @@ namespace MadeinHeavenBookStore.Models
 		public string NameProduct { get; set; } = string.Empty;
 
 		[Required]
-		[Range(0.01, double.MaxValue, ErrorMessage = "Please enter a positive price")]
-		[Column(TypeName = "decimal(8,2)")]
-		public decimal Price { get; set; } = 100000;
+		public int Price { get; set; } = 1000777777;
         public string Author { get; set; } = "Chúa tể bóng tối";
 		public string Publishing { get; set; } = "NXB Màn đêm";
 		public string Description { get; set; } = string.Empty;

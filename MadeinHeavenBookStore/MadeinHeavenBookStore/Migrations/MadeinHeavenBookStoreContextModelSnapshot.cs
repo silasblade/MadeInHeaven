@@ -118,6 +118,77 @@ namespace MadeinHeavenBookStore.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("MadeinHeavenBookStore.Models.OrderDetail.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("DateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("IdUser")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TotalCost")
+                        .HasColumnType("int");
+
+                    b.Property<string>("city")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("discount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("district")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("shipmethodprice")
+                        .HasColumnType("int");
+
+                    b.Property<string>("street")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("telephonenumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("wards")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("MadeinHeavenBookStore.Models.OrderDetail.OrderProduct", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("OrderProducts");
+                });
+
             modelBuilder.Entity("MadeinHeavenBookStore.Models.Product", b =>
                 {
                     b.Property<int>("IdProduct")
@@ -138,8 +209,8 @@ namespace MadeinHeavenBookStore.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(8,2)");
+                    b.Property<int>("Price")
+                        .HasColumnType("int");
 
                     b.Property<string>("Publishing")
                         .IsRequired()
@@ -164,6 +235,104 @@ namespace MadeinHeavenBookStore.Migrations
                     b.HasKey("IdProduct");
 
                     b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("MadeinHeavenBookStore.Models.ShipandCoupon.ApplyCoupon", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("IdCoupon")
+                        .HasColumnType("int");
+
+                    b.Property<string>("IdUser")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ApplyCoupons");
+                });
+
+            modelBuilder.Entity("MadeinHeavenBookStore.Models.ShipandCoupon.ApplyShip", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("IdShip")
+                        .HasColumnType("int");
+
+                    b.Property<string>("IdUser")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ApplyShips");
+                });
+
+            modelBuilder.Entity("MadeinHeavenBookStore.Models.ShipandCoupon.Coupon", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("discount")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("percent")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("remainnumber")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Coupons");
+                });
+
+            modelBuilder.Entity("MadeinHeavenBookStore.Models.ShipandCoupon.ShipMethod", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("price")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ShipMethods");
                 });
 
             modelBuilder.Entity("MadeinHeavenBookStore.Models.ShopCart", b =>

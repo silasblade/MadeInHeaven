@@ -15,7 +15,28 @@ namespace MadeinHeavenBookStore.Models
 			{
 				context.Database.Migrate();
 			}
-			if (!context.Categories.Any())
+
+			if (!context.ShipMethods.Any())
+			{
+				context.ShipMethods.AddRange(
+					new ShipandCoupon.ShipMethod
+					{
+						Name = "Quick Ship",
+						Description = "About 6 hours, and About 3 day if you are not in Ho Chi Minh City",
+						price = 39000
+					},
+
+					new ShipandCoupon.ShipMethod
+					{
+						Name = "Standard Ship",
+						Description = "About 2 days, and About 8 day if you are not in Ho Chi Minh City",
+						price = 22000
+					}
+
+					) ;
+			}	
+
+				if (!context.Categories.Any())
 			{
 				context.Categories.AddRange(
 					new Category

@@ -1,4 +1,6 @@
 ﻿using MadeinHeavenBookStore.Areas.Identity.Data;
+using MadeinHeavenBookStore.Models.OrderDetail;
+using MadeinHeavenBookStore.Models.ShipandCoupon;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -12,9 +14,15 @@ public class MadeinHeavenBookStoreContext : IdentityDbContext<MadeinHeavenBookSt
     {
     }
 
+    public DbSet<OrderProduct> OrderProducts { get; set; }
+    public DbSet<Order> Orders { get; set; }
+    public DbSet<ApplyShip> ApplyShips {  get; set; }
+    public DbSet<ShipMethod> ShipMethods { get; set; }
     public DbSet<Product> Products { get; set; }
 	public DbSet<ShopCart> ShopCarts { get; set; }
 	public DbSet<Category> Categories { get; set; }
+    public DbSet<Coupon> Coupons { get; set; }
+	public DbSet<ApplyCoupon> ApplyCoupons { get; set; }
 	protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
