@@ -1,6 +1,7 @@
 ﻿using MadeinHeavenBookStore.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace MadeinHeavenBookStore.Controllers
 {
@@ -17,8 +18,18 @@ namespace MadeinHeavenBookStore.Controllers
 		}
 		public IActionResult ProductDetail(int id)
         {
-			var product = _context.Products.Find(id);
-			return View(product);
-        }
+			var product = _context.Products
+		.Include(p => p.Categories)
+		.FirstOrDefault(c => c.IdProduct == id);
+
+
+			var viewModel = new ProductDetailViewModel
+			{
+				Product = product,
+				Categories = product.Categories.ToList()
+			};
+
+			return View(viewModel);
+		}
     }
 }

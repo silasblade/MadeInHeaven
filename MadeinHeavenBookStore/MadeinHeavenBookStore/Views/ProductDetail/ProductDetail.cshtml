@@ -1,7 +1,8 @@
 ﻿@{
 	Layout = "_Layout";
 }
-@model Product
+@model MadeinHeavenBookStore.Controllers.ProductDetailViewModel
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,17 +14,12 @@
 <div class="container">
 	<div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
 		<a href="index.html" class="stext-109 cl8 hov-cl1 trans-04">
-			Home
-			<i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
-		</a>
-
-		<a href="product.html" class="stext-109 cl8 hov-cl1 trans-04">
-			Men
+			Shop
 			<i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
 		</a>
 
 		<span class="stext-109 cl4">
-			Lightweight Jacket
+			@Model.Product.NameProduct
 		</span>
 	</div>
 </div>
@@ -40,31 +36,31 @@
 						<div class="wrap-slick3-arrows flex-sb-m flex-w"></div>
 
 						<div class="slick3 gallery-lb">
-							<div class="item-slick3" data-thumb="@Url.Content(Model.imageurl1)">
+							<div class="item-slick3" data-thumb="@Url.Content(Model.Product.imageurl1)">
 								<div class="wrap-pic-w pos-relative">
-									<img src="@Model.imageurl1" alt="IMG-PRODUCT">
+									<img src="@Model.Product.imageurl1" alt="IMG-PRODUCT">
 
-									<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="~/images/product-detail-01.jpg">
+									<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="@Model.Product.imageurl1">
 										<i class="fa fa-expand"></i>
 									</a>
 								</div>
 							</div>
 
-							<div class="item-slick3" data-thumb="@Url.Content(Model.imageurl2)">
+							<div class="item-slick3" data-thumb="@Url.Content(Model.Product.imageurl2)">
 								<div class="wrap-pic-w pos-relative">
-									<img src="@Model.imageurl2" alt="IMG-PRODUCT">
+									<img src="@Model.Product.imageurl2" alt="IMG-PRODUCT">
 
-									<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="~/images/product-detail-02.jpg">
+									<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="@Model.Product.imageurl2">
 										<i class="fa fa-expand"></i>
 									</a>
 								</div>
 							</div>
 
-							<div class="item-slick3" data-thumb="@Url.Content(Model.imageurl3)">
+							<div class="item-slick3" data-thumb="@Url.Content(Model.Product.imageurl3)">
 								<div class="wrap-pic-w pos-relative">
-									<img src="@Model.imageurl3" alt="IMG-PRODUCT">
+									<img src="@Model.Product.imageurl3" alt="IMG-PRODUCT">
 
-									<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="~/images/product-detail-03.jpg">
+									<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="@Model.Product.imageurl3">
 										<i class="fa fa-expand"></i>
 									</a>
 								</div>
@@ -77,22 +73,34 @@
 			<div class="col-md-6 col-lg-5 p-b-30">
 				<div class="p-r-50 p-t-5 p-lr-0-lg">
 					<h4 class="mtext-105 cl2 js-name-detail p-b-14">
-						@Model.NameProduct
+						@Model.Product.NameProduct
 					</h4>
 
 					<span class="mtext-106 cl2">
-						@Model.Price
+						@Model.Product.Price
 					</span>
 
 					<p class="stext-102 cl3 p-t-23">
-						Author: @Model.Author
+						Author: @Model.Product.Author
 					</p>
 					<p class="stext-102 cl3 p-t-23">
-						Publisher: @Model.Publishing
+						Publisher: @Model.Product.Publishing
 					</p>
-					<p class="stext-102 cl3 p-t-23">
-						Category: @Model.Category
-					</p>
+					<div class="row">
+						<div class="col-md-12">
+							<p class="stext-102 cl3 p-t-23">
+								Category:
+								@foreach (var cat in Model.Categories)
+								{
+									<form method="post" asp-controller="Shop" asp-action="ProductsByCategory" asp-route-categoryId="@cat.Id" class="d-inline-block">
+										<a href="#"><button type="submit" class="btn btn-link">@cat.Name</button></a>
+									</form>
+								}
+							</p>
+						</div>
+					</div>
+
+
 
 					<!--  -->
 					<div class="p-t-33">
@@ -203,7 +211,7 @@
 					<div class="tab-pane fade show active" id="description" role="tabpanel">
 						<div class="how-pos2 p-lr-15-md">
 							<p class="stext-102 cl6">
-								@Model.Description
+								@Model.Product.Description 
 							</p>
 						</div>
 					</div>

@@ -21,7 +21,7 @@ namespace MadeinHeavenBookStore.Models
 		public string Publishing { get; set; } = "NXB Màn đêm";
 		public string Description { get; set; } = string.Empty;
 		[Required(ErrorMessage = "Please enter a category")]
-		public string Category { get; set; } = string.Empty;
+		public virtual ICollection<Category> Categories { get; set; } = new List<Category>();
 		public string imageurl1 { get; set; } = "https://files.cults3d.com/uploaders/23262976/illustration-file/77dac2dc-08a2-4e27-be3c-5ffc190f8a91/ref-2.png";
 		public string imageurl2 { get; set; } = "https://files.cults3d.com/uploaders/23262976/illustration-file/77dac2dc-08a2-4e27-be3c-5ffc190f8a91/ref-2.png";
 		public string imageurl3 { get; set; } = "https://files.cults3d.com/uploaders/23262976/illustration-file/77dac2dc-08a2-4e27-be3c-5ffc190f8a91/ref-2.png";

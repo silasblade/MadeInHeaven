@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis;
+using Microsoft.EntityFrameworkCore;
 
 namespace MadeinHeavenBookStore.Controllers
 {
@@ -63,7 +64,15 @@ namespace MadeinHeavenBookStore.Controllers
 		}
 
 
-
+		[HttpPost]
+		public IActionResult ProductsByCategory(int categoryId)
+		{
+			var products = _context.Products
+				.Include(p => p.Categories)
+				.Where(p => p.Categories.Any(c => c.Id == categoryId))
+				.ToList();
+			return View(products);
+		}
 
 		//Chọn sản phẩm rồi xem thông tin
 		//[HttpPost]

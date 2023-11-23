@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MadeinHeavenBookStore.Migrations
 {
     [DbContext(typeof(MadeinHeavenBookStoreContext))]
-    [Migration("20231122153429_InitialDb")]
+    [Migration("20231123061636_InitialDb")]
     partial class InitialDb
     {
         /// <inheritdoc />
@@ -24,6 +24,21 @@ namespace MadeinHeavenBookStore.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("CategoryProduct", b =>
+                {
+                    b.Property<int>("CategoriesId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductsIdProduct")
+                        .HasColumnType("int");
+
+                    b.HasKey("CategoriesId", "ProductsIdProduct");
+
+                    b.HasIndex("ProductsIdProduct");
+
+                    b.ToTable("CategoryProduct");
+                });
 
             modelBuilder.Entity("MadeinHeavenBookStore.Areas.Identity.Data.MadeinHeavenBookStoreUser", b =>
                 {
@@ -90,6 +105,22 @@ namespace MadeinHeavenBookStore.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("MadeinHeavenBookStore.Models.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Categories");
+                });
+
             modelBuilder.Entity("MadeinHeavenBookStore.Models.Product", b =>
                 {
                     b.Property<int>("IdProduct")
@@ -99,10 +130,6 @@ namespace MadeinHeavenBookStore.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdProduct"));
 
                     b.Property<string>("Author")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Category")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -311,6 +338,21 @@ namespace MadeinHeavenBookStore.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("CategoryProduct", b =>
+                {
+                    b.HasOne("MadeinHeavenBookStore.Models.Category", null)
+                        .WithMany()
+                        .HasForeignKey("CategoriesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MadeinHeavenBookStore.Models.Product", null)
+                        .WithMany()
+                        .HasForeignKey("ProductsIdProduct")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("MadeinHeavenBookStore.Models.ShopCart", b =>

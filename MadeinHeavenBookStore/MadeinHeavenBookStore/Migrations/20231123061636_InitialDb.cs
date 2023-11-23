@@ -51,6 +51,19 @@ namespace MadeinHeavenBookStore.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Categories",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Categories", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Products",
                 columns: table => new
                 {
@@ -61,7 +74,6 @@ namespace MadeinHeavenBookStore.Migrations
                     Author = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Publishing = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Category = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     imageurl1 = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     imageurl2 = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     imageurl3 = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -179,6 +191,30 @@ namespace MadeinHeavenBookStore.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "CategoryProduct",
+                columns: table => new
+                {
+                    CategoriesId = table.Column<int>(type: "int", nullable: false),
+                    ProductsIdProduct = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_CategoryProduct", x => new { x.CategoriesId, x.ProductsIdProduct });
+                    table.ForeignKey(
+                        name: "FK_CategoryProduct_Categories_CategoriesId",
+                        column: x => x.CategoriesId,
+                        principalTable: "Categories",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_CategoryProduct_Products_ProductsIdProduct",
+                        column: x => x.ProductsIdProduct,
+                        principalTable: "Products",
+                        principalColumn: "IdProduct",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "ShopCarts",
                 columns: table => new
                 {
@@ -247,6 +283,11 @@ namespace MadeinHeavenBookStore.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
+                name: "IX_CategoryProduct_ProductsIdProduct",
+                table: "CategoryProduct",
+                column: "ProductsIdProduct");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_ShopCarts_MadeinHeavenBookStoreUserId",
                 table: "ShopCarts",
                 column: "MadeinHeavenBookStoreUserId");
@@ -276,10 +317,16 @@ namespace MadeinHeavenBookStore.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
+                name: "CategoryProduct");
+
+            migrationBuilder.DropTable(
                 name: "ShopCarts");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
+
+            migrationBuilder.DropTable(
+                name: "Categories");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
