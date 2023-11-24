@@ -1,0 +1,33 @@
+﻿@using MadeinHeavenBookStore.Models.OrderDetail;
+@{
+    Layout = "_Layout";
+}
+@model List<Order>
+
+
+
+
+
+
+
+<div class="container mt-4">
+    <h2>Order List</h2>
+
+    <ul class="list-group">
+
+        @foreach(var od in Model)
+        {
+            <li class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">ID: @od.Id</h5>
+                    <small>@od.DateTime.ToString()</small>
+                    <a asp-controller="Order" asp-action="OrderDetail" asp-route-id="@od.Id" class="btn btn-outline-primary">View Details</a>
+                    
+                </div>
+                <p class="mb-1">Total Cost: @od.TotalCost</p>
+                
+                <hr />
+            </li>
+        }
+    </ul>
+</div>

@@ -8,6 +8,7 @@ namespace MadeinHeavenBookStore.Models.OrderDetail
         public int Id { get; set; }
 
         public string IdUser { get; set; }
+        public string UserClaim { get; set; }
         public string street { get; set; }
         public string wards { get; set; }
         public string district { get; set; }
@@ -18,6 +19,8 @@ namespace MadeinHeavenBookStore.Models.OrderDetail
 		public string telephonenumber { get; set; }
         public DateTime DateTime { get; set; }
         public int TotalCost { get; set; }
+
+        public string status { get; set; } = "Delivering";
 
 
     }

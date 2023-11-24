@@ -80,6 +80,11 @@
 							<div class="container mt-5">
 								<h2>Ship Address</h2>
 								<form method="post" asp-controller="Order" asp-action="saveOrder">
+
+									<div class="mb-3">
+										<label for="street" class="form-label">Reveiver Name</label>
+										<input type="text" class="form-control" id="receiver" name="receiver" placeholder="Input Reveiver Name...">
+									</div>
 									<div class="mb-3">
 										<label for="street" class="form-label">Street</label>
 										<input type="text" class="form-control" id="street" name="street" placeholder="Input your street...">

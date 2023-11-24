@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using MadeinHeavenBookStore.Models.OrderDetail;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace MadeinHeavenBookStore.Controllers
 {
@@ -75,17 +76,19 @@ namespace MadeinHeavenBookStore.Controllers
 		}
 
 		[HttpPost]
-		public IActionResult saveOrder(string street, string ward, string district, string city, string phoneNumber)
+		public IActionResult saveOrder(string receiver, string street, string ward, string district, string city, string phoneNumber)
 		{
             Order order = new Order();
 			order.IdUser = _userManager.GetUserId(this.User);
+			order.UserClaim = receiver;
 			order.street = street;
 			order.telephonenumber = phoneNumber;
 			order.city = city;
 			order.wards = ward;
 			order.district = district;
-
-			List<ShopCart> shopCarts = _context.ShopCarts
+            _context.Orders.Add(order);
+            _context.SaveChanges();
+            List<ShopCart> shopCarts = _context.ShopCarts
 				.Where(c => c.Id == _userManager
 				.GetUserId(this.User))
 				.ToList();
@@ -96,13 +99,14 @@ namespace MadeinHeavenBookStore.Controllers
 			{
 				OrderProduct Oproduct = new OrderProduct();
 				Oproduct.ProductId = shp.IdProduct;
+				Oproduct.Product = _context.Products.Find(shp.IdProduct);
 				Oproduct.Quantity = shp.Quantity;
 				Oproduct.OrderId = order.Id;
 				_context.OrderProducts.Add(Oproduct);
 				_context.SaveChanges();
 
 				Product product = _context.Products.Find(shp.IdProduct);
-				total = total + product.Price;
+				total = total + product.Price * shp.Quantity;
 				
 			}
 
@@ -122,11 +126,45 @@ namespace MadeinHeavenBookStore.Controllers
 			total = total - coupon.discount + shipMethod.price;
 
 			order.TotalCost = total;
+			order.status = "Delivering..";
 
-			_context.Orders.Add(order);
 			_context.SaveChanges();
 
-			return RedirectToAction();
+			return RedirectToAction("OrderDetail", new {id = order.Id} );
 		}
-	}
+
+
+
+		public IActionResult OrderList()
+		{
+			List<Order> orders = _context.Orders
+				.Where(c => c.IdUser == _userManager.GetUserId(this.User)).ToList();
+
+			return View(orders);
+		}
+
+		[HttpGet]
+        public IActionResult OrderDetail(int id)
+        {
+			Order order = _context.Orders.Find(id);
+			List<OrderProduct> orderProductsList = _context.OrderProducts
+				
+				.Where(c=> c.OrderId == id)
+				.Include(pr => pr.Product)
+                .ToList();
+
+
+            List<int> productIds = orderProductsList.Select(op => op.ProductId).ToList();
+            List<Product> productsList = _context.Products.Where(p => productIds.Contains(p.IdProduct)).ToList(); 
+            ViewData["ProductList"] = orderProductsList;
+
+
+            return View(order);
+        }
+
+
+
+
+
+    }
 }

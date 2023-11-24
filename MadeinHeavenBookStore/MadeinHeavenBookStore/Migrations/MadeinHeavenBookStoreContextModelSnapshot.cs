@@ -136,6 +136,10 @@ namespace MadeinHeavenBookStore.Migrations
                     b.Property<int>("TotalCost")
                         .HasColumnType("int");
 
+                    b.Property<string>("UserClaim")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("city")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -149,6 +153,10 @@ namespace MadeinHeavenBookStore.Migrations
 
                     b.Property<int>("shipmethodprice")
                         .HasColumnType("int");
+
+                    b.Property<string>("status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("street")
                         .IsRequired()
@@ -185,6 +193,8 @@ namespace MadeinHeavenBookStore.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
 
                     b.ToTable("OrderProducts");
                 });
@@ -519,6 +529,17 @@ namespace MadeinHeavenBookStore.Migrations
                         .HasForeignKey("ProductsIdProduct")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("MadeinHeavenBookStore.Models.OrderDetail.OrderProduct", b =>
+                {
+                    b.HasOne("MadeinHeavenBookStore.Models.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("MadeinHeavenBookStore.Models.ShopCart", b =>

@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using MadeinHeavenBookStore.Models.ShipandCoupon;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 
 namespace MadeinHeavenBookStore.Models
@@ -16,7 +17,48 @@ namespace MadeinHeavenBookStore.Models
 				context.Database.Migrate();
 			}
 
-			if (!context.ShipMethods.Any())
+            if (!context.Coupons.Any())
+            {
+				context.Coupons.AddRange(
+					new ShipandCoupon.Coupon
+					{
+						Code = "coupon",
+						discount = 0,
+						Name = "coupon",
+						percent = false,
+						remainnumber = 9999999,
+						Description = "coupon"
+					},
+
+					new ShipandCoupon.Coupon
+                    {
+  
+                        Code = "ab",
+                        discount = 12997,
+                        Name = "coupon",
+                        percent = false,
+                        remainnumber = 9999999,
+                        Description = "coupon"
+                    },
+
+
+                    new ShipandCoupon.Coupon
+                    {
+
+                        Code = "ab2",
+                        discount = 17997,
+                        Name = "coupon",
+                        percent = false,
+                        remainnumber = 9999999,
+                        Description = "coupon"
+                    }
+
+                    ) ;
+                context.SaveChanges();
+
+            }
+
+            if (!context.ShipMethods.Any())
 			{
 				context.ShipMethods.AddRange(
 					new ShipandCoupon.ShipMethod
@@ -34,9 +76,11 @@ namespace MadeinHeavenBookStore.Models
 					}
 
 					) ;
-			}	
+                context.SaveChanges();
 
-				if (!context.Categories.Any())
+            }
+
+            if (!context.Categories.Any())
 			{
 				context.Categories.AddRange(
 					new Category
@@ -56,8 +100,8 @@ namespace MadeinHeavenBookStore.Models
 						Name = "Dark"
 					}
 					);
-				context.SaveChanges();
-			}
+                context.SaveChanges();
+            }
 			if (!context.Products.Any())
 			{
 				context.Products.AddRange(
