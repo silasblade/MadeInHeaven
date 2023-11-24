@@ -5,6 +5,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
+using System.Net.NetworkInformation;
+using X.PagedList;
+
+
+
 
 namespace MadeinHeavenBookStore.Controllers
 {
@@ -21,11 +26,25 @@ namespace MadeinHeavenBookStore.Controllers
 			this._userManager = userManager;
 		}
 
-        public IActionResult Shop()
-        {
-            var products = _context.Products.ToList();
-            return View(products);
-        }
+		//public IActionResult Shop()
+		//{
+		//    var products = _context.Products.ToList();
+		//    return View(products);
+		//}
+
+
+		public IActionResult Shop(string searchString, int? page)
+		{
+			var products = _context.Products.ToList();
+			if (!String.IsNullOrEmpty(searchString))
+			{
+				products = products.Where(s => s.NameProduct.Contains(searchString)).ToList();
+			}
+			int pageSize = 10;
+			int pageNumber = (page ?? 1);
+			return View(products.ToPagedList(pageNumber, pageSize));
+		}
+
 
 		[HttpPost]
 		public async Task<IActionResult> AddToCart(int id)
@@ -65,28 +84,21 @@ namespace MadeinHeavenBookStore.Controllers
 
 
 		[HttpPost]
-		public IActionResult ProductsByCategory(int categoryId)
+		public IActionResult ProductsByCategory(string searchString, int? page, int categoryId)
 		{
 			var products = _context.Products
 				.Include(p => p.Categories)
 				.Where(p => p.Categories.Any(c => c.Id == categoryId))
 				.ToList();
-			return View(products);
+			if (!String.IsNullOrEmpty(searchString))
+			{
+				products = products.Where(s => s.NameProduct.Contains(searchString)).ToList();
+			}
+			int pageSize = 10;
+			int pageNumber = (page ?? 1);
+			return View(products.ToPagedList(pageNumber, pageSize));
 		}
 
-		//Chọn sản phẩm rồi xem thông tin
-		//[HttpPost]
-		//[ValidateAntiForgeryToken]
-		//public IActionResult ShowDetail(Product product)
-		//{
-		//	if (ModelState.IsValid)
-		//	{
-		//		// Chuyển hướng đến action ProductDetail của ProductDetailController và truyền ID
-		//		return RedirectToAction("ProductDetail", "ProductDetail", new { id = product.IdProduct });
-		//	}
-
-		//	// Nếu ModelState không hợp lệ, hiển thị lại form với thông báo lỗi
-		//	return View();
-		//}
+        
 	}
 }

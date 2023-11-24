@@ -2,7 +2,10 @@
 	Layout = "_Layout";
 }
 
-@model List<Product>
+@using X.PagedList.Mvc;
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@model IPagedList<Product>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,13 +31,18 @@
 
 			<!-- Search product -->
 			<div class="dis-none panel-search w-full p-t-10 p-b-15">
-				<div class="bor8 dis-flex p-l-15">
-					<button class="size-113 flex-c-m fs-16 cl2 hov-cl1 trans-04">
-						<i class="zmdi zmdi-search"></i>
-					</button>
+				<form asp-controller="Shop" asp-action="Shop">
+					<div class="bor8 dis-flex p-l-15">
 
-					<input class="mtext-107 cl2 size-114 plh2 p-r-15" type="text" name="search-product" placeholder="Search">
-				</div>
+						<button type="submit" class="size-113 flex-c-m fs-16 cl2 hov-cl1 trans-04">
+							<i class="zmdi zmdi-search"></i>
+						</button>
+
+						<input class="mtext-107 cl2 size-114 plh2 p-r-15" type="text" name="searchString" placeholder="Search">
+
+
+					</div>
+				</form>
 			</div>
 		</div>
 
@@ -73,15 +81,14 @@
 					</div>
 				</div>
 			}
-
-
-			 <!-- Load more -->
-			
 		</div>
+
 		<div class="flex-c-m flex-w w-full p-t-45">
-			<a href="#" class="flex-c-m stext-101 cl5 size-103 bg2 bor1 hov-btn1 p-lr-15 trans-04">
-				Load More
-			</a>
+
+			<div class="flex-c-m stext-101 cl5 size-103 bg2 bor1 p-lr-15 trans-04">
+				@Html.PagedListPager(Model, page => Url.Action("Shop", new { page }))
+			</div>
+
 		</div>
 
 		<script src="~/vendor/jquery/jquery-3.2.1.min.js"></script>
