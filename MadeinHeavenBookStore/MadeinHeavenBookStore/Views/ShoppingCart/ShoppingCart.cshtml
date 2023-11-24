@@ -54,7 +54,10 @@
 										</button>
 										</form>
 									</td>
-									<td class="column-2">@p.Product.NameProduct</td>
+									<td class="column-2">
+										<a asp-controller="ProductDetail" asp-action="ProductDetail" asp-route-id="@p.Product.IdProduct" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+										@p.Product.NameProduct </a>  
+										</td>
 									<td class="column-3">VNĐ @p.Product.Price</td>
 									<td class="column-4">
 										<div class="wrap-num-product flex-w m-l-auto m-r-0">

@@ -215,6 +215,9 @@ namespace MadeinHeavenBookStore.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Inventory")
+                        .HasColumnType("int");
+
                     b.Property<string>("NameProduct")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -245,6 +248,35 @@ namespace MadeinHeavenBookStore.Migrations
                     b.HasKey("IdProduct");
 
                     b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("MadeinHeavenBookStore.Models.Review.ReviewComment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Comment")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ProductIdProduct")
+                        .HasColumnType("int");
+
+                    b.Property<string>("email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("star")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductIdProduct");
+
+                    b.ToTable("ReviewComments");
                 });
 
             modelBuilder.Entity("MadeinHeavenBookStore.Models.ShipandCoupon.ApplyCoupon", b =>
@@ -377,6 +409,33 @@ namespace MadeinHeavenBookStore.Migrations
                     b.HasIndex("ProductIdProduct");
 
                     b.ToTable("ShopCarts");
+                });
+
+            modelBuilder.Entity("MadeinHeavenBookStore.Models.Wishlist", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("IdUser")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ProductIdProduct")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductIdProduct");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Wishlists");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -542,6 +601,17 @@ namespace MadeinHeavenBookStore.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("MadeinHeavenBookStore.Models.Review.ReviewComment", b =>
+                {
+                    b.HasOne("MadeinHeavenBookStore.Models.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductIdProduct")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("MadeinHeavenBookStore.Models.ShopCart", b =>
                 {
                     b.HasOne("MadeinHeavenBookStore.Areas.Identity.Data.MadeinHeavenBookStoreUser", "MadeinHeavenBookStoreUser")
@@ -559,6 +629,23 @@ namespace MadeinHeavenBookStore.Migrations
                     b.Navigation("MadeinHeavenBookStoreUser");
 
                     b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("MadeinHeavenBookStore.Models.Wishlist", b =>
+                {
+                    b.HasOne("MadeinHeavenBookStore.Models.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductIdProduct")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MadeinHeavenBookStore.Areas.Identity.Data.MadeinHeavenBookStoreUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("Product");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

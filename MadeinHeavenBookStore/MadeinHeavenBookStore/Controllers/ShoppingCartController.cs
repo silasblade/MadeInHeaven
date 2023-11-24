@@ -55,6 +55,12 @@ namespace MadeinHeavenBookStore.Controllers
 
 			int idapply = Acoupon.IdCoupon;
 			Coupon coupon = _context.Coupons.FirstOrDefault(c => c.Id == idapply);
+			if(coupon == null)
+			{
+				Acoupon.IdCoupon = 1;
+				coupon = _context.Coupons.Find(1);
+				_context.SaveChanges(true);
+			}
 
 			ViewData["discount"] = coupon.discount;
 			ViewData["code"] = coupon.Code;

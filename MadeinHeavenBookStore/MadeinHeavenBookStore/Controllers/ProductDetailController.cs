@@ -1,9 +1,11 @@
 ﻿using MadeinHeavenBookStore.Areas.Identity.Data;
 using MadeinHeavenBookStore.Models;
+using MadeinHeavenBookStore.Models.Review;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace MadeinHeavenBookStore.Controllers
 {
@@ -25,9 +27,13 @@ namespace MadeinHeavenBookStore.Controllers
 		.Include(p => p.Categories)
 		.FirstOrDefault(c => c.IdProduct == id);
 
+			List<ReviewComment> comments = _context.ReviewComments
+				.Where(c => c.Product == product)
+				.ToList();
 
 			var viewModel = new ProductDetailViewModel
 			{
+				ReviewComment = comments,
 				Product = product,
 				Categories = product.Categories.ToList()
 			};
@@ -35,6 +41,22 @@ namespace MadeinHeavenBookStore.Controllers
 			return View(viewModel);
 		}
 
+
+		[HttpPost]
+		public IActionResult saveComment(int star, string comment, int id)
+		{
+			var user = _userManager.Users.FirstOrDefault(u => u.Id == _userManager.GetUserId(this.User));
+
+			var product = _context.Products.Find(id);
+			ReviewComment reviewComment = new ReviewComment();
+			reviewComment.email = user.Email;
+			reviewComment.star = star;
+			reviewComment.Product = product;
+			reviewComment.Comment = comment;
+			_context.ReviewComments.Add(reviewComment);
+			_context.SaveChanges();
+			return RedirectToAction("ProductDetail", new { id = id });
+		}
 
 
 

@@ -1,7 +1,9 @@
 ﻿using MadeinHeavenBookStore.Areas.Identity.Data;
 using MadeinHeavenBookStore.Models.OrderDetail;
+using MadeinHeavenBookStore.Models.Review;
 using MadeinHeavenBookStore.Models.ShipandCoupon;
 using Microsoft.AspNetCore.Identity;
+
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,6 +16,8 @@ public class MadeinHeavenBookStoreContext : IdentityDbContext<MadeinHeavenBookSt
     {
     }
 
+    public DbSet<Wishlist> Wishlists { get; set; }
+    public DbSet<ReviewComment> ReviewComments { get; set; }
     public DbSet<OrderProduct> OrderProducts { get; set; }
     public DbSet<Order> Orders { get; set; }
     public DbSet<ApplyShip> ApplyShips {  get; set; }

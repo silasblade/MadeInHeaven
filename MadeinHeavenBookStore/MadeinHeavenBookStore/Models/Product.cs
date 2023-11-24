@@ -23,6 +23,7 @@ namespace MadeinHeavenBookStore.Models
 		public string imageurl1 { get; set; } = "https://files.cults3d.com/uploaders/23262976/illustration-file/77dac2dc-08a2-4e27-be3c-5ffc190f8a91/ref-2.png";
 		public string imageurl2 { get; set; } = "https://files.cults3d.com/uploaders/23262976/illustration-file/77dac2dc-08a2-4e27-be3c-5ffc190f8a91/ref-2.png";
 		public string imageurl3 { get; set; } = "https://files.cults3d.com/uploaders/23262976/illustration-file/77dac2dc-08a2-4e27-be3c-5ffc190f8a91/ref-2.png";
+		public int Inventory {  get; set; } = 200;
 		public string Set { get; set; } = string.Empty;
 	}
 }

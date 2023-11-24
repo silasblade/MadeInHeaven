@@ -48,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/visha/OneDrive/Documents/GitHub/MadeInHeaven/MadeinHeavenBookStore/MadeinHeavenBookStore/Views/Coupon/Coupon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cG9uXENvdXBvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/visha/OneDrive/Documents/GitHub/MadeInHeaven/MadeinHeavenBookStore/MadeinHeavenBookStore/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -106,6 +110,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/visha/OneDrive/Documents/GitHub/MadeInHeaven/MadeinHeavenBookStore/MadeinHeavenBookStore/Views/Shop/Shop.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxTaG9wLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/visha/OneDrive/Documents/GitHub/MadeInHeaven/MadeinHeavenBookStore/MadeinHeavenBookStore/Views/Wishlist/Wishlist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2lzaGxpc3RcV2lzaGxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/visha/OneDrive/Documents/GitHub/MadeInHeaven/MadeinHeavenBookStore/MadeinHeavenBookStore/Views/_ViewImports.cshtml]
