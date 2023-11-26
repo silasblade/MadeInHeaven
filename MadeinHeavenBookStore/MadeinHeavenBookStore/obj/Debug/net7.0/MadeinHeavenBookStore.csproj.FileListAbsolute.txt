@@ -266,3 +266,8 @@ C:\Users\visha\OneDrive\Documents\GitHub\MadeInHeaven\MadeinHeavenBookStore\Made
 C:\Users\visha\OneDrive\Documents\GitHub\MadeInHeaven\MadeinHeavenBookStore\MadeinHeavenBookStore\bin\Debug\net7.0\X.PagedList.dll
 C:\Users\visha\OneDrive\Documents\GitHub\MadeInHeaven\MadeinHeavenBookStore\MadeinHeavenBookStore\bin\Debug\net7.0\X.PagedList.Mvc.Core.dll
 C:\Users\visha\OneDrive\Documents\GitHub\MadeInHeaven\MadeinHeavenBookStore\MadeinHeavenBookStore\bin\Debug\net7.0\X.PagedList.Web.Common.dll
+C:\Users\visha\OneDrive\Documents\GitHub\MadeInHeaven\MadeinHeavenBookStore\MadeinHeavenBookStore\obj\Debug\net7.0\scopedcss\Views\Shared\_AdminLayout.cshtml.rz.scp.css
+C:\Users\visha\OneDrive\Documents\GitHub\MadeInHeaven\MadeinHeavenBookStore\MadeinHeavenBookStore\obj\Debug\net7.0\scopedcss\Views\ProductManage\ProductManage.cshtml.rz.scp.css
+C:\Users\visha\OneDrive\Documents\GitHub\MadeInHeaven\MadeinHeavenBookStore\MadeinHeavenBookStore\obj\Debug\net7.0\scopedcss\Views\UserManage\UserManage.cshtml.rz.scp.css
+C:\Users\visha\OneDrive\Documents\GitHub\MadeInHeaven\MadeinHeavenBookStore\MadeinHeavenBookStore\obj\Debug\net7.0\scopedcss\Views\CouponManage\CouponManage.cshtml.rz.scp.css
+C:\Users\visha\OneDrive\Documents\GitHub\MadeInHeaven\MadeinHeavenBookStore\MadeinHeavenBookStore\obj\Debug\net7.0\scopedcss\Views\OrderCheck\OrderCheck.cshtml.rz.scp.css

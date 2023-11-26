@@ -14,21 +14,36 @@ namespace MadeinHeavenBookStore.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly UserManager<MadeinHeavenBookStoreUser> _userManager;
 		private readonly MadeinHeavenBookStoreContext _context;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
-		public HomeController(ILogger<HomeController> logger, UserManager<MadeinHeavenBookStoreUser> userManager, MadeinHeavenBookStoreContext context)
+        public HomeController(ILogger<HomeController> logger, UserManager<MadeinHeavenBookStoreUser> userManager, MadeinHeavenBookStoreContext context, RoleManager<IdentityRole> roleManager)
         {
             _logger = logger;
             this._userManager = userManager;
 			this._context = context;
-		}
+            _roleManager = roleManager;
+        }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            if(!(await _roleManager.RoleExistsAsync("Admin")))
+            {
+                await _roleManager.CreateAsync(new IdentityRole("Admin"));
+            }
+            var usermail = _userManager.Users.FirstOrDefault(u => u.Id == _userManager.GetUserId(this.User));
+            if(usermail != null)
+            {
+                if (usermail.Email == "admin@gmail.com")
+                {
+                    MadeinHeavenBookStoreUser user = await _userManager.FindByEmailAsync("admin@gmail.com");
+                    await _userManager.AddToRoleAsync(user, "Admin");
+                }
+            }
             
-            
-			ViewData["ID"] = _userManager.GetUserId(this.User);
+
+
+            ViewData["ID"] = _userManager.GetUserId(this.User);
 			return View();
-            
         }
 
         public IActionResult Privacy()

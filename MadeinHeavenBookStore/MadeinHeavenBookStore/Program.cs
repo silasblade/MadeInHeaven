@@ -8,10 +8,13 @@ var connectionString = builder.Configuration.GetConnectionString("MadeinHeavenBo
 
 builder.Services.AddDbContext<MadeinHeavenBookStoreContext>(options => options.UseSqlServer(connectionString));
 
-builder.Services.AddDefaultIdentity<MadeinHeavenBookStoreUser>(options => options.SignIn.RequireConfirmedAccount = false).AddEntityFrameworkStores<MadeinHeavenBookStoreContext>();
+builder.Services.AddDefaultIdentity<MadeinHeavenBookStoreUser>(options => options.SignIn.RequireConfirmedAccount = false)
+    .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<MadeinHeavenBookStoreContext>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
 
 var app = builder.Build();
 

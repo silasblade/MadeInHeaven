@@ -1,0 +1,120 @@
+﻿<!-- Views/Product/Create.cshtml -->
+@model Product
+
+<h2>Edit Product</h2>
+
+<div class="form-group">
+    <label asp-for="@Model.Categories"></label>
+    <form asp-controller="ProductManage" asp-action="AddNewCat" method="post">
+        <input type="hidden" name="idproduct" value="@Model.IdProduct" />
+        <select name="catname">
+            <option disabled value="">-- Select a category --</option>
+            @foreach (var category in ViewBag.Categories)
+            {
+                <option type="checkbox" asp-for="SelectedCategoryIds" value="@category.Name">@category.Name</option>
+
+            }
+        </select>
+        <button type="submit" class="btn btn-outline-success">Add Category</button>
+    </form>
+    <div class="form-group">
+        @foreach (var cat in Model.Categories)
+        {
+            
+            <div> 
+                <form method="post" asp-controller="ProductManage" asp-action="DeleteCat" asp-route-catname="@cat.Name" asp-route-idproduct="@Model.IdProduct">
+                    <input type="hidden" name="catname" value="@cat.Name"/>
+                    <input type="hidden" name="idproduct" value="@Model.IdProduct" />
+                    <button class=" text-danger"> X @cat.Name</button>
+                </form> 
+            
+            </div>
+        }
+    </div>
+</div>
+<form method="post" asp-controller="ProductManage" asp-action="SaveProduct" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="@Model.IdProduct"></label>
+        <input asp-for="@Model.IdProduct" value="@Model.IdProduct" class="form-control" readonly />
+        <span asp-validation-for="@Model.IdProduct" class="text-danger"></span>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <!-- NameProduct -->
+            <div class="form-group">
+                <label asp-for="@Model.NameProduct" class="control-label col-md-3"></label>
+                <div class="col-md-9">
+                    <input asp-for="@Model.NameProduct" value="@Model.NameProduct" class="form-control" required />
+                    <span asp-validation-for="@Model.NameProduct" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <!-- Price -->
+            <div class="form-group">
+                <label asp-for="@Model.Price" class="control-label col-md-3"></label>
+                <div class="col-md-9">
+                    <input asp-for="@Model.Price" value="@Model.Price" class="form-control" required />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Author -->
+                <div class="form-group">
+                    <label asp-for="@Model.Author" class="control-label col-md-3"></label>
+                    <div class="col-md-9">
+                        <input asp-for="@Model.Author" value="@Model.Author" class="form-control" required />
+                        <span asp-validation-for="Author" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <!-- Publishing -->
+                <div class="form-group">
+                    <label asp-for="@Model.Publishing" class="control-label col-md-3"></label>
+                    <div class="col-md-9">
+                        <input asp-for="@Model.Publishing" value="@Model.Publishing" class="form-control" required />
+                        <span asp-validation-for="@Model.Publishing" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="@Model.Description"></label>
+        <input value="@Model.Description" asp-for="@Model.Description" class="form-control" required />
+        <span asp-validation-for="@Model.Description" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="formFile">Image</label>
+        <input type="file" name="formFile" id="formFile" class="form-control" />
+        <img src="@Model.imageurl1" height="60px"/>
+    </div>
+
+    <div class="form-group">
+        <label for="formFile2">Image</label>
+        <input type="file" name="formFile2" id="formFile2" class="form-control" />
+        <img src="@Model.imageurl2" height="60px" />
+    </div>
+
+    <div class="form-group">
+        <label for="formFile3">Image</label>
+        <input type="file" name="formFile3" id="formFile3" class="form-control" />
+        <img src="@Model.imageurl3" height="60px" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-controller="ProductManage" asp-action="ProductManage" class="btn btn-danger">Cancle</a>
+</form>
+

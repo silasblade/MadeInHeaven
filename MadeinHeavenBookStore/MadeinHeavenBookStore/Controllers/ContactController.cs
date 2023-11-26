@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MadeinHeavenBookStore.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Admin, Mod")]
 
     public class ContactController : Controller
     {
