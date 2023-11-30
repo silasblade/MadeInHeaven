@@ -98,8 +98,40 @@ namespace MadeinHeavenBookStore.Models
 					new Category
 					{
 						Name = "Dark"
-					}
-					);
+					},
+                    new Category
+                    {
+                        Name = "Romance"
+                    },
+                    new Category
+                    {
+                        Name = "School"
+                    },
+                    new Category
+                    {
+                        Name = "Slice of Life"
+                    },
+                    new Category
+                    {
+                        Name = "Tragedy"
+                    },
+                    new Category
+                    {
+                        Name = "Chill"
+                    },
+                    new Category
+                    {
+                        Name = "Learning"
+                    },
+                    new Category
+                    {
+                        Name = "Toys"
+                    },
+                    new Category
+                    {
+                        Name = "Accessory"
+                    }
+                    );
                 context.SaveChanges();
             }
 			if (!context.Products.Any())
