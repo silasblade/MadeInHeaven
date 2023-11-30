@@ -1,0 +1,223 @@
+﻿@page "/admin/manageproduct/editproduct/{id:int}"
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize]
+@using MadeinHeavenBookStore.Models
+@using MadeinHeavenBookStore.Models.MVCService
+@using System.ComponentModel.DataAnnotations;
+@using Microsoft.AspNetCore.Authorization;
+@inject ProductService ProductService 
+@inject IToastService toastService
+@using System.Security.Claims
+@inject AuthenticationStateProvider AuthenticationStateProvider
+
+
+@inject ILogger<EditProduct> Logger
+@inject IHostEnvironment Environment
+@if (IsUserAuthorized)
+{
+
+<h2>Edit Product</h2>
+
+    <div class="form-group d-flex justify-content-center align-items-center">
+
+            <select @bind="@catename">
+                <option disabled value="">-- Select a category --</option>
+                @foreach (var category in categories)
+                {
+
+                    <option value="@category.Name">@category.Name</option>
+
+                }
+            </select>
+            <button @onclick="@(c => AddCat())" class="btn btn-outline-success">Add Category</button>
+        </div>
+
+    <div class="form-group">
+        <div class="d-flex justify-content-center">
+            <div class="text-center">
+                @foreach (var cat in product.Categories)
+                {
+                    <div>
+                        <button @onclick="@(() => DeleteCat(@cat.Name))" class="text-danger">X @cat.Name</button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+<EditForm Model="product" OnSubmit="SaveProduct" enctype="multipart/form-data" style="margin-left: 50px;">
+    <div class="form-group">
+        <label asp-for="@product.IdProduct">ID:</label>
+             <input @bind="@product.IdProduct" class="form-control" style="width: 200px;" readonly />
+            <span asp-validation-for="@product.IdProduct" class="text-danger"></span>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <!-- NameProduct -->
+            <div class="form-group">
+                    <label asp-for="@product.NameProduct" class="control-label col-md-3">Name: </label>
+                <div class="col-md-9">
+                        <input @bind="@product.NameProduct"  class="form-control" required />
+                        <span asp-validation-for="@product.NameProduct" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <!-- Price -->
+            <div class="form-group">
+                <label asp-for="@product.Price" class="control-label col-md-3">Price: </label>
+                <div class="col-md-9">
+                        <input @bind="@product.Price" class="form-control" required />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Author -->
+                <div class="form-group">
+                        <label asp-for="@product.Author" class="control-label col-md-3">Author: </label>
+                    <div class="col-md-9">
+                            <input @bind="@product.Author" class="form-control" required />
+                        <span asp-validation-for="Author" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <!-- Publishing -->
+                <div class="form-group">
+                        <label asp-for="@product.Publishing" class="control-label col-md-3">Publisher: </label>
+                    <div class="col-md-9">
+                            <input  @bind="@product.Publishing" class="form-control" required />
+                            <span asp-validation-for="@product.Publishing" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="form-group">
+            <label asp-for="@product.Description">Description</label>
+            <input @bind="@product.Description" class="form-control" required />
+            <span asp-validation-for="@product.Description" class="text-danger"></span>
+    </div>
+        <table style="align-content: center;">
+
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <InputFile OnChange="@OnInputFileChange" type="file" />
+                        <img src="@product.imageurl1" height="60px" />
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <InputFile OnChange="@OnInputFileChange2" type="file" />
+                        <img src="@product.imageurl2" height="60px" />
+                    </div>
+                </td>
+                <td>
+
+                    <div class="form-group">
+                        <InputFile OnChange="@OnInputFileChange3" type="file" />
+                        <img src="@product.imageurl3" height="60px" />
+                    </div>
+                </td>
+            </tr>
+            <tr style="text-align:center; justify-items: center;">
+                <button @onclick="@(() => toastService.ShowSuccess("I'm a SUCCESS message with a custom title"))" type="submit" class="btn btn-primary">Save</button>
+                <a href="/admin/manageproduct" class="btn btn-danger">Cancle</a>
+
+            </tr>
+        </table>
+</EditForm>
+
+
+}
+
+else
+    {
+        <p>You are not able to view this content.</p>
+    }
+
+@code {
+    public IBrowserFile image1;
+    public IBrowserFile image2;
+    public IBrowserFile image3;
+    private bool IsUserAuthorized;
+    Product product = new Product();
+    public string catename;
+    [Parameter] public int id { get; set; }
+    List<Category> categories = new List<Category>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        IsUserAuthorized = authState.User.IsInRole("Admin");
+        await Update();
+    }
+
+    public async Task Update()
+    {
+        product = await ProductService.GetAProduct(id);
+        categories = await ProductService.GetCategories();
+    }
+
+    public async Task DeleteCat(string catname)
+    {
+        await ProductService.DeleteCategory(id, catname);
+        await Update();
+    }
+
+    public async Task AddCat()
+    {
+        await ProductService.AddCategory(id, catename);
+        await Update();
+    }
+
+
+    public async Task SaveProduct()
+    {
+        await ProductService.SaveProduct(product, image1, image2, image3);
+        await Update();
+    }
+
+
+    private async Task OnInputFileChange(InputFileChangeEventArgs e)
+    {
+        foreach (var file in e.GetMultipleFiles())
+        {
+            var buffer = new byte[file.Size];
+            await file.OpenReadStream().ReadAsync(buffer);
+            image1 = file;
+        }
+    }
+
+    private async Task OnInputFileChange2(InputFileChangeEventArgs e)
+    {
+        foreach (var file in e.GetMultipleFiles())
+        {
+            var buffer = new byte[file.Size];
+            await file.OpenReadStream().ReadAsync(buffer);
+            image2 = file;
+        }
+    }
+
+    private async Task OnInputFileChange3(InputFileChangeEventArgs e)
+    {
+        foreach (var file in e.GetMultipleFiles())
+        {
+            var buffer = new byte[file.Size];
+            await file.OpenReadStream().ReadAsync(buffer);
+            image3 = file;
+        }
+    }
+   
+}

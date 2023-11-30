@@ -126,7 +126,7 @@ namespace MadeinHeavenBookStore.Controllers
 			total = total - coupon.discount + shipMethod.price;
 
 			order.TotalCost = total;
-			order.status = "Delivering..";
+			order.status = "Waiting";
 
 			_context.SaveChanges();
 

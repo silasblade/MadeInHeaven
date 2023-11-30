@@ -1,6 +1,7 @@
 ﻿@{
 	Layout = "_Layout";
 }
+@using MadeinHeavenBookStore.Components
 @model List<ShopCart>
 <head>
 	<meta charset="utf-8" />
@@ -21,9 +22,50 @@
 	</div>
 </div>
 
+<style>
+	.centered-button-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+</style>
+<div class="centered-button-container">
+
+	<button class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer" style="width: 200px;" id="toggleButton">Next Step</button>
+	<br />
+	<br />
+</div>
+<br />
+<br />
+<div id="blazor-app">
+	<div id="shopiCart" class="component-container">
+		<component type="typeof(ShopiCart)" render-mode="ServerPrerendered" />
+	</div>
+	<div id="orderCart" class="component-container" style="display:none;">
+		<component type="typeof(OrderCart)" render-mode="ServerPrerendered" />
+	</div>
+</div>
+
+<!-- Nút chuyển đổi giữa các component -->
+
+<!-- Đoạn mã JavaScript để điều khiển hiển thị component -->
+<script>
+	document.getElementById('toggleButton').addEventListener('click', function () {
+		var shopiCart = document.getElementById('shopiCart');
+		var orderCart = document.getElementById('orderCart');
+
+		if (shopiCart.style.display === 'none') {
+			shopiCart.style.display = 'block';
+			orderCart.style.display = 'none';
+		} else {
+			shopiCart.style.display = 'none';
+			orderCart.style.display = 'block';
+		}
+	});
+</script>
 
 <!-- Shoping Cart -->
-<form class="bg0 p-t-75 p-b-85">
+@* <form class="bg0 p-t-75 p-b-85">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-10 col-xl-7 m-lr-auto m-b-50">
@@ -148,7 +190,7 @@
 									</button>
 								</form>
 							</div>
-						</div>
+						</div> *@
 						@* <div class="size-208 w-full-ssm">
 							<span class="stext-110 cl2">
 								Shipping:
@@ -190,7 +232,7 @@
 
 							</div>
 						</div> *@
-					</div>
+			@* 		</div>
 
 					<div class="flex-w flex-t p-t-27 p-b-33">
 						<div class="size-208">
@@ -219,7 +261,7 @@
 			</div>
 		</div>
 	</div>
-</form>
+</form> *@
 
 <script src="~/vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->

@@ -20,7 +20,7 @@ namespace MadeinHeavenBookStore.Models.OrderDetail
         public DateTime DateTime { get; set; }
         public int TotalCost { get; set; }
 
-        public string status { get; set; } = "Delivering";
+        public string status { get; set; } = "Waiting";
 
 
     }

@@ -13,7 +13,6 @@ using X.PagedList;
 
 namespace MadeinHeavenBookStore.Controllers
 {
-    [Authorize]
 
     public class ShopController : Controller
     {
@@ -43,6 +42,11 @@ namespace MadeinHeavenBookStore.Controllers
 			int pageSize = 10;
 			int pageNumber = (page ?? 1);
 			return View(products.ToPagedList(pageNumber, pageSize));
+		}
+
+		public async Task<IActionResult> ToShop()
+		{
+			return RedirectToAction("Shop");
 		}
 
 

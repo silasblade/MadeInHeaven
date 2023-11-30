@@ -1,0 +1,224 @@
+﻿@page "/admin/manageusers"
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize]
+@using MadeinHeavenBookStore.Models.MVCService
+@using System.ComponentModel.DataAnnotations;
+@using Microsoft.AspNetCore.Authorization;
+@inject UserService UserService;
+@inject IToastService toastService
+@using System.Security.Claims
+@inject AuthenticationStateProvider AuthenticationStateProvider
+
+<h3>ManageUser</h3>
+@if (IsUserAuthorized)
+{
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 card-margin">
+                <div class="card search-form">
+                    <div class="card-body p-0">
+                        <form @onsubmit="Update" id="search-form">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row no-gutters">
+                                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                            <select @onchange="SelectionRole" name="role" class="" >
+                                                <option disabled>Type</option>
+                                                <option>All</option>
+                                                <option>Modders</option>
+                                                <option>Normal Users</option>
+                                            </select>
+                                           
+                                        </div>
+                                        <div class="col-lg-8 col-md-6 col-sm-12 p-0">
+                                            <input type="text" placeholder="Search..." class="form-control" @bind=@search>
+                                        </div>
+                                        <div class="col-lg-1 col-md-3 col-sm-12 p-0">
+                                            <button type="submit" class="btn btn-base">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card card-margin">
+                    <div class="card-body">
+                        <div class="row search-body">
+                            <div class="col-lg-12">
+                                <div class="search-result">
+                                    <div class="result-body">
+                                        <div class="table-responsive">
+                                            <table class="table widget-26">
+                                                <tbody>
+                                                    @if (users != null && users.Item1 != null)
+                                                    {
+                                                        @foreach (string item in users.Item1)
+                                                        {
+                                                            <tr>
+                                                                <td>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="widget-26-job-title">
+                                                                        <a href="#">@item</a>
+                                                                        <p class="m-0"><a href="#" class="employer-name"></a> <span class="text-muted time"></span></p>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="widget-26-job-info">
+
+
+                                                                    </div>
+                                                                </td>
+
+                                                                <td>
+                                                                    <div class="widget-26-job-category bg-soft-base">
+                                                                        <i class="indicator bg-base"></i>
+                                                                        <span>Modder &nbsp; &nbsp;</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+
+
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <a @onclick="@(c => ChangeToUser(item))" class="btn btn-outline-success">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                                                                <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"></path>
+                                                                            </svg>
+                                                                            Change to normal user
+                                                                        </a>
+
+                                                                        <a @onclick="@(c => DeleteUser(item))" class="btn btn-outline-danger">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                                                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"></path>
+                                                                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"></path>
+                                                                            </svg>
+
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        }
+                                                    }
+                                                    @if (users != null && users.Item2 != null)
+                                                    {
+                                                        @foreach (var item in users.Item2)
+                                                        {
+                                                            <tr>
+                                                                <td>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="widget-26-job-title">
+                                                                        <a href="#">@item</a>
+                                                                        <p class="m-0"><a href="#" class="employer-name"></a> <span class="text-muted time"></span></p>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="widget-26-job-info">
+                                                                    </div>
+                                                                </td>
+
+                                                                <td>
+                                                                    <div class="widget-26-job-category bg-soft-base">
+                                                                        <i class="indicator bg-base"></i>
+                                                                        <span>Normal User &nbsp; &nbsp;</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+
+
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <a @onclick="@(c => ChangeToModder(item))" class="btn btn-outline-success">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                                                                <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"></path>
+                                                                            </svg>
+                                                                            Change to Modder
+                                                                        </a>
+
+                                                                        <a @onclick="@(c => DeleteUser(item))" class="btn btn-outline-danger">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                                                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"></path>
+                                                                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"></path>
+                                                                            </svg>
+
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        }
+                                                    }
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <p>You are not able to view this content.</p>
+}
+
+
+
+
+@code {
+    private bool IsUserAuthorized;
+    private string role = "all";
+    public string search = "";
+
+    public Tuple<List<string>, List<string>> users;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        IsUserAuthorized = authState.User.IsInRole("Admin");
+
+        await Update();
+    }
+    public async Task Update()
+    {
+        users = await UserService.GetUser(role, search);
+        role = null;
+    }
+
+    public async Task ChangeToModder(string mail)
+    {
+        await UserService.ToModder(mail);
+        await Update();
+    }
+
+    public async Task ChangeToUser(string mail)
+    {
+        await UserService.ToUser(mail);
+        await Update();
+    }
+
+    public async Task DeleteUser(string mail)
+    {
+        await UserService.RemoveUser(mail);
+        await Update();
+    }
+
+    private async Task SelectionRole(ChangeEventArgs e)
+    {
+        role = e.Value.ToString();
+        await Update();
+    }
+
+}
+

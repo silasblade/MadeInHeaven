@@ -46,7 +46,13 @@ namespace MadeinHeavenBookStore.Controllers
 			return View();
         }
 
-        public IActionResult Privacy()
+		public async Task<IActionResult> Home()
+		{
+	
+			return View();
+		}
+
+		public IActionResult Privacy()
         {
             return View();
         }

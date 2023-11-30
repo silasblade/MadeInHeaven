@@ -1,11 +1,10 @@
 ﻿@using X.PagedList.Mvc;
 @using X.PagedList;
 @using X.PagedList.Mvc.Core;
+@using MadeinHeavenBookStore.Components
 @model IPagedList<Product>
-
-
 @{
-	Layout = "_Layout";
+	ViewData["Title"] = "Shop";
 }
 
 <!DOCTYPE html>
@@ -16,6 +15,9 @@
 	<title>@ViewData["Title"] Shop</title>
 </head>
 <body>
+
+	<component type="typeof(Shop)" render-mode="ServerPrerendered" />
+@* 
 	<div class="container">
 		<div class="flex-w flex-sb-m p-b-52">
 			@await Component.InvokeAsync("Categorybar")
@@ -98,7 +100,8 @@
 				</div>
 	
 		</div>
-	</div>
+	</div> *@
+	<script src="_content/YourBlazorAppName/blazor.webassembly.js"></script>
 
 	<script src="~/vendor/jquery/jquery-3.2.1.min.js"></script>
 	<!--===============================================================================================-->
@@ -206,6 +209,7 @@
 			}
 		</script>
 	}
+
 
 </body>
 </html>

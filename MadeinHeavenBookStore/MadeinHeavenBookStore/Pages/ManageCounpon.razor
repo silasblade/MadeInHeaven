@@ -1,0 +1,271 @@
+﻿@page "/admin/managecoupon"
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize]
+@using MadeinHeavenBookStore.Models.ShipandCoupon
+@using System.ComponentModel.DataAnnotations;
+@using Microsoft.AspNetCore.Authorization;
+@inject CouponService CouponService 
+@inject IToastService toastService
+@using System.Security.Claims
+@inject AuthenticationStateProvider AuthenticationStateProvider
+<h3>Manage Counpon</h3>
+
+
+
+@if (IsUserAuthorized)
+{
+     
+
+<div class="container">
+        <div class="row">
+            <div class="col-lg-12 card-margin">
+                <div class="card search-form">
+                    <div class="card-body p-0">
+                        <form @onsubmit="() => Search(search)" id="search-form">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row no-gutters">
+                                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                            <select @onchange="HandleSelection" name="percent" class="" id="exampleFormControlSelect1">
+                                                <option selected disabled>Type</option>
+                                                <option>Percent</option>
+                                                <option>Direct Discount</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-8 col-md-6 col-sm-12 p-0">
+                                            <input type="text" placeholder="Search..." class="form-control" id="search" @bind="search">
+                                        </div>
+                                        <div class="col-lg-1 col-md-3 col-sm-12 p-0">
+                                            <button type="submit" class="btn btn-base">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="row" style="background-color: #FFCCCC;">
+            <div class="col-12">
+                <div class="card card-margin">
+                    <div class="card-body">
+                        <div class="row search-body">
+                        <div class="col-lg-12">
+                            <div class="search-result" >
+
+                                <EditForm Model="Coupons" OnSubmit="SaveCoupons">
+                                  
+                                    
+                                <DataAnnotationsValidator />
+                                   
+                               
+                                    <div class="result-header">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                       
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="result-actions">
+                                                    <div class="result-sorting">
+                                                        
+                                                    </div>
+                                                    <div class="result-views">
+                                                        <button type="submit" @onclick="@(() => toastService.ShowSuccess("Update Success"))" asp-controller="CouponManage" asp-action="AddCoupon" class="btn btn-outline-success">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"></path>
+                                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"></path>
+                                                            </svg>
+                                                            Save
+                                                        </button>
+                                                        <button @onclick="() => AddCoupons()" class="btn btn-outline-primary">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"></path>
+                                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"></path>
+                                                            </svg>
+                                                            Add New
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="result-body">
+                                        <div class="table-responsive">
+                                            <table class="table widget-26">
+                                                <tbody>
+
+                                                    @foreach (var item in Coupons)
+                                                    {
+                                                        <tr >
+                                                        
+                                                            <td>
+                                                                <div style="display: none">
+                                                                <input name="Id" @bind="@item.Id">
+                                                                </div>
+                                                                <div class="widget-26-job-title">
+                                                                    <input name="Name" @bind="@item.Name">
+                                                                    <p class="m-0"><a href="#" class="employer-name"></a> 
+                                                                        <span class="text-muted time">
+                                                                            <input name="Description" @bind="@item.Description">
+                                                                            </span></p>
+                                                                </div>
+                                                            </td>
+                                                             <td>
+                                                                <div class="widget-26-job-info">
+
+                                                                        VNĐ   <input name="discount" @bind="@item.discount">
+                                                                    <div class="d-flex align-items-center">
+                                                                        Percent: &nbsp;
+                                                                        <input @bind="@item.percent" type="checkbox" name="percent" />
+
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="widget-26-job-salary"> <input @bind="@item.remainnumber" name="remainnumber"> discount left</div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="widget-26-job-category bg-soft-base">
+                                                                    <i class="indicator bg-base"></i>
+                                                                    <span>  <input name="Code" @bind="@item.Code"> &nbsp; &nbsp;</span>
+                                                                </div>
+                                                            </td>
+                                                         
+                                                            <td>
+
+
+                                                                <div class="d-flex justify-content-between">
+                                                                    <button @onclick="() => DeleteCoupon(item.Id)" class="btn btn-outline-danger">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"></path>
+                                                                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"></path>
+                                                                        </svg>
+
+                                                                    </button>
+                                                                </div>
+                                                            </td> 
+                                                        
+                                                        </tr> 
+                                                    }
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                     
+                                </EditForm>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <nav class="d-flex justify-content-center">
+                            <ul class="pagination pagination-base pagination-boxed pagination-square mb-0">
+                                <li class="page-item">
+                                    <a class="page-link no-border" href="#">
+                                        <span aria-hidden="true">«</span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link no-border" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link no-border" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link no-border" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link no-border" href="#">4</a></li>
+                                <li class="page-item">
+                                    <a class="page-link no-border" href="#">
+                                        <span aria-hidden="true">»</span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <p>You are not able to view this content.</p>
+}
+
+@* <button class="btn btn-info" @onclick="@(() => toastService.ShowInfo("I'm an INFO message"))">Info Toast</button>
+<button class="btn btn-success" @onclick="@(() => toastService.ShowSuccess("I'm a SUCCESS message with a custom title"))">Success Toast</button>
+<button class="btn btn-warning" @onclick="@(() => toastService.ShowWarning("I'm a WARNING message"))">Warning Toast</button>
+<button class="btn btn-danger" @onclick="@(() => toastService.ShowError("I'm an ERROR message"))">Error Toast</button> *@
+
+
+@code {
+    private bool IsUserAuthorized;
+    private string search;
+    private string percent;
+    public string selectedOption;
+    Coupon coupon = new Coupon();
+    public List<Coupon> Coupons = new List<Coupon>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        IsUserAuthorized = authState.User.IsInRole("Mod");
+        if (authState.User.IsInRole("Admin")) IsUserAuthorized = true;
+
+        await Update();
+    }
+
+    private async Task Search(string search)
+    {
+        await Update();
+        Coupons = Coupons.Where(c => c.Name.Contains(search)).ToList();
+
+    }
+
+    private async Task HandleSelection(ChangeEventArgs args)
+    {
+        await Update();
+        selectedOption = args.Value.ToString();
+        if(selectedOption == "Percent")
+        {
+            Coupons = Coupons.Where(x => x.percent == true).ToList();
+        }
+        if (selectedOption == "Direct Discount")
+        {
+            Coupons = Coupons.Where(x => x.percent == false).ToList();
+        }
+    
+    }
+
+
+    public async Task Update()
+    {
+        Coupons = await CouponService.GetCoupons();
+        Console.WriteLine("Function Call");
+    }
+
+    private async Task DeleteCoupon(int id)
+    {
+        await CouponService.DeleteCoupon(id);
+        toastService.ShowWarning("Deleted a Coupon");
+        await Update();
+    }
+
+    private async Task AddCoupons()
+    {
+
+        await CouponService.AddCoupon();
+        toastService.ShowSuccess("Added a new coupon");
+        await Update();
+    }
+
+    private async Task SaveCoupons()
+    {
+
+        await CouponService.SaveCoupon(Coupons);
+
+        await Update();
+    }
+
+
+
+}  

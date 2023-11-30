@@ -11,8 +11,8 @@ namespace MadeinHeavenBookStore.Models
 		[Key]
 		public int IdProduct { get; set; }
 
-        [Required(ErrorMessage = "Please enter the product Name.")]
-        public string NameProduct { get; set; } = string.Empty;
+		[Required(ErrorMessage = "Please enter the product Name.")]
+		public string NameProduct { get; set; } = "New Book";
 
 		[Required(ErrorMessage = "Please enter the product Price.")]
 		public int Price { get; set; } = 1000777777;

@@ -1,3 +1,1226 @@
+@import '_content/Blazored.Toast/Blazored.Toast.bundle.scp.css';
+
+/* _content/MadeinHeavenBookStore/Pages/ManageCounpon.razor.rz.scp.css */
+.widget-26[b-52f68h3efd] {
+    color: #3c4142;
+    font-weight: 400;
+}
+
+    .widget-26 tr:first-child td[b-52f68h3efd] {
+        border: 0;
+    }
+
+
+    .widget-26 .widget-26-job-title[b-52f68h3efd] {
+        min-width: 200px;
+    }
+
+        .widget-26 .widget-26-job-title a[b-52f68h3efd] {
+            font-weight: 400;
+            font-size: 0.875rem;
+            color: #3c4142;
+            line-height: 1.5;
+        }
+
+            .widget-26 .widget-26-job-title a:hover[b-52f68h3efd] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .employer-name[b-52f68h3efd] {
+            margin: 0;
+            line-height: 1.5;
+            font-weight: 400;
+            color: #3c4142;
+            font-size: 0.8125rem;
+            color: #3c4142;
+        }
+
+            .widget-26 .widget-26-job-title .employer-name:hover[b-52f68h3efd] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .time[b-52f68h3efd] {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+    .widget-26 .widget-26-job-info[b-52f68h3efd] {
+        min-width: 100px;
+        font-weight: 400;
+    }
+
+        .widget-26 .widget-26-job-info p[b-52f68h3efd] {
+            line-height: 1.5;
+            color: #3c4142;
+            font-size: 0.8125rem;
+        }
+
+        .widget-26 .widget-26-job-info .location[b-52f68h3efd] {
+            color: #3c4142;
+        }
+
+    .widget-26 .widget-26-job-salary[b-52f68h3efd] {
+        min-width: 70px;
+        font-weight: 400;
+        color: #3c4142;
+        font-size: 0.8125rem;
+    }
+
+    .widget-26 .widget-26-job-category[b-52f68h3efd] {
+        padding: .5rem;
+        display: inline-flex;
+        white-space: nowrap;
+        border-radius: 15px;
+    }
+
+        .widget-26 .widget-26-job-category .indicator[b-52f68h3efd] {
+            width: 13px;
+            height: 13px;
+            margin-right: .5rem;
+            float: left;
+            border-radius: 50%;
+        }
+
+        .widget-26 .widget-26-job-category span[b-52f68h3efd] {
+            font-size: 0.8125rem;
+            color: #3c4142;
+            font-weight: 600;
+        }
+
+    .widget-26 .widget-26-job-starred svg[b-52f68h3efd] {
+        width: 20px;
+        height: 20px;
+        color: #fd8b2c;
+    }
+
+        .widget-26 .widget-26-job-starred svg.starred[b-52f68h3efd] {
+            fill: #fd8b2c;
+        }
+
+.bg-soft-base[b-52f68h3efd] {
+    background-color: #e1f5f7;
+}
+
+.bg-soft-warning[b-52f68h3efd] {
+    background-color: #fff4e1;
+}
+
+.bg-soft-success[b-52f68h3efd] {
+    background-color: #d1f6f2;
+}
+
+.bg-soft-danger[b-52f68h3efd] {
+    background-color: #fedce0;
+}
+
+.bg-soft-info[b-52f68h3efd] {
+    background-color: #d7efff;
+}
+
+
+.search-form[b-52f68h3efd] {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+    .search-form input[b-52f68h3efd] {
+        height: 100%;
+        background: transparent;
+        border: 0;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+    .search-form select[b-52f68h3efd] {
+        background: transparent;
+        border: 0;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form select:focus[b-52f68h3efd] {
+            border: 0;
+        }
+
+    .search-form button[b-52f68h3efd] {
+        height: 100%;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form button svg[b-52f68h3efd] {
+            width: 24px;
+            height: 24px;
+        }
+
+.search-body[b-52f68h3efd] {
+    margin-bottom: 1.5rem;
+}
+
+    .search-body .search-filters .filter-list[b-52f68h3efd] {
+        margin-bottom: 1.3rem;
+    }
+
+        .search-body .search-filters .filter-list .title[b-52f68h3efd] {
+            color: #3c4142;
+            margin-bottom: 1rem;
+        }
+
+        .search-body .search-filters .filter-list .filter-text[b-52f68h3efd] {
+            color: #727686;
+        }
+
+    .search-body .search-result .result-header[b-52f68h3efd] {
+        margin-bottom: 2rem;
+    }
+
+        .search-body .search-result .result-header .records[b-52f68h3efd] {
+            color: #3c4142;
+        }
+
+        .search-body .search-result .result-header .result-actions[b-52f68h3efd] {
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .search-body .search-result .result-header .result-actions .result-sorting[b-52f68h3efd] {
+                display: flex;
+                align-items: center;
+            }
+
+                .search-body .search-result .result-header .result-actions .result-sorting span[b-52f68h3efd] {
+                    flex-shrink: 0;
+                    font-size: 0.8125rem;
+                }
+
+                .search-body .search-result .result-header .result-actions .result-sorting select[b-52f68h3efd] {
+                    color: #68CBD7;
+                }
+
+                    .search-body .search-result .result-header .result-actions .result-sorting select option[b-52f68h3efd] {
+                        color: #3c4142;
+                    }
+
+
+
+.card-margin[b-52f68h3efd] {
+    margin-bottom: 1.875rem;
+}
+
+}
+
+.card-margin[b-52f68h3efd] {
+    margin-bottom: 1.875rem;
+}
+
+.card[b-52f68h3efd] {
+    border: 0;
+    box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -ms-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+}
+
+.card[b-52f68h3efd] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 1px solid #e6e4e9;
+    border-radius: 8px;
+}
+/* _content/MadeinHeavenBookStore/Pages/ManageOrder.razor.rz.scp.css */
+.widget-26[b-54386hcfd5] {
+    color: #3c4142;
+    font-weight: 400;
+}
+
+    .widget-26 tr:first-child td[b-54386hcfd5] {
+        border: 0;
+    }
+
+
+    .widget-26 .widget-26-job-title[b-54386hcfd5] {
+        min-width: 200px;
+    }
+
+        .widget-26 .widget-26-job-title a[b-54386hcfd5] {
+            font-weight: 400;
+            font-size: 0.875rem;
+            color: #3c4142;
+            line-height: 1.5;
+        }
+
+            .widget-26 .widget-26-job-title a:hover[b-54386hcfd5] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .employer-name[b-54386hcfd5] {
+            margin: 0;
+            line-height: 1.5;
+            font-weight: 400;
+            color: #3c4142;
+            font-size: 0.8125rem;
+            color: #3c4142;
+        }
+
+            .widget-26 .widget-26-job-title .employer-name:hover[b-54386hcfd5] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .time[b-54386hcfd5] {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+    .widget-26 .widget-26-job-info[b-54386hcfd5] {
+        min-width: 100px;
+        font-weight: 400;
+    }
+
+        .widget-26 .widget-26-job-info p[b-54386hcfd5] {
+            line-height: 1.5;
+            color: #3c4142;
+            font-size: 0.8125rem;
+        }
+
+        .widget-26 .widget-26-job-info .location[b-54386hcfd5] {
+            color: #3c4142;
+        }
+
+    .widget-26 .widget-26-job-salary[b-54386hcfd5] {
+        min-width: 70px;
+        font-weight: 400;
+        color: #3c4142;
+        font-size: 0.8125rem;
+    }
+
+    .widget-26 .widget-26-job-category[b-54386hcfd5] {
+        padding: .5rem;
+        display: inline-flex;
+        white-space: nowrap;
+        border-radius: 15px;
+    }
+
+        .widget-26 .widget-26-job-category .indicator[b-54386hcfd5] {
+            width: 13px;
+            height: 13px;
+            margin-right: .5rem;
+            float: left;
+            border-radius: 50%;
+        }
+
+        .widget-26 .widget-26-job-category span[b-54386hcfd5] {
+            font-size: 0.8125rem;
+            color: #3c4142;
+            font-weight: 600;
+        }
+
+    .widget-26 .widget-26-job-starred svg[b-54386hcfd5] {
+        width: 20px;
+        height: 20px;
+        color: #fd8b2c;
+    }
+
+        .widget-26 .widget-26-job-starred svg.starred[b-54386hcfd5] {
+            fill: #fd8b2c;
+        }
+
+.bg-soft-base[b-54386hcfd5] {
+    background-color: #e1f5f7;
+}
+
+.bg-soft-warning[b-54386hcfd5] {
+    background-color: #fff4e1;
+}
+
+.bg-soft-success[b-54386hcfd5] {
+    background-color: #d1f6f2;
+}
+
+.bg-soft-danger[b-54386hcfd5] {
+    background-color: #fedce0;
+}
+
+.bg-soft-info[b-54386hcfd5] {
+    background-color: #d7efff;
+}
+
+
+.search-form[b-54386hcfd5] {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+    .search-form input[b-54386hcfd5] {
+        height: 100%;
+        background: transparent;
+        border: 0;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+    .search-form select[b-54386hcfd5] {
+        background: transparent;
+        border: 0;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form select:focus[b-54386hcfd5] {
+            border: 0;
+        }
+
+    .search-form button[b-54386hcfd5] {
+        height: 100%;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form button svg[b-54386hcfd5] {
+            width: 24px;
+            height: 24px;
+        }
+
+.search-body[b-54386hcfd5] {
+    margin-bottom: 1.5rem;
+}
+
+    .search-body .search-filters .filter-list[b-54386hcfd5] {
+        margin-bottom: 1.3rem;
+    }
+
+        .search-body .search-filters .filter-list .title[b-54386hcfd5] {
+            color: #3c4142;
+            margin-bottom: 1rem;
+        }
+
+        .search-body .search-filters .filter-list .filter-text[b-54386hcfd5] {
+            color: #727686;
+        }
+
+    .search-body .search-result .result-header[b-54386hcfd5] {
+        margin-bottom: 2rem;
+    }
+
+        .search-body .search-result .result-header .records[b-54386hcfd5] {
+            color: #3c4142;
+        }
+
+        .search-body .search-result .result-header .result-actions[b-54386hcfd5] {
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .search-body .search-result .result-header .result-actions .result-sorting[b-54386hcfd5] {
+                display: flex;
+                align-items: center;
+            }
+
+                .search-body .search-result .result-header .result-actions .result-sorting span[b-54386hcfd5] {
+                    flex-shrink: 0;
+                    font-size: 0.8125rem;
+                }
+
+                .search-body .search-result .result-header .result-actions .result-sorting select[b-54386hcfd5] {
+                    color: #68CBD7;
+                }
+
+                    .search-body .search-result .result-header .result-actions .result-sorting select option[b-54386hcfd5] {
+                        color: #3c4142;
+                    }
+
+
+
+.card-margin[b-54386hcfd5] {
+    margin-bottom: 1.875rem;
+}
+
+}
+
+.card-margin[b-54386hcfd5] {
+    margin-bottom: 1.875rem;
+}
+
+.card[b-54386hcfd5] {
+    border: 0;
+    box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -ms-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+}
+
+.card[b-54386hcfd5] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 1px solid #e6e4e9;
+    border-radius: 8px;
+}
+/* _content/MadeinHeavenBookStore/Pages/ManageProduct.razor.rz.scp.css */
+.widget-26[b-rqd5p37ty0] {
+    color: #3c4142;
+    font-weight: 400;
+}
+
+    .widget-26 tr:first-child td[b-rqd5p37ty0] {
+        border: 0;
+    }
+
+
+    .widget-26 .widget-26-job-title[b-rqd5p37ty0] {
+        min-width: 200px;
+    }
+
+        .widget-26 .widget-26-job-title a[b-rqd5p37ty0] {
+            font-weight: 400;
+            font-size: 0.875rem;
+            color: #3c4142;
+            line-height: 1.5;
+        }
+
+            .widget-26 .widget-26-job-title a:hover[b-rqd5p37ty0] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .employer-name[b-rqd5p37ty0] {
+            margin: 0;
+            line-height: 1.5;
+            font-weight: 400;
+            color: #3c4142;
+            font-size: 0.8125rem;
+            color: #3c4142;
+        }
+
+            .widget-26 .widget-26-job-title .employer-name:hover[b-rqd5p37ty0] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .time[b-rqd5p37ty0] {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+    .widget-26 .widget-26-job-info[b-rqd5p37ty0] {
+        min-width: 100px;
+        font-weight: 400;
+    }
+
+        .widget-26 .widget-26-job-info p[b-rqd5p37ty0] {
+            line-height: 1.5;
+            color: #3c4142;
+            font-size: 0.8125rem;
+        }
+
+        .widget-26 .widget-26-job-info .location[b-rqd5p37ty0] {
+            color: #3c4142;
+        }
+
+    .widget-26 .widget-26-job-salary[b-rqd5p37ty0] {
+        min-width: 70px;
+        font-weight: 400;
+        color: #3c4142;
+        font-size: 0.8125rem;
+    }
+
+    .widget-26 .widget-26-job-category[b-rqd5p37ty0] {
+        padding: .5rem;
+        display: inline-flex;
+        white-space: nowrap;
+        border-radius: 15px;
+    }
+
+        .widget-26 .widget-26-job-category .indicator[b-rqd5p37ty0] {
+            width: 13px;
+            height: 13px;
+            margin-right: .5rem;
+            float: left;
+            border-radius: 50%;
+        }
+
+        .widget-26 .widget-26-job-category span[b-rqd5p37ty0] {
+            font-size: 0.8125rem;
+            color: #3c4142;
+            font-weight: 600;
+        }
+
+    .widget-26 .widget-26-job-starred svg[b-rqd5p37ty0] {
+        width: 20px;
+        height: 20px;
+        color: #fd8b2c;
+    }
+
+        .widget-26 .widget-26-job-starred svg.starred[b-rqd5p37ty0] {
+            fill: #fd8b2c;
+        }
+
+.bg-soft-base[b-rqd5p37ty0] {
+    background-color: #e1f5f7;
+}
+
+.bg-soft-warning[b-rqd5p37ty0] {
+    background-color: #fff4e1;
+}
+
+.bg-soft-success[b-rqd5p37ty0] {
+    background-color: #d1f6f2;
+}
+
+.bg-soft-danger[b-rqd5p37ty0] {
+    background-color: #fedce0;
+}
+
+.bg-soft-info[b-rqd5p37ty0] {
+    background-color: #d7efff;
+}
+
+
+.search-form[b-rqd5p37ty0] {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+    .search-form input[b-rqd5p37ty0] {
+        height: 100%;
+        background: transparent;
+        border: 0;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+    .search-form select[b-rqd5p37ty0] {
+        background: transparent;
+        border: 0;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form select:focus[b-rqd5p37ty0] {
+            border: 0;
+        }
+
+    .search-form button[b-rqd5p37ty0] {
+        height: 100%;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form button svg[b-rqd5p37ty0] {
+            width: 24px;
+            height: 24px;
+        }
+
+.search-body[b-rqd5p37ty0] {
+    margin-bottom: 1.5rem;
+}
+
+    .search-body .search-filters .filter-list[b-rqd5p37ty0] {
+        margin-bottom: 1.3rem;
+    }
+
+        .search-body .search-filters .filter-list .title[b-rqd5p37ty0] {
+            color: #3c4142;
+            margin-bottom: 1rem;
+        }
+
+        .search-body .search-filters .filter-list .filter-text[b-rqd5p37ty0] {
+            color: #727686;
+        }
+
+    .search-body .search-result .result-header[b-rqd5p37ty0] {
+        margin-bottom: 2rem;
+    }
+
+        .search-body .search-result .result-header .records[b-rqd5p37ty0] {
+            color: #3c4142;
+        }
+
+        .search-body .search-result .result-header .result-actions[b-rqd5p37ty0] {
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .search-body .search-result .result-header .result-actions .result-sorting[b-rqd5p37ty0] {
+                display: flex;
+                align-items: center;
+            }
+
+                .search-body .search-result .result-header .result-actions .result-sorting span[b-rqd5p37ty0] {
+                    flex-shrink: 0;
+                    font-size: 0.8125rem;
+                }
+
+                .search-body .search-result .result-header .result-actions .result-sorting select[b-rqd5p37ty0] {
+                    color: #68CBD7;
+                }
+
+                    .search-body .search-result .result-header .result-actions .result-sorting select option[b-rqd5p37ty0] {
+                        color: #3c4142;
+                    }
+
+
+
+.card-margin[b-rqd5p37ty0] {
+    margin-bottom: 1.875rem;
+}
+
+}
+
+.card-margin[b-rqd5p37ty0] {
+    margin-bottom: 1.875rem;
+}
+
+.card[b-rqd5p37ty0] {
+    border: 0;
+    box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -ms-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+}
+
+.card[b-rqd5p37ty0] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 1px solid #e6e4e9;
+    border-radius: 8px;
+}
+/* _content/MadeinHeavenBookStore/Pages/ManageUser.razor.rz.scp.css */
+.widget-26[b-un0hfe7yi3] {
+    color: #3c4142;
+    font-weight: 400;
+}
+
+    .widget-26 tr:first-child td[b-un0hfe7yi3] {
+        border: 0;
+    }
+
+
+    .widget-26 .widget-26-job-title[b-un0hfe7yi3] {
+        min-width: 200px;
+    }
+
+        .widget-26 .widget-26-job-title a[b-un0hfe7yi3] {
+            font-weight: 400;
+            font-size: 0.875rem;
+            color: #3c4142;
+            line-height: 1.5;
+        }
+
+            .widget-26 .widget-26-job-title a:hover[b-un0hfe7yi3] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .employer-name[b-un0hfe7yi3] {
+            margin: 0;
+            line-height: 1.5;
+            font-weight: 400;
+            color: #3c4142;
+            font-size: 0.8125rem;
+            color: #3c4142;
+        }
+
+            .widget-26 .widget-26-job-title .employer-name:hover[b-un0hfe7yi3] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .time[b-un0hfe7yi3] {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+    .widget-26 .widget-26-job-info[b-un0hfe7yi3] {
+        min-width: 100px;
+        font-weight: 400;
+    }
+
+        .widget-26 .widget-26-job-info p[b-un0hfe7yi3] {
+            line-height: 1.5;
+            color: #3c4142;
+            font-size: 0.8125rem;
+        }
+
+        .widget-26 .widget-26-job-info .location[b-un0hfe7yi3] {
+            color: #3c4142;
+        }
+
+    .widget-26 .widget-26-job-salary[b-un0hfe7yi3] {
+        min-width: 70px;
+        font-weight: 400;
+        color: #3c4142;
+        font-size: 0.8125rem;
+    }
+
+    .widget-26 .widget-26-job-category[b-un0hfe7yi3] {
+        padding: .5rem;
+        display: inline-flex;
+        white-space: nowrap;
+        border-radius: 15px;
+    }
+
+        .widget-26 .widget-26-job-category .indicator[b-un0hfe7yi3] {
+            width: 13px;
+            height: 13px;
+            margin-right: .5rem;
+            float: left;
+            border-radius: 50%;
+        }
+
+        .widget-26 .widget-26-job-category span[b-un0hfe7yi3] {
+            font-size: 0.8125rem;
+            color: #3c4142;
+            font-weight: 600;
+        }
+
+    .widget-26 .widget-26-job-starred svg[b-un0hfe7yi3] {
+        width: 20px;
+        height: 20px;
+        color: #fd8b2c;
+    }
+
+        .widget-26 .widget-26-job-starred svg.starred[b-un0hfe7yi3] {
+            fill: #fd8b2c;
+        }
+
+.bg-soft-base[b-un0hfe7yi3] {
+    background-color: #e1f5f7;
+}
+
+.bg-soft-warning[b-un0hfe7yi3] {
+    background-color: #fff4e1;
+}
+
+.bg-soft-success[b-un0hfe7yi3] {
+    background-color: #d1f6f2;
+}
+
+.bg-soft-danger[b-un0hfe7yi3] {
+    background-color: #fedce0;
+}
+
+.bg-soft-info[b-un0hfe7yi3] {
+    background-color: #d7efff;
+}
+
+
+.search-form[b-un0hfe7yi3] {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+    .search-form input[b-un0hfe7yi3] {
+        height: 100%;
+        background: transparent;
+        border: 0;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+    .search-form select[b-un0hfe7yi3] {
+        background: transparent;
+        border: 0;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form select:focus[b-un0hfe7yi3] {
+            border: 0;
+        }
+
+    .search-form button[b-un0hfe7yi3] {
+        height: 100%;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form button svg[b-un0hfe7yi3] {
+            width: 24px;
+            height: 24px;
+        }
+
+.search-body[b-un0hfe7yi3] {
+    margin-bottom: 1.5rem;
+}
+
+    .search-body .search-filters .filter-list[b-un0hfe7yi3] {
+        margin-bottom: 1.3rem;
+    }
+
+        .search-body .search-filters .filter-list .title[b-un0hfe7yi3] {
+            color: #3c4142;
+            margin-bottom: 1rem;
+        }
+
+        .search-body .search-filters .filter-list .filter-text[b-un0hfe7yi3] {
+            color: #727686;
+        }
+
+    .search-body .search-result .result-header[b-un0hfe7yi3] {
+        margin-bottom: 2rem;
+    }
+
+        .search-body .search-result .result-header .records[b-un0hfe7yi3] {
+            color: #3c4142;
+        }
+
+        .search-body .search-result .result-header .result-actions[b-un0hfe7yi3] {
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .search-body .search-result .result-header .result-actions .result-sorting[b-un0hfe7yi3] {
+                display: flex;
+                align-items: center;
+            }
+
+                .search-body .search-result .result-header .result-actions .result-sorting span[b-un0hfe7yi3] {
+                    flex-shrink: 0;
+                    font-size: 0.8125rem;
+                }
+
+                .search-body .search-result .result-header .result-actions .result-sorting select[b-un0hfe7yi3] {
+                    color: #68CBD7;
+                }
+
+                    .search-body .search-result .result-header .result-actions .result-sorting select option[b-un0hfe7yi3] {
+                        color: #3c4142;
+                    }
+
+
+
+.card-margin[b-un0hfe7yi3] {
+    margin-bottom: 1.875rem;
+}
+
+}
+
+.card-margin[b-un0hfe7yi3] {
+    margin-bottom: 1.875rem;
+}
+
+.card[b-un0hfe7yi3] {
+    border: 0;
+    box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -ms-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+}
+
+.card[b-un0hfe7yi3] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 1px solid #e6e4e9;
+    border-radius: 8px;
+}
+/* _content/MadeinHeavenBookStore/Shared/MainLayout.razor.rz.scp.css */
+.page[b-1g26uxqeiy] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-1g26uxqeiy] {
+    flex: 1;
+}
+
+.sidebar[b-1g26uxqeiy] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-1g26uxqeiy] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-1g26uxqeiy]  a, .top-row .btn-link[b-1g26uxqeiy] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-1g26uxqeiy] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-1g26uxqeiy] {
+        display: none;
+    }
+
+    .top-row.auth[b-1g26uxqeiy] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-1g26uxqeiy], .top-row .btn-link[b-1g26uxqeiy] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-1g26uxqeiy] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-1g26uxqeiy] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-1g26uxqeiy] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-1g26uxqeiy], article[b-1g26uxqeiy] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* _content/MadeinHeavenBookStore/Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-i5pcntgo84] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-i5pcntgo84] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-i5pcntgo84] {
+    font-size: 1.1rem;
+}
+
+.oi[b-i5pcntgo84] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-i5pcntgo84] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-i5pcntgo84] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-i5pcntgo84] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-i5pcntgo84]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-i5pcntgo84]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-i5pcntgo84]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-i5pcntgo84] {
+        display: none;
+    }
+
+    .collapse[b-i5pcntgo84] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+    
+    .nav-scrollable[b-i5pcntgo84] {
+        /* Allow sidebar to scroll for tall menus */
+        height: calc(100vh - 3.5rem);
+        overflow-y: auto;
+    }
+}
+/* _content/MadeinHeavenBookStore/Shared/SubMainLayout.razor.rz.scp.css */
+.page[b-ikjm9x5ohq] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-ikjm9x5ohq] {
+    flex: 1;
+}
+
+.sidebar[b-ikjm9x5ohq] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-ikjm9x5ohq] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-ikjm9x5ohq]  a, .top-row .btn-link[b-ikjm9x5ohq] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-ikjm9x5ohq] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-ikjm9x5ohq] {
+        display: none;
+    }
+
+    .top-row.auth[b-ikjm9x5ohq] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-ikjm9x5ohq], .top-row .btn-link[b-ikjm9x5ohq] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-ikjm9x5ohq] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-ikjm9x5ohq] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-ikjm9x5ohq] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-ikjm9x5ohq], article[b-ikjm9x5ohq] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+a.navbar-brand[b-ikjm9x5ohq] {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+a[b-ikjm9x5ohq] {
+    color: #0077cc;
+}
+
+.btn-primary[b-ikjm9x5ohq] {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-ikjm9x5ohq], .nav-pills .show > .nav-link[b-ikjm9x5ohq] {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.border-top[b-ikjm9x5ohq] {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom[b-ikjm9x5ohq] {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-ikjm9x5ohq] {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-ikjm9x5ohq] {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+.footer[b-ikjm9x5ohq] {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}
 /* _content/MadeinHeavenBookStore/Views/CouponManage/CouponManage.cshtml.rz.scp.css */
 .widget-26[b-8cpn3z4bdp] {
     color: #3c4142;

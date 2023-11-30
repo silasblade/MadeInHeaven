@@ -1,11 +1,13 @@
 ﻿using MadeinHeavenBookStore.Areas.Identity.Data;
 using MadeinHeavenBookStore.Models;
 using MadeinHeavenBookStore.Models.ShipandCoupon;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MadeinHeavenBookStore.Controllers
 {
+    [Authorize]
     public class CouponController : Controller
     {
 
