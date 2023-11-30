@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MadeinHeavenBookStore.Migrations
 {
     [DbContext(typeof(MadeinHeavenBookStoreContext))]
-    [Migration("20231128064710_InitialDb")]
+    [Migration("20231130040239_InitialDb")]
     partial class InitialDb
     {
         /// <inheritdoc />
