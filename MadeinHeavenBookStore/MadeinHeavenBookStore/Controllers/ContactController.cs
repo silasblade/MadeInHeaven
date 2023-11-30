@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MadeinHeavenBookStore.Controllers
 {
-    [Authorize]
 
     public class ContactController : Controller
     {
