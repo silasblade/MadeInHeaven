@@ -27,18 +27,8 @@ namespace MadeinHeavenBookStore.Controllers
 		.Include(p => p.Categories)
 		.FirstOrDefault(c => c.IdProduct == id);
 
-			List<ReviewComment> comments = _context.ReviewComments
-				.Where(c => c.Product == product)
-				.ToList();
-
-			var viewModel = new ProductDetailViewModel
-			{
-				ReviewComment = comments,
-				Product = product,
-				Categories = product.Categories.ToList()
-			};
-
-			return View(viewModel);
+		
+			return View(product);
 		}
 
 
