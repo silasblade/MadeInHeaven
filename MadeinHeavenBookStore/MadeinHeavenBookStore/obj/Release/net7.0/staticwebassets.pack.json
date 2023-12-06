@@ -1,0 +1,1601 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\Components\\Shop.razor.js",
+      "PackagePath": "staticwebassets\\Components\\Shop.razor.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\Pages\\ShopPages\\Shop\\Shopping.razor.js",
+      "PackagePath": "staticwebassets\\Pages\\ShopPages\\Shop\\Shopping.razor.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\obj\\Release\\net7.0\\scopedcss\\projectbundle\\MadeinHeavenBookStore.bundle.scp.css",
+      "PackagePath": "staticwebassets\\MadeinHeavenBookStore.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\css\\util.css",
+      "PackagePath": "staticwebassets\\css\\util.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Montserrat\\Montserrat-Black.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Montserrat\\Montserrat-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-BlackItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Montserrat\\Montserrat-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Montserrat\\Montserrat-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Montserrat\\Montserrat-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-ExtraBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Montserrat\\Montserrat-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Montserrat\\Montserrat-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-ExtraLight.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Montserrat\\Montserrat-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Montserrat\\Montserrat-Italic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Montserrat\\Montserrat-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Montserrat\\Montserrat-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-LightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Montserrat\\Montserrat-Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Montserrat\\Montserrat-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-MediumItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Montserrat\\Montserrat-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Montserrat\\Montserrat-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Montserrat\\Montserrat-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Montserrat\\Montserrat-Thin.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Montserrat\\Montserrat-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\Montserrat-ThinItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Montserrat\\OFL.txt",
+      "PackagePath": "staticwebassets\\fonts\\Montserrat\\OFL.txt"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\PlayfairDisplay\\OFL.txt",
+      "PackagePath": "staticwebassets\\fonts\\PlayfairDisplay\\OFL.txt"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\PlayfairDisplay\\PlayfairDisplay-Black.ttf",
+      "PackagePath": "staticwebassets\\fonts\\PlayfairDisplay\\PlayfairDisplay-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\PlayfairDisplay\\PlayfairDisplay-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\PlayfairDisplay\\PlayfairDisplay-BlackItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\PlayfairDisplay\\PlayfairDisplay-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\PlayfairDisplay\\PlayfairDisplay-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\PlayfairDisplay\\PlayfairDisplay-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\PlayfairDisplay\\PlayfairDisplay-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\PlayfairDisplay\\PlayfairDisplay-Italic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\PlayfairDisplay\\PlayfairDisplay-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\PlayfairDisplay\\PlayfairDisplay-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\PlayfairDisplay\\PlayfairDisplay-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Poppins\\Poppins-Black.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Poppins\\Poppins-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-BlackItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Poppins\\Poppins-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Poppins\\Poppins-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Poppins\\Poppins-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-ExtraBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Poppins\\Poppins-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Poppins\\Poppins-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-ExtraLight.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Poppins\\Poppins-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Poppins\\Poppins-Italic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Poppins\\Poppins-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Poppins\\Poppins-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-LightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Poppins\\Poppins-Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Poppins\\Poppins-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-MediumItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Poppins\\Poppins-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Poppins\\Poppins-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Poppins\\Poppins-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Poppins\\Poppins-Thin.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\Poppins\\Poppins-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-ThinItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\HELP-US-OUT.txt",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\HELP-US-OUT.txt"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\css\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\animated.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\animated.less"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\bordered-pulled.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\bordered-pulled.less"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\core.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\core.less"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\fixed-width.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\fixed-width.less"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\font-awesome.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\font-awesome.less"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\icons.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\icons.less"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\larger.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\larger.less"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\list.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\list.less"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\mixins.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\mixins.less"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\path.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\path.less"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\rotated-flipped.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\rotated-flipped.less"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\screen-reader.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\screen-reader.less"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\stacked.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\stacked.less"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\less\\variables.less",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\less\\variables.less"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_animated.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_animated.scss"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_core.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_core.scss"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_fixed-width.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_fixed-width.scss"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_icons.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_icons.scss"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_larger.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_larger.scss"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_list.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_list.scss"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_path.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_path.scss"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_screen-reader.scss"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_stacked.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_stacked.scss"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\font-awesome-4.7.0\\scss\\font-awesome.scss",
+      "PackagePath": "staticwebassets\\fonts\\font-awesome-4.7.0\\scss\\font-awesome.scss"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\iconic\\css\\material-design-iconic-font.css",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\css\\material-design-iconic-font.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\iconic\\css\\material-design-iconic-font.min.css",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\css\\material-design-iconic-font.min.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.eot",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.eot"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.svg",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.svg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.ttf",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.woff",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.woff"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.woff2",
+      "PackagePath": "staticwebassets\\fonts\\iconic\\fonts\\Material-Design-Iconic-Font.woff2"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\linearicons-v1.0.0\\WebFont\\Linearicons-Free.eot",
+      "PackagePath": "staticwebassets\\fonts\\linearicons-v1.0.0\\WebFont\\Linearicons-Free.eot"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\linearicons-v1.0.0\\WebFont\\Linearicons-Free.svg",
+      "PackagePath": "staticwebassets\\fonts\\linearicons-v1.0.0\\WebFont\\Linearicons-Free.svg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\linearicons-v1.0.0\\WebFont\\Linearicons-Free.ttf",
+      "PackagePath": "staticwebassets\\fonts\\linearicons-v1.0.0\\WebFont\\Linearicons-Free.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\linearicons-v1.0.0\\WebFont\\Linearicons-Free.woff",
+      "PackagePath": "staticwebassets\\fonts\\linearicons-v1.0.0\\WebFont\\Linearicons-Free.woff"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\linearicons-v1.0.0\\WebFont\\Linearicons-Free.woff2",
+      "PackagePath": "staticwebassets\\fonts\\linearicons-v1.0.0\\WebFont\\Linearicons-Free.woff2"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\fonts\\linearicons-v1.0.0\\icon-font.min.css",
+      "PackagePath": "staticwebassets\\fonts\\linearicons-v1.0.0\\icon-font.min.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\about-01.jpg",
+      "PackagePath": "staticwebassets\\images\\about-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\about-02.jpg",
+      "PackagePath": "staticwebassets\\images\\about-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\avatar-01.jpg",
+      "PackagePath": "staticwebassets\\images\\avatar-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\back1.jpg",
+      "PackagePath": "staticwebassets\\images\\back1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\back2.jpg",
+      "PackagePath": "staticwebassets\\images\\back2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\backnime.jpg",
+      "PackagePath": "staticwebassets\\images\\backnime.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\ban1.jpg",
+      "PackagePath": "staticwebassets\\images\\ban1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\ban2.jpg",
+      "PackagePath": "staticwebassets\\images\\ban2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\ban3.jpg",
+      "PackagePath": "staticwebassets\\images\\ban3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\banner-01.jpg",
+      "PackagePath": "staticwebassets\\images\\banner-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\banner-02.jpg",
+      "PackagePath": "staticwebassets\\images\\banner-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\banner-03.jpg",
+      "PackagePath": "staticwebassets\\images\\banner-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\banner-04.jpg",
+      "PackagePath": "staticwebassets\\images\\banner-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\banner-05.jpg",
+      "PackagePath": "staticwebassets\\images\\banner-05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\banner-06.jpg",
+      "PackagePath": "staticwebassets\\images\\banner-06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\banner-07.jpg",
+      "PackagePath": "staticwebassets\\images\\banner-07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\banner-08.jpg",
+      "PackagePath": "staticwebassets\\images\\banner-08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\banner-09.jpg",
+      "PackagePath": "staticwebassets\\images\\banner-09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\bg-01.jpg",
+      "PackagePath": "staticwebassets\\images\\bg-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\bg-02.jpg",
+      "PackagePath": "staticwebassets\\images\\bg-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\blog-01.jpg",
+      "PackagePath": "staticwebassets\\images\\blog-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\blog-02.jpg",
+      "PackagePath": "staticwebassets\\images\\blog-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\blog-03.jpg",
+      "PackagePath": "staticwebassets\\images\\blog-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\blog-04.jpg",
+      "PackagePath": "staticwebassets\\images\\blog-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\blog-05.jpg",
+      "PackagePath": "staticwebassets\\images\\blog-05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\blog-06.jpg",
+      "PackagePath": "staticwebassets\\images\\blog-06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\gallery-01.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\gallery-02.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\gallery-03.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\gallery-04.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\gallery-05.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\gallery-06.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\gallery-07.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\gallery-08.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\gallery-09.jpg",
+      "PackagePath": "staticwebassets\\images\\gallery-09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\icons\\favicon.png",
+      "PackagePath": "staticwebassets\\images\\icons\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\icons\\icon-close.png",
+      "PackagePath": "staticwebassets\\images\\icons\\icon-close.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\icons\\icon-close2.png",
+      "PackagePath": "staticwebassets\\images\\icons\\icon-close2.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\icons\\icon-email.png",
+      "PackagePath": "staticwebassets\\images\\icons\\icon-email.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\icons\\icon-heart-01.png",
+      "PackagePath": "staticwebassets\\images\\icons\\icon-heart-01.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\icons\\icon-heart-02.png",
+      "PackagePath": "staticwebassets\\images\\icons\\icon-heart-02.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\icons\\icon-next.png",
+      "PackagePath": "staticwebassets\\images\\icons\\icon-next.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\icons\\icon-pay-01.png",
+      "PackagePath": "staticwebassets\\images\\icons\\icon-pay-01.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\icons\\icon-pay-02.png",
+      "PackagePath": "staticwebassets\\images\\icons\\icon-pay-02.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\icons\\icon-pay-03.png",
+      "PackagePath": "staticwebassets\\images\\icons\\icon-pay-03.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\icons\\icon-pay-04.png",
+      "PackagePath": "staticwebassets\\images\\icons\\icon-pay-04.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\icons\\icon-pay-05.png",
+      "PackagePath": "staticwebassets\\images\\icons\\icon-pay-05.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\icons\\icon-prev.png",
+      "PackagePath": "staticwebassets\\images\\icons\\icon-prev.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\icons\\logo-01.png",
+      "PackagePath": "staticwebassets\\images\\icons\\logo-01.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\icons\\logo-02.png",
+      "PackagePath": "staticwebassets\\images\\icons\\logo-02.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\icons\\madeinheaven.png",
+      "PackagePath": "staticwebassets\\images\\icons\\madeinheaven.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\icons\\pin.png",
+      "PackagePath": "staticwebassets\\images\\icons\\pin.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\item-cart-01.jpg",
+      "PackagePath": "staticwebassets\\images\\item-cart-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\item-cart-02.jpg",
+      "PackagePath": "staticwebassets\\images\\item-cart-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\item-cart-03.jpg",
+      "PackagePath": "staticwebassets\\images\\item-cart-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\item-cart-04.jpg",
+      "PackagePath": "staticwebassets\\images\\item-cart-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\item-cart-05.jpg",
+      "PackagePath": "staticwebassets\\images\\item-cart-05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\jojoicon.png",
+      "PackagePath": "staticwebassets\\images\\jojoicon.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\kira.png",
+      "PackagePath": "staticwebassets\\images\\kira.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\made1.png",
+      "PackagePath": "staticwebassets\\images\\made1.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\made2.png",
+      "PackagePath": "staticwebassets\\images\\made2.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\made3.png",
+      "PackagePath": "staticwebassets\\images\\made3.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\made4.png",
+      "PackagePath": "staticwebassets\\images\\made4.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\product-01.jpg",
+      "PackagePath": "staticwebassets\\images\\product-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\product-02.jpg",
+      "PackagePath": "staticwebassets\\images\\product-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\product-03.jpg",
+      "PackagePath": "staticwebassets\\images\\product-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\product-04.jpg",
+      "PackagePath": "staticwebassets\\images\\product-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\product-05.jpg",
+      "PackagePath": "staticwebassets\\images\\product-05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\product-06.jpg",
+      "PackagePath": "staticwebassets\\images\\product-06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\product-07.jpg",
+      "PackagePath": "staticwebassets\\images\\product-07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\product-08.jpg",
+      "PackagePath": "staticwebassets\\images\\product-08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\product-09.jpg",
+      "PackagePath": "staticwebassets\\images\\product-09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\product-10.jpg",
+      "PackagePath": "staticwebassets\\images\\product-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\product-11.jpg",
+      "PackagePath": "staticwebassets\\images\\product-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\product-12.jpg",
+      "PackagePath": "staticwebassets\\images\\product-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\product-13.jpg",
+      "PackagePath": "staticwebassets\\images\\product-13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\product-14.jpg",
+      "PackagePath": "staticwebassets\\images\\product-14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\product-15.jpg",
+      "PackagePath": "staticwebassets\\images\\product-15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\product-16.jpg",
+      "PackagePath": "staticwebassets\\images\\product-16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\product-detail-01.jpg",
+      "PackagePath": "staticwebassets\\images\\product-detail-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\product-detail-02.jpg",
+      "PackagePath": "staticwebassets\\images\\product-detail-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\product-detail-03.jpg",
+      "PackagePath": "staticwebassets\\images\\product-detail-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\product-min-01.jpg",
+      "PackagePath": "staticwebassets\\images\\product-min-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\product-min-02.jpg",
+      "PackagePath": "staticwebassets\\images\\product-min-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\product-min-03.jpg",
+      "PackagePath": "staticwebassets\\images\\product-min-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\pucci.png",
+      "PackagePath": "staticwebassets\\images\\pucci.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\slide-01.jpg",
+      "PackagePath": "staticwebassets\\images\\slide-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\slide-02.jpg",
+      "PackagePath": "staticwebassets\\images\\slide-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\slide-03.jpg",
+      "PackagePath": "staticwebassets\\images\\slide-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\slide-04.jpg",
+      "PackagePath": "staticwebassets\\images\\slide-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\slide-05.jpg",
+      "PackagePath": "staticwebassets\\images\\slide-05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\slide-06.jpg",
+      "PackagePath": "staticwebassets\\images\\slide-06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\slide-07.jpg",
+      "PackagePath": "staticwebassets\\images\\slide-07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\thumb-01.jpg",
+      "PackagePath": "staticwebassets\\images\\thumb-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\thumb-02.jpg",
+      "PackagePath": "staticwebassets\\images\\thumb-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\thumb-03.jpg",
+      "PackagePath": "staticwebassets\\images\\thumb-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\jojoicon.png",
+      "PackagePath": "staticwebassets\\jojoicon.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\js\\map-custom.js",
+      "PackagePath": "staticwebassets\\js\\map-custom.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\js\\slick-custom.js",
+      "PackagePath": "staticwebassets\\js\\slick-custom.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\0a8fc267-c6d7-464e-8175-04ee6ee1ff2b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\0a8fc267-c6d7-464e-8175-04ee6ee1ff2b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\1194239e-8cfc-44c1-9321-451991ecc400.png",
+      "PackagePath": "staticwebassets\\uploads\\1194239e-8cfc-44c1-9321-451991ecc400.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\18b02cb0-cc63-482d-88cd-b3bbeca09c8c.png",
+      "PackagePath": "staticwebassets\\uploads\\18b02cb0-cc63-482d-88cd-b3bbeca09c8c.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\1cbbec09-feb0-4033-b1b8-e861e6015fc5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\1cbbec09-feb0-4033-b1b8-e861e6015fc5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\1fcde83f-4fa1-4f52-b606-0b497c03bbfd.png",
+      "PackagePath": "staticwebassets\\uploads\\1fcde83f-4fa1-4f52-b606-0b497c03bbfd.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\28ae35ad-cba3-4947-b5f0-a5f77a06b48e.jpg",
+      "PackagePath": "staticwebassets\\uploads\\28ae35ad-cba3-4947-b5f0-a5f77a06b48e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\36c8d061-e240-47e0-9e7d-366264424b1c.png",
+      "PackagePath": "staticwebassets\\uploads\\36c8d061-e240-47e0-9e7d-366264424b1c.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\3846f2d5-ddac-4d00-808a-b71e0ba32121.png",
+      "PackagePath": "staticwebassets\\uploads\\3846f2d5-ddac-4d00-808a-b71e0ba32121.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\44ddebca-9807-40b6-b025-6f3771a2ab6c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\44ddebca-9807-40b6-b025-6f3771a2ab6c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\4a3e1205-f38e-437a-876d-5455d72740e5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\4a3e1205-f38e-437a-876d-5455d72740e5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\515838c2-63fe-4946-baba-20abf0289eb3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\515838c2-63fe-4946-baba-20abf0289eb3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\55315b7e-bee3-4f26-9abd-e9a84b429233.png",
+      "PackagePath": "staticwebassets\\uploads\\55315b7e-bee3-4f26-9abd-e9a84b429233.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\58807238-9db3-4d9d-b2cc-277ae982d0f1.png",
+      "PackagePath": "staticwebassets\\uploads\\58807238-9db3-4d9d-b2cc-277ae982d0f1.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\5977ddb8-4cd9-4112-baa0-6353cdd2a1ea.png",
+      "PackagePath": "staticwebassets\\uploads\\5977ddb8-4cd9-4112-baa0-6353cdd2a1ea.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\5a9b1c24-1e2b-4fe3-941f-e1297850b6d2.gif",
+      "PackagePath": "staticwebassets\\uploads\\5a9b1c24-1e2b-4fe3-941f-e1297850b6d2.gif"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\5ce88d5e-e000-44fd-906c-0663b07a1c17.png",
+      "PackagePath": "staticwebassets\\uploads\\5ce88d5e-e000-44fd-906c-0663b07a1c17.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\5ef30ea9-51c6-451e-8756-33edd8142417.jpg",
+      "PackagePath": "staticwebassets\\uploads\\5ef30ea9-51c6-451e-8756-33edd8142417.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\60bd98d2-ff45-4085-ad75-bde4d8145c24.png",
+      "PackagePath": "staticwebassets\\uploads\\60bd98d2-ff45-4085-ad75-bde4d8145c24.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\66c100d6-1d20-4f87-8aaa-4680ec199090.png",
+      "PackagePath": "staticwebassets\\uploads\\66c100d6-1d20-4f87-8aaa-4680ec199090.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\68300846-9fa7-427c-8e63-91762b1cbcaa.jpg",
+      "PackagePath": "staticwebassets\\uploads\\68300846-9fa7-427c-8e63-91762b1cbcaa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\6d8bcf55-85cd-4e88-a715-0d5f7981ff2b.png",
+      "PackagePath": "staticwebassets\\uploads\\6d8bcf55-85cd-4e88-a715-0d5f7981ff2b.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\77aad22e-b55e-49c3-adb7-87902e94a69b.png",
+      "PackagePath": "staticwebassets\\uploads\\77aad22e-b55e-49c3-adb7-87902e94a69b.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\8acbe641-6a1f-4231-b5c6-49fb3ee1f058.jpg",
+      "PackagePath": "staticwebassets\\uploads\\8acbe641-6a1f-4231-b5c6-49fb3ee1f058.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\97419996-d55e-4fda-9635-4d8cd697c228.json",
+      "PackagePath": "staticwebassets\\uploads\\97419996-d55e-4fda-9635-4d8cd697c228.json"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\98be11ab-ca3f-4c57-b27f-fb9f730de1a6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\98be11ab-ca3f-4c57-b27f-fb9f730de1a6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\9ac975f1-ab4b-4c46-9c93-1c79c98453d5.png",
+      "PackagePath": "staticwebassets\\uploads\\9ac975f1-ab4b-4c46-9c93-1c79c98453d5.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\a24138a5-6e29-4b19-a531-46855a6ffa29.jpg",
+      "PackagePath": "staticwebassets\\uploads\\a24138a5-6e29-4b19-a531-46855a6ffa29.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\a35536e4-ae0e-4ac5-b646-897028f71daf.png",
+      "PackagePath": "staticwebassets\\uploads\\a35536e4-ae0e-4ac5-b646-897028f71daf.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\ab9cd55b-a3e5-4c32-a618-e1249784c59d.png",
+      "PackagePath": "staticwebassets\\uploads\\ab9cd55b-a3e5-4c32-a618-e1249784c59d.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\ae26f220-158e-4622-9ee0-861a30ec9bdb.png",
+      "PackagePath": "staticwebassets\\uploads\\ae26f220-158e-4622-9ee0-861a30ec9bdb.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\bdba39ed-bac2-482e-8b28-95c7dec20c25.png",
+      "PackagePath": "staticwebassets\\uploads\\bdba39ed-bac2-482e-8b28-95c7dec20c25.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\bfa48185-9c43-49b9-991e-621d0ddaab1a.jpg",
+      "PackagePath": "staticwebassets\\uploads\\bfa48185-9c43-49b9-991e-621d0ddaab1a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\d053015c-4ab4-48f3-9b9e-f61b4f7be1d0.jpg",
+      "PackagePath": "staticwebassets\\uploads\\d053015c-4ab4-48f3-9b9e-f61b4f7be1d0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\d231401c-29c2-4baf-b6f4-754414369f9f.png",
+      "PackagePath": "staticwebassets\\uploads\\d231401c-29c2-4baf-b6f4-754414369f9f.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\dd21f730-ad10-42e5-aab7-39008ceb694d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\dd21f730-ad10-42e5-aab7-39008ceb694d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\eb2ea1af-17e7-4fca-976f-2d19ceaf7a8d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\eb2ea1af-17e7-4fca-976f-2d19ceaf7a8d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\f2549306-85b6-4a80-a489-c444b689b362.gif",
+      "PackagePath": "staticwebassets\\uploads\\f2549306-85b6-4a80-a489-c444b689b362.gif"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\love.png",
+      "PackagePath": "staticwebassets\\uploads\\love.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\pompom1.png",
+      "PackagePath": "staticwebassets\\uploads\\pompom1.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\pompom2.gif",
+      "PackagePath": "staticwebassets\\uploads\\pompom2.gif"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\pompom3.gif",
+      "PackagePath": "staticwebassets\\uploads\\pompom3.gif"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\MagnificPopup\\jquery.magnific-popup.js",
+      "PackagePath": "staticwebassets\\vendor\\MagnificPopup\\jquery.magnific-popup.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\MagnificPopup\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\vendor\\MagnificPopup\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\MagnificPopup\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\vendor\\MagnificPopup\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\animate\\animate.css",
+      "PackagePath": "staticwebassets\\vendor\\animate\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\animsition\\css\\animsition.css",
+      "PackagePath": "staticwebassets\\vendor\\animsition\\css\\animsition.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\animsition\\css\\animsition.min.css",
+      "PackagePath": "staticwebassets\\vendor\\animsition\\css\\animsition.min.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\animsition\\js\\animsition.js",
+      "PackagePath": "staticwebassets\\vendor\\animsition\\js\\animsition.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\animsition\\js\\animsition.min.js",
+      "PackagePath": "staticwebassets\\vendor\\animsition\\js\\animsition.min.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\bootstrap\\js\\popper.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\bootstrap\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\bootstrap\\js\\tooltip.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\tooltip.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\countdowntime\\countdowntime.js",
+      "PackagePath": "staticwebassets\\vendor\\countdowntime\\countdowntime.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\css-hamburgers\\hamburgers.css",
+      "PackagePath": "staticwebassets\\vendor\\css-hamburgers\\hamburgers.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\css-hamburgers\\hamburgers.min.css",
+      "PackagePath": "staticwebassets\\vendor\\css-hamburgers\\hamburgers.min.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\daterangepicker\\daterangepicker.css",
+      "PackagePath": "staticwebassets\\vendor\\daterangepicker\\daterangepicker.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\daterangepicker\\daterangepicker.js",
+      "PackagePath": "staticwebassets\\vendor\\daterangepicker\\daterangepicker.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\daterangepicker\\moment.js",
+      "PackagePath": "staticwebassets\\vendor\\daterangepicker\\moment.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\daterangepicker\\moment.min.js",
+      "PackagePath": "staticwebassets\\vendor\\daterangepicker\\moment.min.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\isotope\\isotope.pkgd.min.js",
+      "PackagePath": "staticwebassets\\vendor\\isotope\\isotope.pkgd.min.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\jquery\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\vendor\\jquery\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\jqueryui\\external\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\external\\jquery\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\jqueryui\\images\\ui-icons_444444_256x240.png",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\images\\ui-icons_444444_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\jqueryui\\images\\ui-icons_555555_256x240.png",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\images\\ui-icons_555555_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\jqueryui\\images\\ui-icons_777620_256x240.png",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\images\\ui-icons_777620_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\jqueryui\\images\\ui-icons_777777_256x240.png",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\images\\ui-icons_777777_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\jqueryui\\images\\ui-icons_cc0000_256x240.png",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\images\\ui-icons_cc0000_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\jqueryui\\images\\ui-icons_ffffff_256x240.png",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\images\\ui-icons_ffffff_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\jqueryui\\index.html",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\jqueryui\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\jquery-ui.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\jqueryui\\jquery-ui.js",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\jquery-ui.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\jqueryui\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\jquery-ui.min.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\jqueryui\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\jquery-ui.min.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\jqueryui\\jquery-ui.structure.css",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\jquery-ui.structure.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\jqueryui\\jquery-ui.structure.min.css",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\jquery-ui.structure.min.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\jqueryui\\jquery-ui.theme.css",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\jquery-ui.theme.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\jqueryui\\jquery-ui.theme.min.css",
+      "PackagePath": "staticwebassets\\vendor\\jqueryui\\jquery-ui.theme.min.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\lightbox2\\css\\lightbox.css",
+      "PackagePath": "staticwebassets\\vendor\\lightbox2\\css\\lightbox.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\lightbox2\\css\\lightbox.min.css",
+      "PackagePath": "staticwebassets\\vendor\\lightbox2\\css\\lightbox.min.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\lightbox2\\images\\close.png",
+      "PackagePath": "staticwebassets\\vendor\\lightbox2\\images\\close.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\lightbox2\\images\\loading.gif",
+      "PackagePath": "staticwebassets\\vendor\\lightbox2\\images\\loading.gif"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\lightbox2\\images\\next.png",
+      "PackagePath": "staticwebassets\\vendor\\lightbox2\\images\\next.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\lightbox2\\images\\prev.png",
+      "PackagePath": "staticwebassets\\vendor\\lightbox2\\images\\prev.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\lightbox2\\js\\lightbox-plus-jquery.js",
+      "PackagePath": "staticwebassets\\vendor\\lightbox2\\js\\lightbox-plus-jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\lightbox2\\js\\lightbox-plus-jquery.min.js",
+      "PackagePath": "staticwebassets\\vendor\\lightbox2\\js\\lightbox-plus-jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\lightbox2\\js\\lightbox-plus-jquery.min.map",
+      "PackagePath": "staticwebassets\\vendor\\lightbox2\\js\\lightbox-plus-jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\lightbox2\\js\\lightbox.js",
+      "PackagePath": "staticwebassets\\vendor\\lightbox2\\js\\lightbox.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\lightbox2\\js\\lightbox.min.js",
+      "PackagePath": "staticwebassets\\vendor\\lightbox2\\js\\lightbox.min.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\lightbox2\\js\\lightbox.min.map",
+      "PackagePath": "staticwebassets\\vendor\\lightbox2\\js\\lightbox.min.map"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\parallax100\\parallax100.js",
+      "PackagePath": "staticwebassets\\vendor\\parallax100\\parallax100.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\perfect-scrollbar\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\vendor\\perfect-scrollbar\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\perfect-scrollbar\\perfect-scrollbar.min.js",
+      "PackagePath": "staticwebassets\\vendor\\perfect-scrollbar\\perfect-scrollbar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\select2\\select2.css",
+      "PackagePath": "staticwebassets\\vendor\\select2\\select2.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\select2\\select2.js",
+      "PackagePath": "staticwebassets\\vendor\\select2\\select2.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\select2\\select2.min.css",
+      "PackagePath": "staticwebassets\\vendor\\select2\\select2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\select2\\select2.min.js",
+      "PackagePath": "staticwebassets\\vendor\\select2\\select2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\slick\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\vendor\\slick\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\slick\\config.rb",
+      "PackagePath": "staticwebassets\\vendor\\slick\\config.rb"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\slick\\fonts\\slick.eot",
+      "PackagePath": "staticwebassets\\vendor\\slick\\fonts\\slick.eot"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\slick\\fonts\\slick.svg",
+      "PackagePath": "staticwebassets\\vendor\\slick\\fonts\\slick.svg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\slick\\fonts\\slick.ttf",
+      "PackagePath": "staticwebassets\\vendor\\slick\\fonts\\slick.ttf"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\slick\\fonts\\slick.woff",
+      "PackagePath": "staticwebassets\\vendor\\slick\\fonts\\slick.woff"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\slick\\slick-theme.css",
+      "PackagePath": "staticwebassets\\vendor\\slick\\slick-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\slick\\slick-theme.less",
+      "PackagePath": "staticwebassets\\vendor\\slick\\slick-theme.less"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\slick\\slick-theme.scss",
+      "PackagePath": "staticwebassets\\vendor\\slick\\slick-theme.scss"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\slick\\slick.css",
+      "PackagePath": "staticwebassets\\vendor\\slick\\slick.css"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\slick\\slick.js",
+      "PackagePath": "staticwebassets\\vendor\\slick\\slick.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\slick\\slick.less",
+      "PackagePath": "staticwebassets\\vendor\\slick\\slick.less"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\slick\\slick.min.js",
+      "PackagePath": "staticwebassets\\vendor\\slick\\slick.min.js"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\slick\\slick.scss",
+      "PackagePath": "staticwebassets\\vendor\\slick\\slick.scss"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\vendor\\sweetalert\\sweetalert.min.js",
+      "PackagePath": "staticwebassets\\vendor\\sweetalert\\sweetalert.min.js"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.MadeinHeavenBookStore.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.build.MadeinHeavenBookStore.props",
+      "PackagePath": "build\\MadeinHeavenBookStore.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.MadeinHeavenBookStore.props",
+      "PackagePath": "buildMultiTargeting\\MadeinHeavenBookStore.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildTransitive.MadeinHeavenBookStore.props",
+      "PackagePath": "buildTransitive\\MadeinHeavenBookStore.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

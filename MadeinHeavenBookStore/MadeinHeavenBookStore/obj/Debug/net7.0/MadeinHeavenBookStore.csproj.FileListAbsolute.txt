@@ -592,3 +592,10 @@ C:\Users\visha\OneDrive\Documents\GitHub\MadeInHeaven\MadeinHeavenBookStore\Made
 C:\Users\visha\OneDrive\Documents\GitHub\MadeInHeaven\MadeinHeavenBookStore\MadeinHeavenBookStore\bin\Debug\net7.0\refs\WindowsBase.dll
 C:\Users\visha\OneDrive\Documents\GitHub\MadeInHeaven\MadeinHeavenBookStore\MadeinHeavenBookStore\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 C:\Users\visha\OneDrive\Documents\GitHub\MadeInHeaven\MadeinHeavenBookStore\MadeinHeavenBookStore\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
+C:\Users\visha\OneDrive\Documents\GitHub\MadeInHeaven\MadeinHeavenBookStore\MadeinHeavenBookStore\obj\Debug\net7.0\scopedcss\Pages\ShopPages\CouponShow.razor.rz.scp.css
+C:\Users\visha\OneDrive\Documents\GitHub\MadeInHeaven\MadeinHeavenBookStore\MadeinHeavenBookStore\obj\Debug\net7.0\scopedcss\Pages\ShopPages\OrderList.razor.rz.scp.css
+C:\Users\visha\OneDrive\Documents\GitHub\MadeInHeaven\MadeinHeavenBookStore\MadeinHeavenBookStore\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\visha\OneDrive\Documents\GitHub\MadeInHeaven\MadeinHeavenBookStore\MadeinHeavenBookStore\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\visha\OneDrive\Documents\GitHub\MadeInHeaven\MadeinHeavenBookStore\MadeinHeavenBookStore\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\visha\OneDrive\Documents\GitHub\MadeInHeaven\MadeinHeavenBookStore\MadeinHeavenBookStore\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\visha\OneDrive\Documents\GitHub\MadeInHeaven\MadeinHeavenBookStore\MadeinHeavenBookStore\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll

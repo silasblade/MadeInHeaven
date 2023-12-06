@@ -161,7 +161,13 @@ namespace MadeinHeavenBookStore.Models.MVCService
 		public async Task<int> saveOrder(string receiver, string street, string ward, string district, string city, string phoneNumber)
 		{
 			string userID = _httpContextAccessor.HttpContext?.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-
+			List<ShopCart> shopCarts = _context.ShopCarts
+				.Where(c => c.Id == userID)
+				.ToList();
+			if (shopCarts.Count == 0)
+			{
+				return -4;
+			}
 			Order order = new Order();
 			order.IdUser = userID;
 			order.UserClaim = receiver;
@@ -172,14 +178,9 @@ namespace MadeinHeavenBookStore.Models.MVCService
 			order.district = district;
 			_context.Orders.Add(order);
 			_context.SaveChanges();
-			List<ShopCart> shopCarts = _context.ShopCarts
-				.Where(c => c.Id == userID)
-				.ToList();
+			
 
-			if(shopCarts.Count == 0) 
-			{
-				return -4;
-			}
+			
 
 			int total = 0;
 
@@ -193,6 +194,7 @@ namespace MadeinHeavenBookStore.Models.MVCService
 				_context.OrderProducts.Add(Oproduct);
 				_context.SaveChanges();
 				Product product = _context.Products.Find(shp.IdProduct);
+				product.Inventory = product.Inventory - shp.Quantity;
 				total = total + product.Price * shp.Quantity;
 
 			}

@@ -3,12 +3,11 @@
 @attribute [Authorize]
 @using MadeinHeavenBookStore.Models.MVCService
 @using System.ComponentModel.DataAnnotations;
-@using Microsoft.AspNetCore.Authorization;
 @inject UserService UserService;
 @inject IToastService toastService
 @using System.Security.Claims
 @inject AuthenticationStateProvider AuthenticationStateProvider
-
+@layout SubMainLayout
 <h3>ManageUser</h3>
 @if (IsUserAuthorized)
 {

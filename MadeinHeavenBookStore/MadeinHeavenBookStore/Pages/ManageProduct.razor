@@ -5,28 +5,29 @@
 @using MadeinHeavenBookStore.Models.MVCService
 @using System.ComponentModel.DataAnnotations;
 @using Microsoft.AspNetCore.Authorization;
+@using MadeinHeavenBookStore.Controllers.Services;
 @inject ProductService ProductService 
+@inject ShopService ShopService 
+@inject ShopAPIService ShopAPIService 
+@layout SubMainLayout
+
 @inject IToastService toastService
 @using System.Security.Claims
 @inject AuthenticationStateProvider AuthenticationStateProvider
-@if (IsUserAuthorized)
+@if (IsUserAuthorized || IsUserAuthorizedMod)
 {
-<h3>ManageProduct</h3>
-
-
 
     <div class="container">
         <div class="row">
             <div class="col-lg-12 card-margin">
                 <div class="card search-form">
                     <div class="card-body p-0">
-                        <form asp-controller="ProductManage" asp-action="ProductManage" id="search-form">
                             <div class="row">
                                 <div class="col-12">
                                     <div class="row no-gutters">
                                         <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                                            <select class="" id="catsear" name="catsearch">
-                                                <option disabled>Choose a Category</option>
+                                            <select @onchange="CategoryPage">
+                                                <option>All</option>
                                                 @foreach(var cat in Categories)
                                                 {
                                                   <option>@cat.Name</option>  
@@ -35,17 +36,16 @@
                                             </select>
                                         </div>
                                         <div class="col-lg-8 col-md-6 col-sm-12 p-0">
-                                            <input type="text" placeholder="Search..." class="form-control" id="search" name="search">
+                                            <input type="text" placeholder="Search..." class="form-control" @bind="search">
                                         </div>
                                         <div class="col-lg-1 col-md-3 col-sm-12 p-0">
-                                            <button type="submit" class="btn btn-base">
+                                            <button @onclick="Update">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                                             </button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -60,16 +60,15 @@
                                     <div class="result-header">
                                         <div class="row">
                                             <div class="col-lg-6">
-                                                <div class="records">Showing: <b>1-20</b> of <b>200</b> result</div>
+                                                <div class="records">Showing: <b>10</b> of <b>@totalItems</b> result</div>
                                             </div>
                                             <div class="col-lg-6">
                                                 <div class="result-actions">
                                                     <div class="result-sorting">
                                                         <span>Sort By:</span>
-                                                        <select class="form-control border-0" id="exampleOption">
-                                                            <option value="1">Relevance</option>
-                                                            <option value="2">Names (A-Z)</option>
-                                                            <option value="3">Names (Z-A)</option>
+                                                        <select @onchange="Reverts" class="form-control border-0" id="exampleOption">
+                                                            <option value="1">Index (First-Final)</option>
+                                                            <option value="2">Index (Final-First)</option>
                                                         </select>
                                                     </div>
                                                     <div class="result-views">
@@ -153,30 +152,50 @@
                                 </div>
                             </div>
                         </div>
-                        <nav class="d-flex justify-content-center">
-                            <ul class="pagination pagination-base pagination-boxed pagination-square mb-0">
-                                <li class="page-item">
-                                    <a class="page-link no-border" href="#">
-                                        <span aria-hidden="true">«</span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                </li>
-                                <li class="page-item active"><a class="page-link no-border" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link no-border" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link no-border" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link no-border" href="#">4</a></li>
-                                <li class="page-item">
-                                    <a class="page-link no-border" href="#">
-                                        <span aria-hidden="true">»</span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                         <nav class="d-flex justify-content-center">
+		<ul class="pagination pagination-base pagination-boxed pagination-square mb-0">
+			@if (currentPage != 1)
+			{
+				<li class="page-item">
+					<button @onclick="@(c => ChangePage(currentPage - 1))" class="page-link no-border">
+						<span aria-hidden="true">«</span>
+						<span class="sr-only">Previous</span>
+					</button>
+				</li>
+			}
+
+			
+			@for (int i = 1; i <= Math.Ceiling((double)totalItems / itemsPerPage); i++)
+			{
+				int pageNumber = i; // Local variable to capture the current value of i
+				if(currentPage == i)
+				{
+					<li class="page-item active"><button class="page-link no-border" @onclick="@(c => ChangePage(pageNumber))">@i</button></li>
+
+				}
+				else
+				{
+					<li class="page-item"><button class="page-link no-border" @onclick="@(c => ChangePage(pageNumber))">@i</button></li>
+
+				}
+			}
+			@if (currentPage != Math.Ceiling((double)totalItems / itemsPerPage))
+			{
+				<li class="page-item">
+					<button @onclick="@(c => ChangePage(currentPage + 1))" class="page-link no-border">
+						<span aria-hidden="true">»</span>
+						<span class="sr-only">Next</span>
+					</button>
+				</li>
+			}
+			
+		</ul>
+	</nav>
                     </div>
                 </div>
             </div>
         </div>
+       
     </div>
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -190,31 +209,59 @@ else
 }
 
 @code {
+    public int currentPage = 1;
+    public int itemsPerPage = 10;
+    public int totalItems;
+    public int min;
+    public int max;
+    public string cate =  "";
+    public string search = "";
+
     private bool IsUserAuthorized;
-    private string search;
-    private string percent;
+        private bool IsUserAuthorizedMod;
+
     public string selectedOption;
     public List<Category> Categories = new List<Category>();
     public List<Product> Products = new List<Product>();
+    public List<Product> productsnopage = new List<Product>();
+
     public List<Category> ProCat = new List<Category>();
 
 
     protected override async Task OnInitializedAsync()
     {
         var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
-        IsUserAuthorized = authState.User.IsInRole("Mod");
-        if (authState.User.IsInRole("Admin")) IsUserAuthorized = true;
-
+        IsUserAuthorized = authState.User.IsInRole("Admin");
+        IsUserAuthorizedMod = authState.User.IsInRole("Mod");
         await Update();
     }
 
     public async Task Update()
     {
-        Categories = await ProductService.GetCategories();
-        Products = await ProductService.GetProduct();
-
-        Console.WriteLine("Function Call");
+        Categories = await ShopService.GetCategories();
+        productsnopage = await ShopService.ShopProduct(cate, search, max, min);
+        totalItems = productsnopage.Count();
+        Products = await ShopService.GetPagedProducts(cate, search, max, min, currentPage, itemsPerPage);
     }
+
+    public async Task ChangePage(int page)
+    {
+        currentPage = page;
+        await Update();
+    }
+
+    public async Task Reverts()
+    {
+        Products.Reverse();
+    }
+
+
+    public async Task CategoryPage(ChangeEventArgs cat)
+    {
+        cate = cat.Value.ToString();
+        if (cate == "All") cate = "";
+        await Update();
+	}
 
     public async Task DeleteProduct(int id)
     {
@@ -224,8 +271,10 @@ else
 
     public async Task AddNewProduct()
     {
-        ProductService.AddProduct();
+        ShopAPIService.AddProduct();
         await Update();
     }
+
+  
      public string GetEditUrl(int id) => $"/admin/manageproduct/editproduct/{id}";
 }

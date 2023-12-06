@@ -64,6 +64,10 @@
               "target": "Package",
               "version": "[7.0.14, )"
             },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.14, )"
@@ -99,6 +103,10 @@
             "PagedList.Mvc": {
               "target": "Package",
               "version": "[4.5.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
             },
             "X.PagedList": {
               "target": "Package",

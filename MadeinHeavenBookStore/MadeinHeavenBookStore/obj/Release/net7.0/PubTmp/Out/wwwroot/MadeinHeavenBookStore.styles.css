@@ -1,0 +1,2767 @@
+@import '_content/Blazored.Toast/Blazored.Toast.bundle.scp.css';
+
+/* _content/MadeinHeavenBookStore/Pages/ManageCounpon.razor.rz.scp.css */
+.widget-26[b-52f68h3efd] {
+    color: #3c4142;
+    font-weight: 400;
+}
+
+    .widget-26 tr:first-child td[b-52f68h3efd] {
+        border: 0;
+    }
+
+
+    .widget-26 .widget-26-job-title[b-52f68h3efd] {
+        min-width: 200px;
+    }
+
+        .widget-26 .widget-26-job-title a[b-52f68h3efd] {
+            font-weight: 400;
+            font-size: 0.875rem;
+            color: #3c4142;
+            line-height: 1.5;
+        }
+
+            .widget-26 .widget-26-job-title a:hover[b-52f68h3efd] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .employer-name[b-52f68h3efd] {
+            margin: 0;
+            line-height: 1.5;
+            font-weight: 400;
+            color: #3c4142;
+            font-size: 0.8125rem;
+            color: #3c4142;
+        }
+
+            .widget-26 .widget-26-job-title .employer-name:hover[b-52f68h3efd] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .time[b-52f68h3efd] {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+    .widget-26 .widget-26-job-info[b-52f68h3efd] {
+        min-width: 100px;
+        font-weight: 400;
+    }
+
+        .widget-26 .widget-26-job-info p[b-52f68h3efd] {
+            line-height: 1.5;
+            color: #3c4142;
+            font-size: 0.8125rem;
+        }
+
+        .widget-26 .widget-26-job-info .location[b-52f68h3efd] {
+            color: #3c4142;
+        }
+
+    .widget-26 .widget-26-job-salary[b-52f68h3efd] {
+        min-width: 70px;
+        font-weight: 400;
+        color: #3c4142;
+        font-size: 0.8125rem;
+    }
+
+    .widget-26 .widget-26-job-category[b-52f68h3efd] {
+        padding: .5rem;
+        display: inline-flex;
+        white-space: nowrap;
+        border-radius: 15px;
+    }
+
+        .widget-26 .widget-26-job-category .indicator[b-52f68h3efd] {
+            width: 13px;
+            height: 13px;
+            margin-right: .5rem;
+            float: left;
+            border-radius: 50%;
+        }
+
+        .widget-26 .widget-26-job-category span[b-52f68h3efd] {
+            font-size: 0.8125rem;
+            color: #3c4142;
+            font-weight: 600;
+        }
+
+    .widget-26 .widget-26-job-starred svg[b-52f68h3efd] {
+        width: 20px;
+        height: 20px;
+        color: #fd8b2c;
+    }
+
+        .widget-26 .widget-26-job-starred svg.starred[b-52f68h3efd] {
+            fill: #fd8b2c;
+        }
+
+.bg-soft-base[b-52f68h3efd] {
+    background-color: #e1f5f7;
+}
+
+.bg-soft-warning[b-52f68h3efd] {
+    background-color: #fff4e1;
+}
+
+.bg-soft-success[b-52f68h3efd] {
+    background-color: #d1f6f2;
+}
+
+.bg-soft-danger[b-52f68h3efd] {
+    background-color: #fedce0;
+}
+
+.bg-soft-info[b-52f68h3efd] {
+    background-color: #d7efff;
+}
+
+
+.search-form[b-52f68h3efd] {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+    .search-form input[b-52f68h3efd] {
+        height: 100%;
+        background: transparent;
+        border: 0;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+    .search-form select[b-52f68h3efd] {
+        background: transparent;
+        border: 0;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form select:focus[b-52f68h3efd] {
+            border: 0;
+        }
+
+    .search-form button[b-52f68h3efd] {
+        height: 100%;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form button svg[b-52f68h3efd] {
+            width: 24px;
+            height: 24px;
+        }
+
+.search-body[b-52f68h3efd] {
+    margin-bottom: 1.5rem;
+}
+
+    .search-body .search-filters .filter-list[b-52f68h3efd] {
+        margin-bottom: 1.3rem;
+    }
+
+        .search-body .search-filters .filter-list .title[b-52f68h3efd] {
+            color: #3c4142;
+            margin-bottom: 1rem;
+        }
+
+        .search-body .search-filters .filter-list .filter-text[b-52f68h3efd] {
+            color: #727686;
+        }
+
+    .search-body .search-result .result-header[b-52f68h3efd] {
+        margin-bottom: 2rem;
+    }
+
+        .search-body .search-result .result-header .records[b-52f68h3efd] {
+            color: #3c4142;
+        }
+
+        .search-body .search-result .result-header .result-actions[b-52f68h3efd] {
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .search-body .search-result .result-header .result-actions .result-sorting[b-52f68h3efd] {
+                display: flex;
+                align-items: center;
+            }
+
+                .search-body .search-result .result-header .result-actions .result-sorting span[b-52f68h3efd] {
+                    flex-shrink: 0;
+                    font-size: 0.8125rem;
+                }
+
+                .search-body .search-result .result-header .result-actions .result-sorting select[b-52f68h3efd] {
+                    color: #68CBD7;
+                }
+
+                    .search-body .search-result .result-header .result-actions .result-sorting select option[b-52f68h3efd] {
+                        color: #3c4142;
+                    }
+
+
+
+.card-margin[b-52f68h3efd] {
+    margin-bottom: 1.875rem;
+}
+
+}
+
+.card-margin[b-52f68h3efd] {
+    margin-bottom: 1.875rem;
+}
+
+.card[b-52f68h3efd] {
+    border: 0;
+    box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -ms-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+}
+
+.card[b-52f68h3efd] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 1px solid #e6e4e9;
+    border-radius: 8px;
+}
+/* _content/MadeinHeavenBookStore/Pages/ManageOrder.razor.rz.scp.css */
+.widget-26[b-54386hcfd5] {
+    color: #3c4142;
+    font-weight: 400;
+}
+
+    .widget-26 tr:first-child td[b-54386hcfd5] {
+        border: 0;
+    }
+
+
+    .widget-26 .widget-26-job-title[b-54386hcfd5] {
+        min-width: 200px;
+    }
+
+        .widget-26 .widget-26-job-title a[b-54386hcfd5] {
+            font-weight: 400;
+            font-size: 0.875rem;
+            color: #3c4142;
+            line-height: 1.5;
+        }
+
+            .widget-26 .widget-26-job-title a:hover[b-54386hcfd5] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .employer-name[b-54386hcfd5] {
+            margin: 0;
+            line-height: 1.5;
+            font-weight: 400;
+            color: #3c4142;
+            font-size: 0.8125rem;
+            color: #3c4142;
+        }
+
+            .widget-26 .widget-26-job-title .employer-name:hover[b-54386hcfd5] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .time[b-54386hcfd5] {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+    .widget-26 .widget-26-job-info[b-54386hcfd5] {
+        min-width: 100px;
+        font-weight: 400;
+    }
+
+        .widget-26 .widget-26-job-info p[b-54386hcfd5] {
+            line-height: 1.5;
+            color: #3c4142;
+            font-size: 0.8125rem;
+        }
+
+        .widget-26 .widget-26-job-info .location[b-54386hcfd5] {
+            color: #3c4142;
+        }
+
+    .widget-26 .widget-26-job-salary[b-54386hcfd5] {
+        min-width: 70px;
+        font-weight: 400;
+        color: #3c4142;
+        font-size: 0.8125rem;
+    }
+
+    .widget-26 .widget-26-job-category[b-54386hcfd5] {
+        padding: .5rem;
+        display: inline-flex;
+        white-space: nowrap;
+        border-radius: 15px;
+    }
+
+        .widget-26 .widget-26-job-category .indicator[b-54386hcfd5] {
+            width: 13px;
+            height: 13px;
+            margin-right: .5rem;
+            float: left;
+            border-radius: 50%;
+        }
+
+        .widget-26 .widget-26-job-category span[b-54386hcfd5] {
+            font-size: 0.8125rem;
+            color: #3c4142;
+            font-weight: 600;
+        }
+
+    .widget-26 .widget-26-job-starred svg[b-54386hcfd5] {
+        width: 20px;
+        height: 20px;
+        color: #fd8b2c;
+    }
+
+        .widget-26 .widget-26-job-starred svg.starred[b-54386hcfd5] {
+            fill: #fd8b2c;
+        }
+
+.bg-soft-base[b-54386hcfd5] {
+    background-color: #e1f5f7;
+}
+
+.bg-soft-warning[b-54386hcfd5] {
+    background-color: #fff4e1;
+}
+
+.bg-soft-success[b-54386hcfd5] {
+    background-color: #d1f6f2;
+}
+
+.bg-soft-danger[b-54386hcfd5] {
+    background-color: #fedce0;
+}
+
+.bg-soft-info[b-54386hcfd5] {
+    background-color: #d7efff;
+}
+
+
+.search-form[b-54386hcfd5] {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+    .search-form input[b-54386hcfd5] {
+        height: 100%;
+        background: transparent;
+        border: 0;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+    .search-form select[b-54386hcfd5] {
+        background: transparent;
+        border: 0;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form select:focus[b-54386hcfd5] {
+            border: 0;
+        }
+
+    .search-form button[b-54386hcfd5] {
+        height: 100%;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form button svg[b-54386hcfd5] {
+            width: 24px;
+            height: 24px;
+        }
+
+.search-body[b-54386hcfd5] {
+    margin-bottom: 1.5rem;
+}
+
+    .search-body .search-filters .filter-list[b-54386hcfd5] {
+        margin-bottom: 1.3rem;
+    }
+
+        .search-body .search-filters .filter-list .title[b-54386hcfd5] {
+            color: #3c4142;
+            margin-bottom: 1rem;
+        }
+
+        .search-body .search-filters .filter-list .filter-text[b-54386hcfd5] {
+            color: #727686;
+        }
+
+    .search-body .search-result .result-header[b-54386hcfd5] {
+        margin-bottom: 2rem;
+    }
+
+        .search-body .search-result .result-header .records[b-54386hcfd5] {
+            color: #3c4142;
+        }
+
+        .search-body .search-result .result-header .result-actions[b-54386hcfd5] {
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .search-body .search-result .result-header .result-actions .result-sorting[b-54386hcfd5] {
+                display: flex;
+                align-items: center;
+            }
+
+                .search-body .search-result .result-header .result-actions .result-sorting span[b-54386hcfd5] {
+                    flex-shrink: 0;
+                    font-size: 0.8125rem;
+                }
+
+                .search-body .search-result .result-header .result-actions .result-sorting select[b-54386hcfd5] {
+                    color: #68CBD7;
+                }
+
+                    .search-body .search-result .result-header .result-actions .result-sorting select option[b-54386hcfd5] {
+                        color: #3c4142;
+                    }
+
+
+
+.card-margin[b-54386hcfd5] {
+    margin-bottom: 1.875rem;
+}
+
+}
+
+.card-margin[b-54386hcfd5] {
+    margin-bottom: 1.875rem;
+}
+
+.card[b-54386hcfd5] {
+    border: 0;
+    box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -ms-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+}
+
+.card[b-54386hcfd5] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 1px solid #e6e4e9;
+    border-radius: 8px;
+}
+/* _content/MadeinHeavenBookStore/Pages/ManageProduct.razor.rz.scp.css */
+.widget-26[b-rqd5p37ty0] {
+    color: #3c4142;
+    font-weight: 400;
+}
+
+    .widget-26 tr:first-child td[b-rqd5p37ty0] {
+        border: 0;
+    }
+
+
+    .widget-26 .widget-26-job-title[b-rqd5p37ty0] {
+        min-width: 200px;
+    }
+
+        .widget-26 .widget-26-job-title a[b-rqd5p37ty0] {
+            font-weight: 400;
+            font-size: 0.875rem;
+            color: #3c4142;
+            line-height: 1.5;
+        }
+
+            .widget-26 .widget-26-job-title a:hover[b-rqd5p37ty0] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .employer-name[b-rqd5p37ty0] {
+            margin: 0;
+            line-height: 1.5;
+            font-weight: 400;
+            color: #3c4142;
+            font-size: 0.8125rem;
+            color: #3c4142;
+        }
+
+            .widget-26 .widget-26-job-title .employer-name:hover[b-rqd5p37ty0] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .time[b-rqd5p37ty0] {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+    .widget-26 .widget-26-job-info[b-rqd5p37ty0] {
+        min-width: 100px;
+        font-weight: 400;
+    }
+
+        .widget-26 .widget-26-job-info p[b-rqd5p37ty0] {
+            line-height: 1.5;
+            color: #3c4142;
+            font-size: 0.8125rem;
+        }
+
+        .widget-26 .widget-26-job-info .location[b-rqd5p37ty0] {
+            color: #3c4142;
+        }
+
+    .widget-26 .widget-26-job-salary[b-rqd5p37ty0] {
+        min-width: 70px;
+        font-weight: 400;
+        color: #3c4142;
+        font-size: 0.8125rem;
+    }
+
+    .widget-26 .widget-26-job-category[b-rqd5p37ty0] {
+        padding: .5rem;
+        display: inline-flex;
+        white-space: nowrap;
+        border-radius: 15px;
+    }
+
+        .widget-26 .widget-26-job-category .indicator[b-rqd5p37ty0] {
+            width: 13px;
+            height: 13px;
+            margin-right: .5rem;
+            float: left;
+            border-radius: 50%;
+        }
+
+        .widget-26 .widget-26-job-category span[b-rqd5p37ty0] {
+            font-size: 0.8125rem;
+            color: #3c4142;
+            font-weight: 600;
+        }
+
+    .widget-26 .widget-26-job-starred svg[b-rqd5p37ty0] {
+        width: 20px;
+        height: 20px;
+        color: #fd8b2c;
+    }
+
+        .widget-26 .widget-26-job-starred svg.starred[b-rqd5p37ty0] {
+            fill: #fd8b2c;
+        }
+
+.bg-soft-base[b-rqd5p37ty0] {
+    background-color: #e1f5f7;
+}
+
+.bg-soft-warning[b-rqd5p37ty0] {
+    background-color: #fff4e1;
+}
+
+.bg-soft-success[b-rqd5p37ty0] {
+    background-color: #d1f6f2;
+}
+
+.bg-soft-danger[b-rqd5p37ty0] {
+    background-color: #fedce0;
+}
+
+.bg-soft-info[b-rqd5p37ty0] {
+    background-color: #d7efff;
+}
+
+
+.search-form[b-rqd5p37ty0] {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+    .search-form input[b-rqd5p37ty0] {
+        height: 100%;
+        background: transparent;
+        border: 0;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+    .search-form select[b-rqd5p37ty0] {
+        background: transparent;
+        border: 0;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form select:focus[b-rqd5p37ty0] {
+            border: 0;
+        }
+
+    .search-form button[b-rqd5p37ty0] {
+        height: 100%;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form button svg[b-rqd5p37ty0] {
+            width: 24px;
+            height: 24px;
+        }
+
+.search-body[b-rqd5p37ty0] {
+    margin-bottom: 1.5rem;
+}
+
+    .search-body .search-filters .filter-list[b-rqd5p37ty0] {
+        margin-bottom: 1.3rem;
+    }
+
+        .search-body .search-filters .filter-list .title[b-rqd5p37ty0] {
+            color: #3c4142;
+            margin-bottom: 1rem;
+        }
+
+        .search-body .search-filters .filter-list .filter-text[b-rqd5p37ty0] {
+            color: #727686;
+        }
+
+    .search-body .search-result .result-header[b-rqd5p37ty0] {
+        margin-bottom: 2rem;
+    }
+
+        .search-body .search-result .result-header .records[b-rqd5p37ty0] {
+            color: #3c4142;
+        }
+
+        .search-body .search-result .result-header .result-actions[b-rqd5p37ty0] {
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .search-body .search-result .result-header .result-actions .result-sorting[b-rqd5p37ty0] {
+                display: flex;
+                align-items: center;
+            }
+
+                .search-body .search-result .result-header .result-actions .result-sorting span[b-rqd5p37ty0] {
+                    flex-shrink: 0;
+                    font-size: 0.8125rem;
+                }
+
+                .search-body .search-result .result-header .result-actions .result-sorting select[b-rqd5p37ty0] {
+                    color: #68CBD7;
+                }
+
+                    .search-body .search-result .result-header .result-actions .result-sorting select option[b-rqd5p37ty0] {
+                        color: #3c4142;
+                    }
+
+
+
+.card-margin[b-rqd5p37ty0] {
+    margin-bottom: 1.875rem;
+}
+
+}
+
+.card-margin[b-rqd5p37ty0] {
+    margin-bottom: 1.875rem;
+}
+
+.card[b-rqd5p37ty0] {
+    border: 0;
+    box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -ms-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+}
+
+.card[b-rqd5p37ty0] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 1px solid #e6e4e9;
+    border-radius: 8px;
+}
+/* _content/MadeinHeavenBookStore/Pages/ManageUser.razor.rz.scp.css */
+.widget-26[b-un0hfe7yi3] {
+    color: #3c4142;
+    font-weight: 400;
+}
+
+    .widget-26 tr:first-child td[b-un0hfe7yi3] {
+        border: 0;
+    }
+
+
+    .widget-26 .widget-26-job-title[b-un0hfe7yi3] {
+        min-width: 200px;
+    }
+
+        .widget-26 .widget-26-job-title a[b-un0hfe7yi3] {
+            font-weight: 400;
+            font-size: 0.875rem;
+            color: #3c4142;
+            line-height: 1.5;
+        }
+
+            .widget-26 .widget-26-job-title a:hover[b-un0hfe7yi3] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .employer-name[b-un0hfe7yi3] {
+            margin: 0;
+            line-height: 1.5;
+            font-weight: 400;
+            color: #3c4142;
+            font-size: 0.8125rem;
+            color: #3c4142;
+        }
+
+            .widget-26 .widget-26-job-title .employer-name:hover[b-un0hfe7yi3] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .time[b-un0hfe7yi3] {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+    .widget-26 .widget-26-job-info[b-un0hfe7yi3] {
+        min-width: 100px;
+        font-weight: 400;
+    }
+
+        .widget-26 .widget-26-job-info p[b-un0hfe7yi3] {
+            line-height: 1.5;
+            color: #3c4142;
+            font-size: 0.8125rem;
+        }
+
+        .widget-26 .widget-26-job-info .location[b-un0hfe7yi3] {
+            color: #3c4142;
+        }
+
+    .widget-26 .widget-26-job-salary[b-un0hfe7yi3] {
+        min-width: 70px;
+        font-weight: 400;
+        color: #3c4142;
+        font-size: 0.8125rem;
+    }
+
+    .widget-26 .widget-26-job-category[b-un0hfe7yi3] {
+        padding: .5rem;
+        display: inline-flex;
+        white-space: nowrap;
+        border-radius: 15px;
+    }
+
+        .widget-26 .widget-26-job-category .indicator[b-un0hfe7yi3] {
+            width: 13px;
+            height: 13px;
+            margin-right: .5rem;
+            float: left;
+            border-radius: 50%;
+        }
+
+        .widget-26 .widget-26-job-category span[b-un0hfe7yi3] {
+            font-size: 0.8125rem;
+            color: #3c4142;
+            font-weight: 600;
+        }
+
+    .widget-26 .widget-26-job-starred svg[b-un0hfe7yi3] {
+        width: 20px;
+        height: 20px;
+        color: #fd8b2c;
+    }
+
+        .widget-26 .widget-26-job-starred svg.starred[b-un0hfe7yi3] {
+            fill: #fd8b2c;
+        }
+
+.bg-soft-base[b-un0hfe7yi3] {
+    background-color: #e1f5f7;
+}
+
+.bg-soft-warning[b-un0hfe7yi3] {
+    background-color: #fff4e1;
+}
+
+.bg-soft-success[b-un0hfe7yi3] {
+    background-color: #d1f6f2;
+}
+
+.bg-soft-danger[b-un0hfe7yi3] {
+    background-color: #fedce0;
+}
+
+.bg-soft-info[b-un0hfe7yi3] {
+    background-color: #d7efff;
+}
+
+
+.search-form[b-un0hfe7yi3] {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+    .search-form input[b-un0hfe7yi3] {
+        height: 100%;
+        background: transparent;
+        border: 0;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+    .search-form select[b-un0hfe7yi3] {
+        background: transparent;
+        border: 0;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form select:focus[b-un0hfe7yi3] {
+            border: 0;
+        }
+
+    .search-form button[b-un0hfe7yi3] {
+        height: 100%;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form button svg[b-un0hfe7yi3] {
+            width: 24px;
+            height: 24px;
+        }
+
+.search-body[b-un0hfe7yi3] {
+    margin-bottom: 1.5rem;
+}
+
+    .search-body .search-filters .filter-list[b-un0hfe7yi3] {
+        margin-bottom: 1.3rem;
+    }
+
+        .search-body .search-filters .filter-list .title[b-un0hfe7yi3] {
+            color: #3c4142;
+            margin-bottom: 1rem;
+        }
+
+        .search-body .search-filters .filter-list .filter-text[b-un0hfe7yi3] {
+            color: #727686;
+        }
+
+    .search-body .search-result .result-header[b-un0hfe7yi3] {
+        margin-bottom: 2rem;
+    }
+
+        .search-body .search-result .result-header .records[b-un0hfe7yi3] {
+            color: #3c4142;
+        }
+
+        .search-body .search-result .result-header .result-actions[b-un0hfe7yi3] {
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .search-body .search-result .result-header .result-actions .result-sorting[b-un0hfe7yi3] {
+                display: flex;
+                align-items: center;
+            }
+
+                .search-body .search-result .result-header .result-actions .result-sorting span[b-un0hfe7yi3] {
+                    flex-shrink: 0;
+                    font-size: 0.8125rem;
+                }
+
+                .search-body .search-result .result-header .result-actions .result-sorting select[b-un0hfe7yi3] {
+                    color: #68CBD7;
+                }
+
+                    .search-body .search-result .result-header .result-actions .result-sorting select option[b-un0hfe7yi3] {
+                        color: #3c4142;
+                    }
+
+
+
+.card-margin[b-un0hfe7yi3] {
+    margin-bottom: 1.875rem;
+}
+
+}
+
+.card-margin[b-un0hfe7yi3] {
+    margin-bottom: 1.875rem;
+}
+
+.card[b-un0hfe7yi3] {
+    border: 0;
+    box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -ms-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+}
+
+.card[b-un0hfe7yi3] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 1px solid #e6e4e9;
+    border-radius: 8px;
+}
+/* _content/MadeinHeavenBookStore/Pages/ShopPages/CouponShow.razor.rz.scp.css */
+.widget-26[b-sy3g3w3x7i] {
+    color: #3c4142;
+    font-weight: 400;
+}
+
+    .widget-26 tr:first-child td[b-sy3g3w3x7i] {
+        border: 0;
+    }
+
+
+    .widget-26 .widget-26-job-title[b-sy3g3w3x7i] {
+        min-width: 200px;
+    }
+
+        .widget-26 .widget-26-job-title a[b-sy3g3w3x7i] {
+            font-weight: 400;
+            font-size: 0.875rem;
+            color: #3c4142;
+            line-height: 1.5;
+        }
+
+            .widget-26 .widget-26-job-title a:hover[b-sy3g3w3x7i] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .employer-name[b-sy3g3w3x7i] {
+            margin: 0;
+            line-height: 1.5;
+            font-weight: 400;
+            color: #3c4142;
+            font-size: 0.8125rem;
+            color: #3c4142;
+        }
+
+            .widget-26 .widget-26-job-title .employer-name:hover[b-sy3g3w3x7i] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .time[b-sy3g3w3x7i] {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+    .widget-26 .widget-26-job-info[b-sy3g3w3x7i] {
+        min-width: 100px;
+        font-weight: 400;
+    }
+
+        .widget-26 .widget-26-job-info p[b-sy3g3w3x7i] {
+            line-height: 1.5;
+            color: #3c4142;
+            font-size: 0.8125rem;
+        }
+
+        .widget-26 .widget-26-job-info .location[b-sy3g3w3x7i] {
+            color: #3c4142;
+        }
+
+    .widget-26 .widget-26-job-salary[b-sy3g3w3x7i] {
+        min-width: 70px;
+        font-weight: 400;
+        color: #3c4142;
+        font-size: 0.8125rem;
+    }
+
+    .widget-26 .widget-26-job-category[b-sy3g3w3x7i] {
+        padding: .5rem;
+        display: inline-flex;
+        white-space: nowrap;
+        border-radius: 15px;
+    }
+
+        .widget-26 .widget-26-job-category .indicator[b-sy3g3w3x7i] {
+            width: 13px;
+            height: 13px;
+            margin-right: .5rem;
+            float: left;
+            border-radius: 50%;
+        }
+
+        .widget-26 .widget-26-job-category span[b-sy3g3w3x7i] {
+            font-size: 0.8125rem;
+            color: #3c4142;
+            font-weight: 600;
+        }
+
+    .widget-26 .widget-26-job-starred svg[b-sy3g3w3x7i] {
+        width: 20px;
+        height: 20px;
+        color: #fd8b2c;
+    }
+
+        .widget-26 .widget-26-job-starred svg.starred[b-sy3g3w3x7i] {
+            fill: #fd8b2c;
+        }
+
+.bg-soft-base[b-sy3g3w3x7i] {
+    background-color: #e1f5f7;
+}
+
+.bg-soft-warning[b-sy3g3w3x7i] {
+    background-color: #fff4e1;
+}
+
+.bg-soft-success[b-sy3g3w3x7i] {
+    background-color: #d1f6f2;
+}
+
+.bg-soft-danger[b-sy3g3w3x7i] {
+    background-color: #fedce0;
+}
+
+.bg-soft-info[b-sy3g3w3x7i] {
+    background-color: #d7efff;
+}
+
+
+.search-form[b-sy3g3w3x7i] {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+    .search-form input[b-sy3g3w3x7i] {
+        height: 100%;
+        background: transparent;
+        border: 0;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+    .search-form select[b-sy3g3w3x7i] {
+        background: transparent;
+        border: 0;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form select:focus[b-sy3g3w3x7i] {
+            border: 0;
+        }
+
+    .search-form button[b-sy3g3w3x7i] {
+        height: 100%;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form button svg[b-sy3g3w3x7i] {
+            width: 24px;
+            height: 24px;
+        }
+
+.search-body[b-sy3g3w3x7i] {
+    margin-bottom: 1.5rem;
+}
+
+    .search-body .search-filters .filter-list[b-sy3g3w3x7i] {
+        margin-bottom: 1.3rem;
+    }
+
+        .search-body .search-filters .filter-list .title[b-sy3g3w3x7i] {
+            color: #3c4142;
+            margin-bottom: 1rem;
+        }
+
+        .search-body .search-filters .filter-list .filter-text[b-sy3g3w3x7i] {
+            color: #727686;
+        }
+
+    .search-body .search-result .result-header[b-sy3g3w3x7i] {
+        margin-bottom: 2rem;
+    }
+
+        .search-body .search-result .result-header .records[b-sy3g3w3x7i] {
+            color: #3c4142;
+        }
+
+        .search-body .search-result .result-header .result-actions[b-sy3g3w3x7i] {
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .search-body .search-result .result-header .result-actions .result-sorting[b-sy3g3w3x7i] {
+                display: flex;
+                align-items: center;
+            }
+
+                .search-body .search-result .result-header .result-actions .result-sorting span[b-sy3g3w3x7i] {
+                    flex-shrink: 0;
+                    font-size: 0.8125rem;
+                }
+
+                .search-body .search-result .result-header .result-actions .result-sorting select[b-sy3g3w3x7i] {
+                    color: #68CBD7;
+                }
+
+                    .search-body .search-result .result-header .result-actions .result-sorting select option[b-sy3g3w3x7i] {
+                        color: #3c4142;
+                    }
+
+
+
+.card-margin[b-sy3g3w3x7i] {
+    margin-bottom: 1.875rem;
+}
+
+}
+
+.card-margin[b-sy3g3w3x7i] {
+    margin-bottom: 1.875rem;
+}
+
+.card[b-sy3g3w3x7i] {
+    border: 0;
+    box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -ms-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+}
+
+.card[b-sy3g3w3x7i] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 1px solid #e6e4e9;
+    border-radius: 8px;
+}
+/* _content/MadeinHeavenBookStore/Pages/ShopPages/OrderList.razor.rz.scp.css */
+.widget-26[b-yy6yekpq5w] {
+    color: #3c4142;
+    font-weight: 400;
+}
+
+    .widget-26 tr:first-child td[b-yy6yekpq5w] {
+        border: 0;
+    }
+
+
+    .widget-26 .widget-26-job-title[b-yy6yekpq5w] {
+        min-width: 200px;
+    }
+
+        .widget-26 .widget-26-job-title a[b-yy6yekpq5w] {
+            font-weight: 400;
+            font-size: 0.875rem;
+            color: #3c4142;
+            line-height: 1.5;
+        }
+
+            .widget-26 .widget-26-job-title a:hover[b-yy6yekpq5w] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .employer-name[b-yy6yekpq5w] {
+            margin: 0;
+            line-height: 1.5;
+            font-weight: 400;
+            color: #3c4142;
+            font-size: 0.8125rem;
+            color: #3c4142;
+        }
+
+            .widget-26 .widget-26-job-title .employer-name:hover[b-yy6yekpq5w] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .time[b-yy6yekpq5w] {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+    .widget-26 .widget-26-job-info[b-yy6yekpq5w] {
+        min-width: 100px;
+        font-weight: 400;
+    }
+
+        .widget-26 .widget-26-job-info p[b-yy6yekpq5w] {
+            line-height: 1.5;
+            color: #3c4142;
+            font-size: 0.8125rem;
+        }
+
+        .widget-26 .widget-26-job-info .location[b-yy6yekpq5w] {
+            color: #3c4142;
+        }
+
+    .widget-26 .widget-26-job-salary[b-yy6yekpq5w] {
+        min-width: 70px;
+        font-weight: 400;
+        color: #3c4142;
+        font-size: 0.8125rem;
+    }
+
+    .widget-26 .widget-26-job-category[b-yy6yekpq5w] {
+        padding: .5rem;
+        display: inline-flex;
+        white-space: nowrap;
+        border-radius: 15px;
+    }
+
+        .widget-26 .widget-26-job-category .indicator[b-yy6yekpq5w] {
+            width: 13px;
+            height: 13px;
+            margin-right: .5rem;
+            float: left;
+            border-radius: 50%;
+        }
+
+        .widget-26 .widget-26-job-category span[b-yy6yekpq5w] {
+            font-size: 0.8125rem;
+            color: #3c4142;
+            font-weight: 600;
+        }
+
+    .widget-26 .widget-26-job-starred svg[b-yy6yekpq5w] {
+        width: 20px;
+        height: 20px;
+        color: #fd8b2c;
+    }
+
+        .widget-26 .widget-26-job-starred svg.starred[b-yy6yekpq5w] {
+            fill: #fd8b2c;
+        }
+
+.bg-soft-base[b-yy6yekpq5w] {
+    background-color: #e1f5f7;
+}
+
+.bg-soft-warning[b-yy6yekpq5w] {
+    background-color: #fff4e1;
+}
+
+.bg-soft-success[b-yy6yekpq5w] {
+    background-color: #d1f6f2;
+}
+
+.bg-soft-danger[b-yy6yekpq5w] {
+    background-color: #fedce0;
+}
+
+.bg-soft-info[b-yy6yekpq5w] {
+    background-color: #d7efff;
+}
+
+
+.search-form[b-yy6yekpq5w] {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+    .search-form input[b-yy6yekpq5w] {
+        height: 100%;
+        background: transparent;
+        border: 0;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+    .search-form select[b-yy6yekpq5w] {
+        background: transparent;
+        border: 0;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form select:focus[b-yy6yekpq5w] {
+            border: 0;
+        }
+
+    .search-form button[b-yy6yekpq5w] {
+        height: 100%;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form button svg[b-yy6yekpq5w] {
+            width: 24px;
+            height: 24px;
+        }
+
+.search-body[b-yy6yekpq5w] {
+    margin-bottom: 1.5rem;
+}
+
+    .search-body .search-filters .filter-list[b-yy6yekpq5w] {
+        margin-bottom: 1.3rem;
+    }
+
+        .search-body .search-filters .filter-list .title[b-yy6yekpq5w] {
+            color: #3c4142;
+            margin-bottom: 1rem;
+        }
+
+        .search-body .search-filters .filter-list .filter-text[b-yy6yekpq5w] {
+            color: #727686;
+        }
+
+    .search-body .search-result .result-header[b-yy6yekpq5w] {
+        margin-bottom: 2rem;
+    }
+
+        .search-body .search-result .result-header .records[b-yy6yekpq5w] {
+            color: #3c4142;
+        }
+
+        .search-body .search-result .result-header .result-actions[b-yy6yekpq5w] {
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .search-body .search-result .result-header .result-actions .result-sorting[b-yy6yekpq5w] {
+                display: flex;
+                align-items: center;
+            }
+
+                .search-body .search-result .result-header .result-actions .result-sorting span[b-yy6yekpq5w] {
+                    flex-shrink: 0;
+                    font-size: 0.8125rem;
+                }
+
+                .search-body .search-result .result-header .result-actions .result-sorting select[b-yy6yekpq5w] {
+                    color: #68CBD7;
+                }
+
+                    .search-body .search-result .result-header .result-actions .result-sorting select option[b-yy6yekpq5w] {
+                        color: #3c4142;
+                    }
+
+
+
+.card-margin[b-yy6yekpq5w] {
+    margin-bottom: 1.875rem;
+}
+
+}
+
+.card-margin[b-yy6yekpq5w] {
+    margin-bottom: 1.875rem;
+}
+
+.card[b-yy6yekpq5w] {
+    border: 0;
+    box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -ms-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+}
+
+.card[b-yy6yekpq5w] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 1px solid #e6e4e9;
+    border-radius: 8px;
+}
+/* _content/MadeinHeavenBookStore/Shared/MainLayout.razor.rz.scp.css */
+.page[b-1g26uxqeiy] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-1g26uxqeiy] {
+    flex: 1;
+}
+
+.sidebar[b-1g26uxqeiy] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-1g26uxqeiy] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-1g26uxqeiy]  a, .top-row .btn-link[b-1g26uxqeiy] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-1g26uxqeiy] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-1g26uxqeiy] {
+        display: none;
+    }
+
+    .top-row.auth[b-1g26uxqeiy] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-1g26uxqeiy], .top-row .btn-link[b-1g26uxqeiy] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-1g26uxqeiy] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-1g26uxqeiy] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-1g26uxqeiy] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-1g26uxqeiy], article[b-1g26uxqeiy] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+a.navbar-brand[b-1g26uxqeiy] {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+a[b-1g26uxqeiy] {
+    color: #0077cc;
+}
+
+.btn-primary[b-1g26uxqeiy] {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-1g26uxqeiy], .nav-pills .show > .nav-link[b-1g26uxqeiy] {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.border-top[b-1g26uxqeiy] {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom[b-1g26uxqeiy] {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-1g26uxqeiy] {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-1g26uxqeiy] {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+.footer[b-1g26uxqeiy] {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}
+/* _content/MadeinHeavenBookStore/Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-i5pcntgo84] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-i5pcntgo84] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-i5pcntgo84] {
+    font-size: 1.1rem;
+}
+
+.oi[b-i5pcntgo84] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-i5pcntgo84] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-i5pcntgo84] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-i5pcntgo84] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-i5pcntgo84]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-i5pcntgo84]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-i5pcntgo84]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-i5pcntgo84] {
+        display: none;
+    }
+
+    .collapse[b-i5pcntgo84] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+    
+    .nav-scrollable[b-i5pcntgo84] {
+        /* Allow sidebar to scroll for tall menus */
+        height: calc(100vh - 3.5rem);
+        overflow-y: auto;
+    }
+}
+/* _content/MadeinHeavenBookStore/Shared/SubMainLayout.razor.rz.scp.css */
+.page[b-ikjm9x5ohq] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-ikjm9x5ohq] {
+    flex: 1;
+}
+
+.sidebar[b-ikjm9x5ohq] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-ikjm9x5ohq] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-ikjm9x5ohq]  a, .top-row .btn-link[b-ikjm9x5ohq] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-ikjm9x5ohq] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-ikjm9x5ohq] {
+        display: none;
+    }
+
+    .top-row.auth[b-ikjm9x5ohq] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-ikjm9x5ohq], .top-row .btn-link[b-ikjm9x5ohq] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-ikjm9x5ohq] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-ikjm9x5ohq] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-ikjm9x5ohq] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-ikjm9x5ohq], article[b-ikjm9x5ohq] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* _content/MadeinHeavenBookStore/Views/CouponManage/CouponManage.cshtml.rz.scp.css */
+.widget-26[b-8cpn3z4bdp] {
+    color: #3c4142;
+    font-weight: 400;
+}
+
+    .widget-26 tr:first-child td[b-8cpn3z4bdp] {
+        border: 0;
+    }
+
+
+    .widget-26 .widget-26-job-title[b-8cpn3z4bdp] {
+        min-width: 200px;
+    }
+
+        .widget-26 .widget-26-job-title a[b-8cpn3z4bdp] {
+            font-weight: 400;
+            font-size: 0.875rem;
+            color: #3c4142;
+            line-height: 1.5;
+        }
+
+            .widget-26 .widget-26-job-title a:hover[b-8cpn3z4bdp] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .employer-name[b-8cpn3z4bdp] {
+            margin: 0;
+            line-height: 1.5;
+            font-weight: 400;
+            color: #3c4142;
+            font-size: 0.8125rem;
+            color: #3c4142;
+        }
+
+            .widget-26 .widget-26-job-title .employer-name:hover[b-8cpn3z4bdp] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .time[b-8cpn3z4bdp] {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+    .widget-26 .widget-26-job-info[b-8cpn3z4bdp] {
+        min-width: 100px;
+        font-weight: 400;
+    }
+
+        .widget-26 .widget-26-job-info p[b-8cpn3z4bdp] {
+            line-height: 1.5;
+            color: #3c4142;
+            font-size: 0.8125rem;
+        }
+
+        .widget-26 .widget-26-job-info .location[b-8cpn3z4bdp] {
+            color: #3c4142;
+        }
+
+    .widget-26 .widget-26-job-salary[b-8cpn3z4bdp] {
+        min-width: 70px;
+        font-weight: 400;
+        color: #3c4142;
+        font-size: 0.8125rem;
+    }
+
+    .widget-26 .widget-26-job-category[b-8cpn3z4bdp] {
+        padding: .5rem;
+        display: inline-flex;
+        white-space: nowrap;
+        border-radius: 15px;
+    }
+
+        .widget-26 .widget-26-job-category .indicator[b-8cpn3z4bdp] {
+            width: 13px;
+            height: 13px;
+            margin-right: .5rem;
+            float: left;
+            border-radius: 50%;
+        }
+
+        .widget-26 .widget-26-job-category span[b-8cpn3z4bdp] {
+            font-size: 0.8125rem;
+            color: #3c4142;
+            font-weight: 600;
+        }
+
+    .widget-26 .widget-26-job-starred svg[b-8cpn3z4bdp] {
+        width: 20px;
+        height: 20px;
+        color: #fd8b2c;
+    }
+
+        .widget-26 .widget-26-job-starred svg.starred[b-8cpn3z4bdp] {
+            fill: #fd8b2c;
+        }
+
+.bg-soft-base[b-8cpn3z4bdp] {
+    background-color: #e1f5f7;
+}
+
+.bg-soft-warning[b-8cpn3z4bdp] {
+    background-color: #fff4e1;
+}
+
+.bg-soft-success[b-8cpn3z4bdp] {
+    background-color: #d1f6f2;
+}
+
+.bg-soft-danger[b-8cpn3z4bdp] {
+    background-color: #fedce0;
+}
+
+.bg-soft-info[b-8cpn3z4bdp] {
+    background-color: #d7efff;
+}
+
+
+.search-form[b-8cpn3z4bdp] {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+    .search-form input[b-8cpn3z4bdp] {
+        height: 100%;
+        background: transparent;
+        border: 0;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+    .search-form select[b-8cpn3z4bdp] {
+        background: transparent;
+        border: 0;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form select:focus[b-8cpn3z4bdp] {
+            border: 0;
+        }
+
+    .search-form button[b-8cpn3z4bdp] {
+        height: 100%;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form button svg[b-8cpn3z4bdp] {
+            width: 24px;
+            height: 24px;
+        }
+
+.search-body[b-8cpn3z4bdp] {
+    margin-bottom: 1.5rem;
+}
+
+    .search-body .search-filters .filter-list[b-8cpn3z4bdp] {
+        margin-bottom: 1.3rem;
+    }
+
+        .search-body .search-filters .filter-list .title[b-8cpn3z4bdp] {
+            color: #3c4142;
+            margin-bottom: 1rem;
+        }
+
+        .search-body .search-filters .filter-list .filter-text[b-8cpn3z4bdp] {
+            color: #727686;
+        }
+
+    .search-body .search-result .result-header[b-8cpn3z4bdp] {
+        margin-bottom: 2rem;
+    }
+
+        .search-body .search-result .result-header .records[b-8cpn3z4bdp] {
+            color: #3c4142;
+        }
+
+        .search-body .search-result .result-header .result-actions[b-8cpn3z4bdp] {
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .search-body .search-result .result-header .result-actions .result-sorting[b-8cpn3z4bdp] {
+                display: flex;
+                align-items: center;
+            }
+
+                .search-body .search-result .result-header .result-actions .result-sorting span[b-8cpn3z4bdp] {
+                    flex-shrink: 0;
+                    font-size: 0.8125rem;
+                }
+
+                .search-body .search-result .result-header .result-actions .result-sorting select[b-8cpn3z4bdp] {
+                    color: #68CBD7;
+                }
+
+                    .search-body .search-result .result-header .result-actions .result-sorting select option[b-8cpn3z4bdp] {
+                        color: #3c4142;
+                    }
+
+
+
+.card-margin[b-8cpn3z4bdp] {
+    margin-bottom: 1.875rem;
+}
+
+}
+
+.card-margin[b-8cpn3z4bdp] {
+    margin-bottom: 1.875rem;
+}
+
+.card[b-8cpn3z4bdp] {
+    border: 0;
+    box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -ms-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+}
+
+.card[b-8cpn3z4bdp] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 1px solid #e6e4e9;
+    border-radius: 8px;
+}
+/* _content/MadeinHeavenBookStore/Views/OrderCheck/OrderCheck.cshtml.rz.scp.css */
+.widget-26[b-1tdtnbtyz0] {
+    color: #3c4142;
+    font-weight: 400;
+}
+
+    .widget-26 tr:first-child td[b-1tdtnbtyz0] {
+        border: 0;
+    }
+
+
+    .widget-26 .widget-26-job-title[b-1tdtnbtyz0] {
+        min-width: 200px;
+    }
+
+        .widget-26 .widget-26-job-title a[b-1tdtnbtyz0] {
+            font-weight: 400;
+            font-size: 0.875rem;
+            color: #3c4142;
+            line-height: 1.5;
+        }
+
+            .widget-26 .widget-26-job-title a:hover[b-1tdtnbtyz0] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .employer-name[b-1tdtnbtyz0] {
+            margin: 0;
+            line-height: 1.5;
+            font-weight: 400;
+            color: #3c4142;
+            font-size: 0.8125rem;
+            color: #3c4142;
+        }
+
+            .widget-26 .widget-26-job-title .employer-name:hover[b-1tdtnbtyz0] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .time[b-1tdtnbtyz0] {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+    .widget-26 .widget-26-job-info[b-1tdtnbtyz0] {
+        min-width: 100px;
+        font-weight: 400;
+    }
+
+        .widget-26 .widget-26-job-info p[b-1tdtnbtyz0] {
+            line-height: 1.5;
+            color: #3c4142;
+            font-size: 0.8125rem;
+        }
+
+        .widget-26 .widget-26-job-info .location[b-1tdtnbtyz0] {
+            color: #3c4142;
+        }
+
+    .widget-26 .widget-26-job-salary[b-1tdtnbtyz0] {
+        min-width: 70px;
+        font-weight: 400;
+        color: #3c4142;
+        font-size: 0.8125rem;
+    }
+
+    .widget-26 .widget-26-job-category[b-1tdtnbtyz0] {
+        padding: .5rem;
+        display: inline-flex;
+        white-space: nowrap;
+        border-radius: 15px;
+    }
+
+        .widget-26 .widget-26-job-category .indicator[b-1tdtnbtyz0] {
+            width: 13px;
+            height: 13px;
+            margin-right: .5rem;
+            float: left;
+            border-radius: 50%;
+        }
+
+        .widget-26 .widget-26-job-category span[b-1tdtnbtyz0] {
+            font-size: 0.8125rem;
+            color: #3c4142;
+            font-weight: 600;
+        }
+
+    .widget-26 .widget-26-job-starred svg[b-1tdtnbtyz0] {
+        width: 20px;
+        height: 20px;
+        color: #fd8b2c;
+    }
+
+        .widget-26 .widget-26-job-starred svg.starred[b-1tdtnbtyz0] {
+            fill: #fd8b2c;
+        }
+
+.bg-soft-base[b-1tdtnbtyz0] {
+    background-color: #e1f5f7;
+}
+
+.bg-soft-warning[b-1tdtnbtyz0] {
+    background-color: #fff4e1;
+}
+
+.bg-soft-success[b-1tdtnbtyz0] {
+    background-color: #d1f6f2;
+}
+
+.bg-soft-danger[b-1tdtnbtyz0] {
+    background-color: #fedce0;
+}
+
+.bg-soft-info[b-1tdtnbtyz0] {
+    background-color: #d7efff;
+}
+
+
+.search-form[b-1tdtnbtyz0] {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+    .search-form input[b-1tdtnbtyz0] {
+        height: 100%;
+        background: transparent;
+        border: 0;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+    .search-form select[b-1tdtnbtyz0] {
+        background: transparent;
+        border: 0;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form select:focus[b-1tdtnbtyz0] {
+            border: 0;
+        }
+
+    .search-form button[b-1tdtnbtyz0] {
+        height: 100%;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form button svg[b-1tdtnbtyz0] {
+            width: 24px;
+            height: 24px;
+        }
+
+.search-body[b-1tdtnbtyz0] {
+    margin-bottom: 1.5rem;
+}
+
+    .search-body .search-filters .filter-list[b-1tdtnbtyz0] {
+        margin-bottom: 1.3rem;
+    }
+
+        .search-body .search-filters .filter-list .title[b-1tdtnbtyz0] {
+            color: #3c4142;
+            margin-bottom: 1rem;
+        }
+
+        .search-body .search-filters .filter-list .filter-text[b-1tdtnbtyz0] {
+            color: #727686;
+        }
+
+    .search-body .search-result .result-header[b-1tdtnbtyz0] {
+        margin-bottom: 2rem;
+    }
+
+        .search-body .search-result .result-header .records[b-1tdtnbtyz0] {
+            color: #3c4142;
+        }
+
+        .search-body .search-result .result-header .result-actions[b-1tdtnbtyz0] {
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .search-body .search-result .result-header .result-actions .result-sorting[b-1tdtnbtyz0] {
+                display: flex;
+                align-items: center;
+            }
+
+                .search-body .search-result .result-header .result-actions .result-sorting span[b-1tdtnbtyz0] {
+                    flex-shrink: 0;
+                    font-size: 0.8125rem;
+                }
+
+                .search-body .search-result .result-header .result-actions .result-sorting select[b-1tdtnbtyz0] {
+                    color: #68CBD7;
+                }
+
+                    .search-body .search-result .result-header .result-actions .result-sorting select option[b-1tdtnbtyz0] {
+                        color: #3c4142;
+                    }
+
+
+
+.card-margin[b-1tdtnbtyz0] {
+    margin-bottom: 1.875rem;
+}
+
+}
+
+.card-margin[b-1tdtnbtyz0] {
+    margin-bottom: 1.875rem;
+}
+
+.card[b-1tdtnbtyz0] {
+    border: 0;
+    box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -ms-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+}
+
+.card[b-1tdtnbtyz0] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 1px solid #e6e4e9;
+    border-radius: 8px;
+}
+/* _content/MadeinHeavenBookStore/Views/ProductManage/ProductManage.cshtml.rz.scp.css */
+.widget-26[b-wpg57r4nq1] {
+    color: #3c4142;
+    font-weight: 400;
+}
+
+    .widget-26 tr:first-child td[b-wpg57r4nq1] {
+        border: 0;
+    }
+
+
+    .widget-26 .widget-26-job-title[b-wpg57r4nq1] {
+        min-width: 200px;
+    }
+
+        .widget-26 .widget-26-job-title a[b-wpg57r4nq1] {
+            font-weight: 400;
+            font-size: 0.875rem;
+            color: #3c4142;
+            line-height: 1.5;
+        }
+
+            .widget-26 .widget-26-job-title a:hover[b-wpg57r4nq1] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .employer-name[b-wpg57r4nq1] {
+            margin: 0;
+            line-height: 1.5;
+            font-weight: 400;
+            color: #3c4142;
+            font-size: 0.8125rem;
+            color: #3c4142;
+        }
+
+            .widget-26 .widget-26-job-title .employer-name:hover[b-wpg57r4nq1] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .time[b-wpg57r4nq1] {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+    .widget-26 .widget-26-job-info[b-wpg57r4nq1] {
+        min-width: 100px;
+        font-weight: 400;
+    }
+
+        .widget-26 .widget-26-job-info p[b-wpg57r4nq1] {
+            line-height: 1.5;
+            color: #3c4142;
+            font-size: 0.8125rem;
+        }
+
+        .widget-26 .widget-26-job-info .location[b-wpg57r4nq1] {
+            color: #3c4142;
+        }
+
+    .widget-26 .widget-26-job-salary[b-wpg57r4nq1] {
+        min-width: 70px;
+        font-weight: 400;
+        color: #3c4142;
+        font-size: 0.8125rem;
+    }
+
+    .widget-26 .widget-26-job-category[b-wpg57r4nq1] {
+        padding: .5rem;
+        display: inline-flex;
+        white-space: nowrap;
+        border-radius: 15px;
+    }
+
+        .widget-26 .widget-26-job-category .indicator[b-wpg57r4nq1] {
+            width: 13px;
+            height: 13px;
+            margin-right: .5rem;
+            float: left;
+            border-radius: 50%;
+        }
+
+        .widget-26 .widget-26-job-category span[b-wpg57r4nq1] {
+            font-size: 0.8125rem;
+            color: #3c4142;
+            font-weight: 600;
+        }
+
+    .widget-26 .widget-26-job-starred svg[b-wpg57r4nq1] {
+        width: 20px;
+        height: 20px;
+        color: #fd8b2c;
+    }
+
+        .widget-26 .widget-26-job-starred svg.starred[b-wpg57r4nq1] {
+            fill: #fd8b2c;
+        }
+
+.bg-soft-base[b-wpg57r4nq1] {
+    background-color: #e1f5f7;
+}
+
+.bg-soft-warning[b-wpg57r4nq1] {
+    background-color: #fff4e1;
+}
+
+.bg-soft-success[b-wpg57r4nq1] {
+    background-color: #d1f6f2;
+}
+
+.bg-soft-danger[b-wpg57r4nq1] {
+    background-color: #fedce0;
+}
+
+.bg-soft-info[b-wpg57r4nq1] {
+    background-color: #d7efff;
+}
+
+
+.search-form[b-wpg57r4nq1] {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+    .search-form input[b-wpg57r4nq1] {
+        height: 100%;
+        background: transparent;
+        border: 0;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+    .search-form select[b-wpg57r4nq1] {
+        background: transparent;
+        border: 0;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form select:focus[b-wpg57r4nq1] {
+            border: 0;
+        }
+
+    .search-form button[b-wpg57r4nq1] {
+        height: 100%;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form button svg[b-wpg57r4nq1] {
+            width: 24px;
+            height: 24px;
+        }
+
+.search-body[b-wpg57r4nq1] {
+    margin-bottom: 1.5rem;
+}
+
+    .search-body .search-filters .filter-list[b-wpg57r4nq1] {
+        margin-bottom: 1.3rem;
+    }
+
+        .search-body .search-filters .filter-list .title[b-wpg57r4nq1] {
+            color: #3c4142;
+            margin-bottom: 1rem;
+        }
+
+        .search-body .search-filters .filter-list .filter-text[b-wpg57r4nq1] {
+            color: #727686;
+        }
+
+    .search-body .search-result .result-header[b-wpg57r4nq1] {
+        margin-bottom: 2rem;
+    }
+
+        .search-body .search-result .result-header .records[b-wpg57r4nq1] {
+            color: #3c4142;
+        }
+
+        .search-body .search-result .result-header .result-actions[b-wpg57r4nq1] {
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .search-body .search-result .result-header .result-actions .result-sorting[b-wpg57r4nq1] {
+                display: flex;
+                align-items: center;
+            }
+
+                .search-body .search-result .result-header .result-actions .result-sorting span[b-wpg57r4nq1] {
+                    flex-shrink: 0;
+                    font-size: 0.8125rem;
+                }
+
+                .search-body .search-result .result-header .result-actions .result-sorting select[b-wpg57r4nq1] {
+                    color: #68CBD7;
+                }
+
+                    .search-body .search-result .result-header .result-actions .result-sorting select option[b-wpg57r4nq1] {
+                        color: #3c4142;
+                    }
+
+
+
+.card-margin[b-wpg57r4nq1] {
+    margin-bottom: 1.875rem;
+}
+
+}
+
+.card-margin[b-wpg57r4nq1] {
+    margin-bottom: 1.875rem;
+}
+
+.card[b-wpg57r4nq1] {
+    border: 0;
+    box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -ms-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+}
+
+.card[b-wpg57r4nq1] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 1px solid #e6e4e9;
+    border-radius: 8px;
+}
+/* _content/MadeinHeavenBookStore/Views/Shared/_AdminLayout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-36sk5sihj3] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-36sk5sihj3] {
+  color: #0077cc;
+}
+
+.btn-primary[b-36sk5sihj3] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-36sk5sihj3], .nav-pills .show > .nav-link[b-36sk5sihj3] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-36sk5sihj3] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-36sk5sihj3] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-36sk5sihj3] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-36sk5sihj3] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-36sk5sihj3] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+/* _content/MadeinHeavenBookStore/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-xydvxsl38f] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-xydvxsl38f] {
+  color: #0077cc;
+}
+
+.btn-primary[b-xydvxsl38f] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-xydvxsl38f], .nav-pills .show > .nav-link[b-xydvxsl38f] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-xydvxsl38f] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-xydvxsl38f] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-xydvxsl38f] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-xydvxsl38f] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-xydvxsl38f] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+/* _content/MadeinHeavenBookStore/Views/UserManage/UserManage.cshtml.rz.scp.css */
+.widget-26[b-upe6pstr73] {
+    color: #3c4142;
+    font-weight: 400;
+}
+
+    .widget-26 tr:first-child td[b-upe6pstr73] {
+        border: 0;
+    }
+
+
+    .widget-26 .widget-26-job-title[b-upe6pstr73] {
+        min-width: 200px;
+    }
+
+        .widget-26 .widget-26-job-title a[b-upe6pstr73] {
+            font-weight: 400;
+            font-size: 0.875rem;
+            color: #3c4142;
+            line-height: 1.5;
+        }
+
+            .widget-26 .widget-26-job-title a:hover[b-upe6pstr73] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .employer-name[b-upe6pstr73] {
+            margin: 0;
+            line-height: 1.5;
+            font-weight: 400;
+            color: #3c4142;
+            font-size: 0.8125rem;
+            color: #3c4142;
+        }
+
+            .widget-26 .widget-26-job-title .employer-name:hover[b-upe6pstr73] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .time[b-upe6pstr73] {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+    .widget-26 .widget-26-job-info[b-upe6pstr73] {
+        min-width: 100px;
+        font-weight: 400;
+    }
+
+        .widget-26 .widget-26-job-info p[b-upe6pstr73] {
+            line-height: 1.5;
+            color: #3c4142;
+            font-size: 0.8125rem;
+        }
+
+        .widget-26 .widget-26-job-info .location[b-upe6pstr73] {
+            color: #3c4142;
+        }
+
+    .widget-26 .widget-26-job-salary[b-upe6pstr73] {
+        min-width: 70px;
+        font-weight: 400;
+        color: #3c4142;
+        font-size: 0.8125rem;
+    }
+
+    .widget-26 .widget-26-job-category[b-upe6pstr73] {
+        padding: .5rem;
+        display: inline-flex;
+        white-space: nowrap;
+        border-radius: 15px;
+    }
+
+        .widget-26 .widget-26-job-category .indicator[b-upe6pstr73] {
+            width: 13px;
+            height: 13px;
+            margin-right: .5rem;
+            float: left;
+            border-radius: 50%;
+        }
+
+        .widget-26 .widget-26-job-category span[b-upe6pstr73] {
+            font-size: 0.8125rem;
+            color: #3c4142;
+            font-weight: 600;
+        }
+
+    .widget-26 .widget-26-job-starred svg[b-upe6pstr73] {
+        width: 20px;
+        height: 20px;
+        color: #fd8b2c;
+    }
+
+        .widget-26 .widget-26-job-starred svg.starred[b-upe6pstr73] {
+            fill: #fd8b2c;
+        }
+
+.bg-soft-base[b-upe6pstr73] {
+    background-color: #e1f5f7;
+}
+
+.bg-soft-warning[b-upe6pstr73] {
+    background-color: #fff4e1;
+}
+
+.bg-soft-success[b-upe6pstr73] {
+    background-color: #d1f6f2;
+}
+
+.bg-soft-danger[b-upe6pstr73] {
+    background-color: #fedce0;
+}
+
+.bg-soft-info[b-upe6pstr73] {
+    background-color: #d7efff;
+}
+
+
+.search-form[b-upe6pstr73] {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+    .search-form input[b-upe6pstr73] {
+        height: 100%;
+        background: transparent;
+        border: 0;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+    .search-form select[b-upe6pstr73] {
+        background: transparent;
+        border: 0;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form select:focus[b-upe6pstr73] {
+            border: 0;
+        }
+
+    .search-form button[b-upe6pstr73] {
+        height: 100%;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form button svg[b-upe6pstr73] {
+            width: 24px;
+            height: 24px;
+        }
+
+.search-body[b-upe6pstr73] {
+    margin-bottom: 1.5rem;
+}
+
+    .search-body .search-filters .filter-list[b-upe6pstr73] {
+        margin-bottom: 1.3rem;
+    }
+
+        .search-body .search-filters .filter-list .title[b-upe6pstr73] {
+            color: #3c4142;
+            margin-bottom: 1rem;
+        }
+
+        .search-body .search-filters .filter-list .filter-text[b-upe6pstr73] {
+            color: #727686;
+        }
+
+    .search-body .search-result .result-header[b-upe6pstr73] {
+        margin-bottom: 2rem;
+    }
+
+        .search-body .search-result .result-header .records[b-upe6pstr73] {
+            color: #3c4142;
+        }
+
+        .search-body .search-result .result-header .result-actions[b-upe6pstr73] {
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .search-body .search-result .result-header .result-actions .result-sorting[b-upe6pstr73] {
+                display: flex;
+                align-items: center;
+            }
+
+                .search-body .search-result .result-header .result-actions .result-sorting span[b-upe6pstr73] {
+                    flex-shrink: 0;
+                    font-size: 0.8125rem;
+                }
+
+                .search-body .search-result .result-header .result-actions .result-sorting select[b-upe6pstr73] {
+                    color: #68CBD7;
+                }
+
+                    .search-body .search-result .result-header .result-actions .result-sorting select option[b-upe6pstr73] {
+                        color: #3c4142;
+                    }
+
+
+
+.card-margin[b-upe6pstr73] {
+    margin-bottom: 1.875rem;
+}
+
+}
+
+.card-margin[b-upe6pstr73] {
+    margin-bottom: 1.875rem;
+}
+
+.card[b-upe6pstr73] {
+    border: 0;
+    box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -ms-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+}
+
+.card[b-upe6pstr73] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 1px solid #e6e4e9;
+    border-radius: 8px;
+}

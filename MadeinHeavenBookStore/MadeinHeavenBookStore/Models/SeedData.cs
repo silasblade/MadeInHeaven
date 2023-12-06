@@ -12,7 +12,7 @@ namespace MadeinHeavenBookStore.Models
 				.CreateScope()
 				.ServiceProvider
 				.GetRequiredService<MadeinHeavenBookStoreContext>();
-			if (context.Database.GetPendingMigrations().Any())
+			if (!context.Database.GetPendingMigrations().Any())
 			{
 				context.Database.Migrate();
 			}

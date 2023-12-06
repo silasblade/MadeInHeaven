@@ -100,9 +100,7 @@
 								Category:
 								@foreach (var cat in Model.Categories)
 								{
-									<form method="post" asp-controller="Shop" asp-action="ProductsByCategory" asp-route-categoryId="@cat.Id" class="d-inline-block">
-										<a href="#"><button type="submit" class="btn btn-link">@cat.Name</button></a>
-									</form>
+										<a class="btn btn-link">@cat.Name</a>
 								}
 							</p>
 						</div>
@@ -146,9 +144,21 @@
 
 						<div class="flex-w flex-r-m p-b-10">
 							<div class="size-204 flex-w flex-m respon6-next">
-								<form method="post" asp-controller="ProductDetail" asp-action="AddToCart" asp-route-id="@Model.IdProduct">
-									<button class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04" type="submit">Add to Cart</button>
-								</form>
+								@if(User.Identity.IsAuthenticated)
+									{
+										
+									if(Model.Inventory > 0)
+										{
+											<form method="post" asp-controller="ProductDetail" asp-action="AddToCart" asp-route-id="@Model.IdProduct">
+												<button class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04" type="submit">Add to Cart</button>
+											</form>
+										}
+										else
+										{
+												<button class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04" type="submit" disabled>Out of Stock</button>
+										}
+
+									}
 							</div>
 						</div>
 					</div>
@@ -287,9 +297,9 @@
 	</div>
 </section>
 
-
+	@await Component.InvokeAsync("RelatedProduct", new { categories  = Model.Categories })
 <!-- Related Products -->
-<section class="sec-relate-product bg0 p-t-45 p-b-105">
+@* <section class="sec-relate-product bg0 p-t-45 p-b-105">
 	<div class="container">
 		<div class="p-b-45">
 			<h3 class="ltext-106 cl5 txt-center">
@@ -558,7 +568,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> *@
 	<script src="_content/YourBlazorAppName/blazor.webassembly.js"></script>
 
 	<script src="~/vendor/jquery/jquery-3.2.1.min.js"></script>

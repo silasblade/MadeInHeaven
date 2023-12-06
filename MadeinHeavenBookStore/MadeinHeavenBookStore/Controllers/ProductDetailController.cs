@@ -10,7 +10,6 @@ using System.Security.Claims;
 namespace MadeinHeavenBookStore.Controllers
 {
 
-    [Authorize]
 
     public class ProductDetailController : Controller
     {

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using MadeinHeavenBookStore.Areas.Identity.Data;
+using System.ComponentModel.DataAnnotations;
 
 namespace MadeinHeavenBookStore.Models.OrderDetail
 {

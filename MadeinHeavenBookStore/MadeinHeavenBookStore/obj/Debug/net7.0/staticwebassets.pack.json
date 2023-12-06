@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Components\\Shop.razor.js"
     },
     {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\Pages\\ShopPages\\Shop\\Shopping.razor.js",
+      "PackagePath": "staticwebassets\\Pages\\ShopPages\\Shop\\Shopping.razor.js"
+    },
+    {
       "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\MadeinHeavenBookStore.bundle.scp.css",
       "PackagePath": "staticwebassets\\MadeinHeavenBookStore.bundle.scp.css"
     },
@@ -465,6 +469,10 @@
       "PackagePath": "staticwebassets\\images\\back2.jpg"
     },
     {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\backnime.jpg",
+      "PackagePath": "staticwebassets\\images\\backnime.jpg"
+    },
+    {
       "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\ban1.jpg",
       "PackagePath": "staticwebassets\\images\\ban1.jpg"
     },
@@ -669,6 +677,10 @@
       "PackagePath": "staticwebassets\\images\\item-cart-05.jpg"
     },
     {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\jojoicon.png",
+      "PackagePath": "staticwebassets\\images\\jojoicon.png"
+    },
+    {
       "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\kira.png",
       "PackagePath": "staticwebassets\\images\\kira.png"
     },
@@ -819,6 +831,10 @@
     {
       "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\images\\thumb-03.jpg",
       "PackagePath": "staticwebassets\\images\\thumb-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\jojoicon.png",
+      "PackagePath": "staticwebassets\\jojoicon.png"
     },
     {
       "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\js\\main.js",
@@ -1065,6 +1081,14 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\0a8fc267-c6d7-464e-8175-04ee6ee1ff2b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\0a8fc267-c6d7-464e-8175-04ee6ee1ff2b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\1194239e-8cfc-44c1-9321-451991ecc400.png",
+      "PackagePath": "staticwebassets\\uploads\\1194239e-8cfc-44c1-9321-451991ecc400.png"
+    },
+    {
       "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\18b02cb0-cc63-482d-88cd-b3bbeca09c8c.png",
       "PackagePath": "staticwebassets\\uploads\\18b02cb0-cc63-482d-88cd-b3bbeca09c8c.png"
     },
@@ -1089,8 +1113,24 @@
       "PackagePath": "staticwebassets\\uploads\\3846f2d5-ddac-4d00-808a-b71e0ba32121.png"
     },
     {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\44ddebca-9807-40b6-b025-6f3771a2ab6c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\44ddebca-9807-40b6-b025-6f3771a2ab6c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\4a3e1205-f38e-437a-876d-5455d72740e5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\4a3e1205-f38e-437a-876d-5455d72740e5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\515838c2-63fe-4946-baba-20abf0289eb3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\515838c2-63fe-4946-baba-20abf0289eb3.jpg"
+    },
+    {
       "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\55315b7e-bee3-4f26-9abd-e9a84b429233.png",
       "PackagePath": "staticwebassets\\uploads\\55315b7e-bee3-4f26-9abd-e9a84b429233.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\58807238-9db3-4d9d-b2cc-277ae982d0f1.png",
+      "PackagePath": "staticwebassets\\uploads\\58807238-9db3-4d9d-b2cc-277ae982d0f1.png"
     },
     {
       "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\5977ddb8-4cd9-4112-baa0-6353cdd2a1ea.png",
@@ -1109,24 +1149,80 @@
       "PackagePath": "staticwebassets\\uploads\\5ef30ea9-51c6-451e-8756-33edd8142417.jpg"
     },
     {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\60bd98d2-ff45-4085-ad75-bde4d8145c24.png",
+      "PackagePath": "staticwebassets\\uploads\\60bd98d2-ff45-4085-ad75-bde4d8145c24.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\66c100d6-1d20-4f87-8aaa-4680ec199090.png",
+      "PackagePath": "staticwebassets\\uploads\\66c100d6-1d20-4f87-8aaa-4680ec199090.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\68300846-9fa7-427c-8e63-91762b1cbcaa.jpg",
+      "PackagePath": "staticwebassets\\uploads\\68300846-9fa7-427c-8e63-91762b1cbcaa.jpg"
+    },
+    {
       "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\6d8bcf55-85cd-4e88-a715-0d5f7981ff2b.png",
       "PackagePath": "staticwebassets\\uploads\\6d8bcf55-85cd-4e88-a715-0d5f7981ff2b.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\77aad22e-b55e-49c3-adb7-87902e94a69b.png",
+      "PackagePath": "staticwebassets\\uploads\\77aad22e-b55e-49c3-adb7-87902e94a69b.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\8acbe641-6a1f-4231-b5c6-49fb3ee1f058.jpg",
+      "PackagePath": "staticwebassets\\uploads\\8acbe641-6a1f-4231-b5c6-49fb3ee1f058.jpg"
     },
     {
       "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\97419996-d55e-4fda-9635-4d8cd697c228.json",
       "PackagePath": "staticwebassets\\uploads\\97419996-d55e-4fda-9635-4d8cd697c228.json"
     },
     {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\98be11ab-ca3f-4c57-b27f-fb9f730de1a6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\98be11ab-ca3f-4c57-b27f-fb9f730de1a6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\9ac975f1-ab4b-4c46-9c93-1c79c98453d5.png",
+      "PackagePath": "staticwebassets\\uploads\\9ac975f1-ab4b-4c46-9c93-1c79c98453d5.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\a24138a5-6e29-4b19-a531-46855a6ffa29.jpg",
+      "PackagePath": "staticwebassets\\uploads\\a24138a5-6e29-4b19-a531-46855a6ffa29.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\a35536e4-ae0e-4ac5-b646-897028f71daf.png",
+      "PackagePath": "staticwebassets\\uploads\\a35536e4-ae0e-4ac5-b646-897028f71daf.png"
+    },
+    {
       "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\ab9cd55b-a3e5-4c32-a618-e1249784c59d.png",
       "PackagePath": "staticwebassets\\uploads\\ab9cd55b-a3e5-4c32-a618-e1249784c59d.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\ae26f220-158e-4622-9ee0-861a30ec9bdb.png",
+      "PackagePath": "staticwebassets\\uploads\\ae26f220-158e-4622-9ee0-861a30ec9bdb.png"
     },
     {
       "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\bdba39ed-bac2-482e-8b28-95c7dec20c25.png",
       "PackagePath": "staticwebassets\\uploads\\bdba39ed-bac2-482e-8b28-95c7dec20c25.png"
     },
     {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\bfa48185-9c43-49b9-991e-621d0ddaab1a.jpg",
+      "PackagePath": "staticwebassets\\uploads\\bfa48185-9c43-49b9-991e-621d0ddaab1a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\d053015c-4ab4-48f3-9b9e-f61b4f7be1d0.jpg",
+      "PackagePath": "staticwebassets\\uploads\\d053015c-4ab4-48f3-9b9e-f61b4f7be1d0.jpg"
+    },
+    {
       "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\d231401c-29c2-4baf-b6f4-754414369f9f.png",
       "PackagePath": "staticwebassets\\uploads\\d231401c-29c2-4baf-b6f4-754414369f9f.png"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\dd21f730-ad10-42e5-aab7-39008ceb694d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\dd21f730-ad10-42e5-aab7-39008ceb694d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\eb2ea1af-17e7-4fca-976f-2d19ceaf7a8d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\eb2ea1af-17e7-4fca-976f-2d19ceaf7a8d.jpg"
     },
     {
       "Id": "C:\\Users\\visha\\OneDrive\\Documents\\GitHub\\MadeInHeaven\\MadeinHeavenBookStore\\MadeinHeavenBookStore\\wwwroot\\uploads\\f2549306-85b6-4a80-a489-c444b689b362.gif",

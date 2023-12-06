@@ -1,0 +1,206 @@
+﻿@page "/orderlist"
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize]
+@using MadeinHeavenBookStore.Models.MVCService
+@using MadeinHeavenBookStore.Controllers.Services
+
+@using MadeinHeavenBookStore.Models.OrderDetail
+@using System.ComponentModel.DataAnnotations;
+@using Microsoft.AspNetCore.Authorization;
+@inject OrderService OrderService;
+@inject OrderAPIService OrderAPIService;
+
+@inject IToastService toastService
+@using System.Security.Claims
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager NavigationManager
+
+
+
+
+<div class="container">
+        <div class="row">
+            <div class="col-lg-12 card-margin">
+                <div class="card search-form">
+                    <div class="card-body p-0">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row no-gutters">
+                                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                            <select class="" @onchange="Filter">
+                                                <option>All</option>
+                                                <option>Waiting</option>
+                                                <option>Delivering...</option>
+                                                <option>Completed</option>
+                                                <option>Cancled</option>
+                                              
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-8 col-md-6 col-sm-12 p-0">
+                                            <input @bind="search" placeholder="Search..." class="form-control" id="search" name="search">
+                                        </div>
+                                        <div class="col-lg-1 col-md-3 col-sm-12 p-0">
+                                            <button @onclick="Searches" class="btn btn-base">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="card card-margin">
+                <div class="card-body">
+                    <div class="row search-body">
+                        <div class="col-lg-12">
+                            <div class="search-result">
+                                <div class="result-header">
+                                    <div class="row">
+
+                                        <div class="col-lg-6">
+                                            <div class="result-actions">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="result-body">
+                                    <div class="table-responsive">
+                                        <table class="table widget-26">
+                                            <tbody>
+
+                                                @foreach (var item in Model)
+                                                {
+                                                    <tr>
+
+                                                        <td>
+                                                            <div class="widget-26-job-title">
+                                                                <a href="#">ID: @item.Id</a>
+                                                                <p class="m-0"><a href="#" class="employer-name"></a> <span class="text-muted time">@item.UserClaim</span></p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="widget-26-job-info">
+                                                                @item.DateTime
+                                                                <p class="m-0"><a href="#" class="employer-name"></a> <span class="text-muted time">@item.telephonenumber</span></p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="widget-26-job-info">@item.TotalCost  VNĐ</div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="widget-26-job-category bg-soft-base">
+                                                                <i class="indicator bg-base"></i>
+                                                                <span> @item.status &nbsp; &nbsp;</span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+
+
+                                                            <div class="d-flex justify-content-between">
+
+                                                                <a @onclick="@(c => OrderDetail(item.Id))" class="btn btn-outline-primary">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"></path>
+                                                                        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"></path>
+                                                                    </svg>
+                                                                </a>
+                                                                    @if (item.status == "Waiting")
+                                                                    {
+                                                                        <a @onclick="@(c => @CancleOrder(item.Id))" type="button" class="btn btn-outline-danger">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                                                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"></path>
+                                                                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"></path>
+                                                                            </svg>
+                                                                        </a>
+                                                                    }
+                                                                   
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="d-flex justify-content-center">
+                        <div class="flex-c-m flex-w w-full p-t-45">
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+@code {
+    private bool IsUserAuthorized;
+    public string status = "";
+    public string search = "";
+    public List<Order> Model = new List<Order>();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        IsUserAuthorized = authState.User.IsInRole("Mod");
+        if (authState.User.IsInRole("Admin")) IsUserAuthorized = true;
+
+        await Update();
+    }
+
+    public async Task Searches()
+    {
+        await Update();
+        Model = Model.Where(c => c.DateTime.ToString().Contains(search)).ToList();
+    }
+
+    public async Task Update()
+    {
+        Model = await OrderAPIService.ListOrderofMe(status);
+    }
+
+    public async Task Deliver(int id)
+    {
+        await OrderService.Delivery(id);
+        await Update();
+    }
+
+    public async Task CompleteOrder(int id)
+    {
+        await OrderService.DoneOrder(id);
+        await Update();
+    }
+
+    public async Task CancleOrder(int id)
+    {
+        await OrderAPIService.CancleOrder(id);
+        await Update();
+    }
+
+    public async Task OrderDetail(int id)
+    {
+        NavigationManager.NavigateTo("Order/OrderDetail/" + id , true);
+
+    }
+
+    public async Task Filter(ChangeEventArgs eventArgs)
+    {
+        status = eventArgs.Value.ToString();
+        if (status == "All")
+        {
+            status = "";
+        }
+        await Update();
+    }
+}

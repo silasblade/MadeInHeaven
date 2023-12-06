@@ -1,0 +1,240 @@
+.widget-26[b-wpg57r4nq1] {
+    color: #3c4142;
+    font-weight: 400;
+}
+
+    .widget-26 tr:first-child td[b-wpg57r4nq1] {
+        border: 0;
+    }
+
+
+    .widget-26 .widget-26-job-title[b-wpg57r4nq1] {
+        min-width: 200px;
+    }
+
+        .widget-26 .widget-26-job-title a[b-wpg57r4nq1] {
+            font-weight: 400;
+            font-size: 0.875rem;
+            color: #3c4142;
+            line-height: 1.5;
+        }
+
+            .widget-26 .widget-26-job-title a:hover[b-wpg57r4nq1] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .employer-name[b-wpg57r4nq1] {
+            margin: 0;
+            line-height: 1.5;
+            font-weight: 400;
+            color: #3c4142;
+            font-size: 0.8125rem;
+            color: #3c4142;
+        }
+
+            .widget-26 .widget-26-job-title .employer-name:hover[b-wpg57r4nq1] {
+                color: #68CBD7;
+                text-decoration: none;
+            }
+
+        .widget-26 .widget-26-job-title .time[b-wpg57r4nq1] {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+    .widget-26 .widget-26-job-info[b-wpg57r4nq1] {
+        min-width: 100px;
+        font-weight: 400;
+    }
+
+        .widget-26 .widget-26-job-info p[b-wpg57r4nq1] {
+            line-height: 1.5;
+            color: #3c4142;
+            font-size: 0.8125rem;
+        }
+
+        .widget-26 .widget-26-job-info .location[b-wpg57r4nq1] {
+            color: #3c4142;
+        }
+
+    .widget-26 .widget-26-job-salary[b-wpg57r4nq1] {
+        min-width: 70px;
+        font-weight: 400;
+        color: #3c4142;
+        font-size: 0.8125rem;
+    }
+
+    .widget-26 .widget-26-job-category[b-wpg57r4nq1] {
+        padding: .5rem;
+        display: inline-flex;
+        white-space: nowrap;
+        border-radius: 15px;
+    }
+
+        .widget-26 .widget-26-job-category .indicator[b-wpg57r4nq1] {
+            width: 13px;
+            height: 13px;
+            margin-right: .5rem;
+            float: left;
+            border-radius: 50%;
+        }
+
+        .widget-26 .widget-26-job-category span[b-wpg57r4nq1] {
+            font-size: 0.8125rem;
+            color: #3c4142;
+            font-weight: 600;
+        }
+
+    .widget-26 .widget-26-job-starred svg[b-wpg57r4nq1] {
+        width: 20px;
+        height: 20px;
+        color: #fd8b2c;
+    }
+
+        .widget-26 .widget-26-job-starred svg.starred[b-wpg57r4nq1] {
+            fill: #fd8b2c;
+        }
+
+.bg-soft-base[b-wpg57r4nq1] {
+    background-color: #e1f5f7;
+}
+
+.bg-soft-warning[b-wpg57r4nq1] {
+    background-color: #fff4e1;
+}
+
+.bg-soft-success[b-wpg57r4nq1] {
+    background-color: #d1f6f2;
+}
+
+.bg-soft-danger[b-wpg57r4nq1] {
+    background-color: #fedce0;
+}
+
+.bg-soft-info[b-wpg57r4nq1] {
+    background-color: #d7efff;
+}
+
+
+.search-form[b-wpg57r4nq1] {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+    .search-form input[b-wpg57r4nq1] {
+        height: 100%;
+        background: transparent;
+        border: 0;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+    .search-form select[b-wpg57r4nq1] {
+        background: transparent;
+        border: 0;
+        padding: 1rem;
+        height: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form select:focus[b-wpg57r4nq1] {
+            border: 0;
+        }
+
+    .search-form button[b-wpg57r4nq1] {
+        height: 100%;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+        .search-form button svg[b-wpg57r4nq1] {
+            width: 24px;
+            height: 24px;
+        }
+
+.search-body[b-wpg57r4nq1] {
+    margin-bottom: 1.5rem;
+}
+
+    .search-body .search-filters .filter-list[b-wpg57r4nq1] {
+        margin-bottom: 1.3rem;
+    }
+
+        .search-body .search-filters .filter-list .title[b-wpg57r4nq1] {
+            color: #3c4142;
+            margin-bottom: 1rem;
+        }
+
+        .search-body .search-filters .filter-list .filter-text[b-wpg57r4nq1] {
+            color: #727686;
+        }
+
+    .search-body .search-result .result-header[b-wpg57r4nq1] {
+        margin-bottom: 2rem;
+    }
+
+        .search-body .search-result .result-header .records[b-wpg57r4nq1] {
+            color: #3c4142;
+        }
+
+        .search-body .search-result .result-header .result-actions[b-wpg57r4nq1] {
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .search-body .search-result .result-header .result-actions .result-sorting[b-wpg57r4nq1] {
+                display: flex;
+                align-items: center;
+            }
+
+                .search-body .search-result .result-header .result-actions .result-sorting span[b-wpg57r4nq1] {
+                    flex-shrink: 0;
+                    font-size: 0.8125rem;
+                }
+
+                .search-body .search-result .result-header .result-actions .result-sorting select[b-wpg57r4nq1] {
+                    color: #68CBD7;
+                }
+
+                    .search-body .search-result .result-header .result-actions .result-sorting select option[b-wpg57r4nq1] {
+                        color: #3c4142;
+                    }
+
+
+
+.card-margin[b-wpg57r4nq1] {
+    margin-bottom: 1.875rem;
+}
+
+}
+
+.card-margin[b-wpg57r4nq1] {
+    margin-bottom: 1.875rem;
+}
+
+.card[b-wpg57r4nq1] {
+    border: 0;
+    box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+    -ms-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+}
+
+.card[b-wpg57r4nq1] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 1px solid #e6e4e9;
+    border-radius: 8px;
+}

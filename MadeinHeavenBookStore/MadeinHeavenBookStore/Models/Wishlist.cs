@@ -1,5 +1,9 @@
 ﻿using MadeinHeavenBookStore.Areas.Identity.Data;
 using System.ComponentModel.DataAnnotations;
+using MadeinHeavenBookStore.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.OpenApi;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace MadeinHeavenBookStore.Models
 {
@@ -11,4 +15,7 @@ namespace MadeinHeavenBookStore.Models
 		public string IdUser { get; set; }
 		public Product Product { get; set; }
 	}
+
+
+
 }

@@ -74,6 +74,21 @@ namespace MadeinHeavenBookStore.Models.MVCService
             return products;
         }
 
+        public async Task<List<Product>> GetPagedProducts(string category, int currentPage, int itemsPerPage)
+        {
+            // Assuming you have a method to retrieve all products and then filter based on category and search
+
+            var allProducts = await GetProduct();
+
+            // Calculate the index to start retrieving products based on the current page
+            var startIndex = (currentPage - 1) * itemsPerPage;
+
+            // Retrieve the subset of products for the current page
+            var pagedProducts = allProducts.Skip(startIndex).Take(itemsPerPage).ToList();
+
+            return pagedProducts;
+        }
+
         public async Task <Product> DeleteProduct(int id)
         {
             Product product = _context.Products.Find(id);

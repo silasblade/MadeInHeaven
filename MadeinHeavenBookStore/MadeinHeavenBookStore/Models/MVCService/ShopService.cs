@@ -56,10 +56,10 @@ namespace MadeinHeavenBookStore.Models.MVCService
 				{
 					products = products.Where(c => c.Price > min).ToList();
 				}
-			}	
-			
+			}
+            products.Reverse();
 
-			return products;
+            return products;
         }
 
 		public async Task<int> GetAllProducts()

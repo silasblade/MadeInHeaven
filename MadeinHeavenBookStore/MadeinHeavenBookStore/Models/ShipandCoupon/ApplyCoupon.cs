@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using MadeinHeavenBookStore.Areas.Identity.Data;
+using System.ComponentModel.DataAnnotations;
 
 namespace MadeinHeavenBookStore.Models.ShipandCoupon
 {
@@ -6,7 +7,9 @@ namespace MadeinHeavenBookStore.Models.ShipandCoupon
 	{
 		[Key]
 		public int Id { get; set; }
-		public string IdUser { get; set; } = string.Empty;
+
+
+        public string IdUser { get; set; } = string.Empty;
 		public int IdCoupon { get; set; }
 	}
 }

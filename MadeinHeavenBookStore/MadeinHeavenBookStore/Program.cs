@@ -7,6 +7,10 @@ using MadeinHeavenBookStore.Models.ShipandCoupon;
 using Blazored.Toast;
 using MadeinHeavenBookStore.Models.MVCService;
 using MadeinHeavenBookStore.Controllers;
+using MadeinHeavenBookStore.Controllers.Services;
+using MadeinHeavenBookStore.Controllers.ShopAPI;
+using Microsoft.AspNetCore.Http.Features;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("MadeinHeavenBookStoreContextConnection") ?? throw new InvalidOperationException("Connection string 'MadeinHeavenBookStoreContextConnection' not found.");
@@ -19,7 +23,7 @@ builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddServerSideBlazor();
 
 
-
+builder.Services.AddHttpContextAccessor();
 builder.Services.AddDbContext<MadeinHeavenBookStoreContext>(options => options.UseSqlServer(connectionString));
 
 builder.Services.AddDefaultIdentity<MadeinHeavenBookStoreUser>(options => options.SignIn.RequireConfirmedAccount = false)
@@ -31,11 +35,25 @@ builder.Services.AddHttpClient<CouponService>(client =>
 {
     client.BaseAddress = new Uri("https://localhost:7074/");
 });
+builder.Services.AddHttpClient<WishlistAPIService>(client =>
+{
+	client.BaseAddress = new Uri("https://localhost:7074/");
+});
+builder.Services.AddHttpClient<ReviewAPIService>(client =>
+{
+	client.BaseAddress = new Uri("https://localhost:7074/");
+});
+builder.Services.AddHttpClient<OrderAPIService>(client =>
+{
+	client.BaseAddress = new Uri("https://localhost:7074/");
+});
+
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddScoped<CouponService>();
+
 builder.Services.AddScoped<ProductService>();
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<OrderService>();
@@ -43,10 +61,21 @@ builder.Services.AddScoped<ShopController>();
 builder.Services.AddScoped<ShopService>();
 builder.Services.AddScoped<ReviewService>();
 builder.Services.AddScoped<ShopCartService>();
+builder.Services.AddScoped<WishlistService>();
+builder.Services.AddScoped<WishlistAPIService>();
+builder.Services.AddScoped<ReviewAPIService>();
+builder.Services.AddScoped<ReviewAPI>();
+builder.Services.AddScoped<OrderAPIService>();
+builder.Services.AddScoped<ShopAPIService>();
+builder.Services.AddScoped<ContactAPIService>();
+
+
+
+
+
 
 
 builder.Services.AddSingleton<EmailSender>();
-
 
 
 builder.Services.AddBlazoredToast();
@@ -62,17 +91,9 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
-
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-app.UseCors(builder =>
-    {
-        builder.AllowAnyOrigin()
-               .AllowAnyHeader()
-               .AllowAnyMethod();
-    });
 app.UseRouting();
-
 app.UseAuthentication();
 app.UseAuthorization();
 
@@ -89,7 +110,11 @@ app.MapFallbackToPage("/_Host");
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=}/{action=}/{id?}");
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "/");
 
 app.MapRazorPages();
 SeedData.EnsurePopulated(app);

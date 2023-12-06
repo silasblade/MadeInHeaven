@@ -3,13 +3,18 @@
 @attribute [Authorize]
 @using MadeinHeavenBookStore.Models.MVCService
 @using MadeinHeavenBookStore.Models.OrderDetail
+@using MadeinHeavenBookStore.Controllers.Services
+
 @using System.ComponentModel.DataAnnotations;
 @using Microsoft.AspNetCore.Authorization;
 @inject OrderService OrderService;
+@inject OrderAPIService OrderAPIService;
+
 @inject IToastService toastService
 @using System.Security.Claims
 @inject AuthenticationStateProvider AuthenticationStateProvider
 @inject NavigationManager NavigationManager
+@layout SubMainLayout
 
 <h3>Manage Order</h3>
 @if (IsUserAuthorized)
@@ -21,31 +26,31 @@
             <div class="col-lg-12 card-margin">
                 <div class="card search-form">
                     <div class="card-body p-0">
-                        <form asp-controller="ProductManage" asp-action="ProductManage" id="search-form">
                             <div class="row">
                                 <div class="col-12">
                                     <div class="row no-gutters">
                                         <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                                            <select class="" id="catsear" name="catsearch">
-                                                <option disabled>Choose a Category</option>
-                                                <option disabled>Delivering...</option>
-                                                <option disabled>Completed</option>
-                                                <option disabled>Cancled</option>
+                                            <select class="" @onchange="Filter">
+                                                <option >All</option>
+                                                <option >Waiting</option>
+                                                <option >Delivering...</option>
+                                                <option >Completed</option>
+                                                <option >Cancled</option>
+                                                
                                               
                                             </select>
                                         </div>
                                         <div class="col-lg-8 col-md-6 col-sm-12 p-0">
-                                            <input type="text" placeholder="Search..." class="form-control" id="search" name="search">
+                                            <input @bind="search">
                                         </div>
                                         <div class="col-lg-1 col-md-3 col-sm-12 p-0">
-                                            <button type="submit" class="btn btn-base">
+                                            <button @onclick="Searches">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                                             </button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -162,6 +167,7 @@ else
 @code {
     private bool IsUserAuthorized;
     public string status = "";
+    public string search = "";
     public List<Order> Model = new List<Order>();
 
 
@@ -176,24 +182,32 @@ else
 
     public async Task Update()
     {
-        Model = await OrderService.ListOrder(status);
+        Model = await OrderAPIService.ListOrder(status);
+    }
+
+    public async Task Searches()
+    {
+        await Update();
+        Model = Model.Where(c => c.UserClaim.Contains(search)).ToList();
+        StateHasChanged();
     }
 
     public async Task Deliver(int id)
-    {
-        await OrderService.Delivery(id);
+    { 
+        
+        await OrderAPIService.Delivery(id);
         await Update();
     }
 
     public async Task CompleteOrder(int id)
     {
-        await OrderService.DoneOrder(id);
+        await OrderAPIService.DoneOrder(id);
         await Update();
     }
 
     public async Task CancleOrder(int id)
     {
-        await OrderService.CancleOrder(id);
+        await OrderAPIService.CancleOrder(id);
         await Update();
     }
 
@@ -201,5 +215,15 @@ else
     {
         NavigationManager.NavigateTo("Order/OrderDetail/" + id , true);
 
+    }
+
+    public async Task Filter(ChangeEventArgs eventArgs)
+    {
+        status = eventArgs.Value.ToString();
+        if(status == "All")
+        {
+            status = "";
+        }
+        await Update();
     }
 }

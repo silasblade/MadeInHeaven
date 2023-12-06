@@ -9,7 +9,7 @@
 @inject IToastService toastService
 @using System.Security.Claims
 @inject AuthenticationStateProvider AuthenticationStateProvider
-
+@layout SubMainLayout
 
 @inject ILogger<EditProduct> Logger
 @inject IHostEnvironment Environment
@@ -46,10 +46,21 @@
     </div>
 
 <EditForm Model="product" OnSubmit="SaveProduct" enctype="multipart/form-data" style="margin-left: 50px;">
-    <div class="form-group">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
         <label asp-for="@product.IdProduct">ID:</label>
              <input @bind="@product.IdProduct" class="form-control" style="width: 200px;" readonly />
             <span asp-validation-for="@product.IdProduct" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+        <label asp-for="@product.Inventory">Inventory:</label>
+             <input @bind="@product.Inventory" class="form-control" style="width: 200px;" />
+            <span asp-validation-for="@product.Inventory" class="text-danger"></span>
+            </div>
+        </div>
     </div>
     <div class="row">
         <div class="col-md-6">
@@ -131,11 +142,16 @@
                     </div>
                 </td>
             </tr>
+		
             <tr style="text-align:center; justify-items: center;">
-                <button @onclick="@(() => toastService.ShowSuccess("I'm a SUCCESS message with a custom title"))" type="submit" class="btn btn-primary">Save</button>
+                <td>
+                <button @onclick="@(() => toastService.ShowSuccess("Update product successfully"))" type="submit" class="btn btn-primary">Save</button>
+                </td>
+                <td>
                 <a href="/admin/manageproduct" class="btn btn-danger">Cancle</a>
-
-            </tr>
+                </td>
+            </tr
+            
         </table>
 </EditForm>
 
@@ -153,14 +169,16 @@ else
     public IBrowserFile image3;
     private bool IsUserAuthorized;
     Product product = new Product();
-    public string catename;
+    public string catename = "Fantasy";
     [Parameter] public int id { get; set; }
     List<Category> categories = new List<Category>();
 
     protected override async Task OnInitializedAsync()
     {
         var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
-        IsUserAuthorized = authState.User.IsInRole("Admin");
+        IsUserAuthorized = authState.User.IsInRole("Mod");
+        if (authState.User.IsInRole("Admin")) IsUserAuthorized = true;
+
         await Update();
     }
 
@@ -192,32 +210,17 @@ else
 
     private async Task OnInputFileChange(InputFileChangeEventArgs e)
     {
-        foreach (var file in e.GetMultipleFiles())
-        {
-            var buffer = new byte[file.Size];
-            await file.OpenReadStream().ReadAsync(buffer);
-            image1 = file;
-        }
+        image1 = e.File;
     }
 
     private async Task OnInputFileChange2(InputFileChangeEventArgs e)
     {
-        foreach (var file in e.GetMultipleFiles())
-        {
-            var buffer = new byte[file.Size];
-            await file.OpenReadStream().ReadAsync(buffer);
-            image2 = file;
-        }
+        image2 = e.File;
     }
 
     private async Task OnInputFileChange3(InputFileChangeEventArgs e)
     {
-        foreach (var file in e.GetMultipleFiles())
-        {
-            var buffer = new byte[file.Size];
-            await file.OpenReadStream().ReadAsync(buffer);
-            image3 = file;
-        }
+        image3 = e.File;
     }
    
 }
